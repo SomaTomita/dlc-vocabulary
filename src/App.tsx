@@ -24,13 +24,13 @@ function AudioButton({ text, onPlay, compact = false }: { text: string; onPlay: 
   return <button className={compact ? 'icon compact' : 'icon'} onClick={() => onPlay(text)} aria-label="Play pronunciation" title="Play pronunciation"><Icon name="audio" /></button>;
 }
 
-function Feedback({ word, onPlay }: { word: Word; onPlay: (text: string) => void }) {
+function Feedback({ word, onPlay, expanded = false }: { word: Word; onPlay: (text: string) => void; expanded?: boolean }) {
   return <div className="feedback-detail">
     {!!word.forms.length && <dl className="forms">
       {word.kind === 'noun' && <div><dt>Singular</dt><dd><span lang="nl-BE">{word.nl}</span><AudioButton text={word.nl} onPlay={onPlay} compact /></dd></div>}
       {word.forms.map(form => <div key={form.label}><dt>{form.label}</dt><dd><span lang="nl-BE">{form.text}</span><AudioButton text={form.text} onPlay={onPlay} compact /></dd></div>)}
     </dl>}
-    {word.groups.map(key => <details key={key} open={word.kind === 'preposition' || undefined}>
+    {word.groups.map(key => <details key={key} open={expanded || undefined}>
       <summary>{groups[key].title}</summary>
       <table><tbody>{groups[key].rows.map(([use, dutch, english]) => <tr key={dutch}>
         {use && <td>{use}</td>}<th scope="row" lang="nl-BE">{dutch}</th><td>{english}</td>
@@ -50,6 +50,7 @@ function Feedback({ word, onPlay }: { word: Word; onPlay: (text: string) => void
 function Activity({ history }: { history: Record<string, string[]> }) {
   const [date, select] = useState(localDay());
   const dates = Array.from({ length: 84 }, (_, i) => localDay(i - 83));
+  const selectedCount = history[date]?.length ?? 0;
   return <section className="surface">
     <h1>Activity</h1>
     <div className="calendar" aria-label="Daily practice over the last 12 weeks">
@@ -60,7 +61,7 @@ function Activity({ history }: { history: Record<string, string[]> }) {
           aria-pressed={date === day} title={`${day} · ${count} words`} onClick={() => select(day)} />;
       })}
     </div>
-    <p aria-live="polite">{date} · {history[date]?.length ?? 0} words</p>
+    <p aria-live="polite">{date} · {selectedCount} {selectedCount === 1 ? 'word' : 'words'}</p>
   </section>;
 }
 
@@ -231,7 +232,7 @@ export default function App() {
         <p role="status" className={session.result === 'wrong' ? 'wrong-text' : ''}>
           {session.result === 'correct' ? 'Correct' : session.result === 'wrong' ? 'Answer' : 'Revealed'} · <span lang="nl-BE">{word.nl}</span> · {word.en}
         </p>
-        <Feedback word={word} onPlay={play} />
+        <Feedback word={word} onPlay={play} expanded={session.result === 'correct'} />
         <button className="primary next" onClick={advance}>Next <Icon name="arrow" /></button>
       </div>}
     </section>;
