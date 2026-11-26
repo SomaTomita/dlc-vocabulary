@@ -173,5 +173,275 @@
         "young"
       ]
     ]
+  },
+  "large-numbers": {
+    "title": "Large numbers",
+    "rows": [
+      [
+        "1,000",
+        "duizend",
+        "thousand"
+      ],
+      [
+        "1,000,000",
+        "één miljoen",
+        "one million"
+      ],
+      [
+        "1,000,000,000",
+        "één miljard",
+        "one billion"
+      ]
+    ]
+  },
+  "number-money": {
+    "title": "Money and prices",
+    "rows": [
+      [
+        "",
+        "de prijs",
+        "price"
+      ],
+      [
+        "",
+        "de euro",
+        "euro"
+      ],
+      [
+        "",
+        "Hoeveel kost het?",
+        "How much does it cost?"
+      ]
+    ]
+  },
+  "number-age": {
+    "title": "Age",
+    "rows": [
+      [
+        "",
+        "de leeftijd",
+        "age"
+      ],
+      [
+        "",
+        "Hoe oud ben je?",
+        "How old are you?"
+      ],
+      [
+        "",
+        "jaar oud",
+        "years old"
+      ]
+    ]
+  },
+  "number-floor": {
+    "title": "Floors and places",
+    "rows": [
+      [
+        "",
+        "de verdieping",
+        "floor"
+      ],
+      [
+        "",
+        "de lift",
+        "lift"
+      ],
+      [
+        "",
+        "de plaats",
+        "place or position"
+      ]
+    ]
+  },
+  "number-address": {
+    "title": "Addresses",
+    "rows": [
+      [
+        "",
+        "het huisnummer",
+        "house number"
+      ],
+      [
+        "",
+        "de postcode",
+        "postal code"
+      ],
+      [
+        "",
+        "de straat",
+        "street"
+      ]
+    ]
+  },
+  "number-population": {
+    "title": "Population",
+    "rows": [
+      [
+        "",
+        "de inwoner",
+        "resident"
+      ],
+      [
+        "",
+        "het aantal",
+        "number or amount"
+      ],
+      [
+        "",
+        "miljoen inwoners",
+        "million inhabitants"
+      ]
+    ]
+  },
+  "pair-size": {
+    "title": "Compare",
+    "rows": [
+      [
+        "",
+        "groot",
+        "big"
+      ],
+      [
+        "",
+        "klein",
+        "small"
+      ]
+    ]
+  },
+  "pair-weight": {
+    "title": "Compare",
+    "rows": [
+      [
+        "",
+        "licht",
+        "light"
+      ],
+      [
+        "",
+        "zwaar",
+        "heavy"
+      ]
+    ]
+  },
+  "pair-length": {
+    "title": "Compare",
+    "rows": [
+      [
+        "",
+        "kort",
+        "short"
+      ],
+      [
+        "",
+        "lang",
+        "long"
+      ]
+    ]
+  },
+  "pair-time": {
+    "title": "Compare",
+    "rows": [
+      [
+        "",
+        "vroeg",
+        "early"
+      ],
+      [
+        "",
+        "laat",
+        "late"
+      ]
+    ]
+  },
+  "pair-opening": {
+    "title": "Compare",
+    "rows": [
+      [
+        "",
+        "open",
+        "open"
+      ],
+      [
+        "",
+        "dicht",
+        "closed"
+      ]
+    ]
+  },
+  "pair-quality": {
+    "title": "Compare",
+    "rows": [
+      [
+        "",
+        "goed",
+        "good"
+      ],
+      [
+        "",
+        "slecht",
+        "bad"
+      ]
+    ]
+  },
+  "pair-appearance": {
+    "title": "Compare",
+    "rows": [
+      [
+        "",
+        "mooi",
+        "beautiful"
+      ],
+      [
+        "",
+        "lelijk",
+        "ugly"
+      ]
+    ]
+  },
+  "pair-direction": {
+    "title": "Compare",
+    "rows": [
+      [
+        "",
+        "links",
+        "left"
+      ],
+      [
+        "",
+        "rechts",
+        "right"
+      ]
+    ]
+  },
+  "pair-location": {
+    "title": "Compare",
+    "rows": [
+      [
+        "",
+        "binnen",
+        "inside"
+      ],
+      [
+        "",
+        "buiten",
+        "outside"
+      ]
+    ]
+  },
+  "pair-height": {
+    "title": "Compare",
+    "rows": [
+      [
+        "",
+        "boven",
+        "above"
+      ],
+      [
+        "",
+        "onder",
+        "below"
+      ]
+    ]
   }
 }
