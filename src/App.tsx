@@ -5,7 +5,7 @@ import coverage from '../content/coverage.json';
 import { playDutch, stopAudio } from './audio';
 import {
   allTopics, answer, availableWords, changeTopics, createSession, expected, getWord, groups, localDay, mergeStudy, next,
-  normalize, prompt, restore, restoreTab, selectedTopics, storageKey, tabKey, topicCounts, topics, withoutNumbers, words,
+  normalize, prompt, restore, restoreTab, roundMistakes, selectedTopics, storageKey, tabKey, topicCounts, topics, withoutNumbers, words,
 } from './study';
 import type { Mode, Rating, Word } from './study';
 
@@ -109,6 +109,19 @@ function TopicPicker({ selection, onChange, disabled }: {
       </label>)}
     </div>
   </fieldset>;
+}
+
+function RoundReview({ missedWords }: { missedWords: string[] }) {
+  const topics = roundMistakes(missedWords);
+  if (!topics.length) return <p className="small">No incorrect answers this round.</p>;
+
+  return <section className="round-review" aria-labelledby="round-review-title">
+    <h2 id="round-review-title">Most missed topics</h2>
+    <dl>{topics.map(([topic, count]) => <div key={topic}>
+      <dt>{topic}</dt>
+      <dd>{count} {count === 1 ? 'word' : 'words'}</dd>
+    </div>)}</dl>
+  </section>;
 }
 
 function readView() {
@@ -310,6 +323,7 @@ export default function App() {
   else if (!word) content = <section className="surface round-complete">
     <h1>Round complete</h1>
     {session.completed && <p>{session.completed.length} words this round</p>}
+    {session.missedWords && <RoundReview missedWords={session.missedWords} />}
     <button className="primary" onClick={() => newSession()}>Start next {nextSize} <Icon name="arrow" /></button>
   </section>;
   else {

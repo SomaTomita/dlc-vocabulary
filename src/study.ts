@@ -38,6 +38,7 @@ export type Session = {
   size?: number;
   target?: number;
   completed?: string[];
+  missedWords?: string[];
   topic: string;
   topics?: string[];
   retries: Record<string, number>;
@@ -147,7 +148,7 @@ export function createSession(
     [queue[0], queue[1]] = [queue[1], queue[0]];
   }
   return {
-    date, queue, first: queue[0], question: 1, size: queue.length, target: study.goal, completed: [],
+    date, queue, first: queue[0], question: 1, size: queue.length, target: study.goal, completed: [], missedWords: [],
     topics: selection, topic: selection.length === 1 ? selection[0] : allTopics, mode, options: optionsFor(queue[0], mode), retries: {},
   };
 }
@@ -184,6 +185,9 @@ export function answer(study: Study, session: Session, grade: Rating, selected?:
     session: {
       ...session, queue, retries, result: grade, selected,
       completed: session.completed && [...new Set([...session.completed, id])],
+      missedWords: grade === 'wrong' && session.missedWords
+        ? [...new Set([...session.missedWords, id])]
+        : session.missedWords,
     },
     review: { ...study.review, [id]: { due: localDay(interval), streak, missed: missed || alreadyMissed, updatedAt: Date.now() } },
     history: grade === 'reveal' ? study.history : {
@@ -196,6 +200,20 @@ export function next(session: Session): Session {
   const roundDone = session.size !== undefined && session.completed?.length === session.size;
   const queue = roundDone ? [] : session.queue.slice(1);
   return { ...session, queue, question: session.question === undefined ? undefined : session.question + 1, options: optionsFor(queue[0], session.mode), result: undefined, selected: undefined };
+}
+
+export function roundMistakes(ids: string[]) {
+  const counts = new Map<string, number>();
+  for (const id of ids) {
+    const word = getWord(id);
+    if (!word) continue;
+    const kind = Object.entries(wordKinds).find(([, value]) => word.kind === value)?.[0];
+    const topic = word.topic === 'Numbers' ? 'Numbers' : kind ?? (
+      word.kind === 'preposition' ? 'Prepositions' : word.topic
+    );
+    counts.set(topic, (counts.get(topic) ?? 0) + 1);
+  }
+  return [...counts].sort(([a, first], [b, second]) => second - first || a.localeCompare(b)).slice(0, 3);
 }
 
 export function mergeStudy(study: Study, saved: Study): Study {
