@@ -296,7 +296,7 @@ export default function App() {
     }}>{[10,20,30,40,50].map(goal => <option key={goal}>{goal}</option>)}</select></label>
     <TopicPicker selection={selection} onChange={updateTopics} />
     <button className="text-button" onClick={clearStudyHistory}>Clear study history</button>
-    <details><summary>Course coverage</summary><p>{words.length} study entries. The source index records {coverage.sourceWordCandidates.toLocaleString('en')} Dutch candidates and expressions across {coverage.pdfPages.toLocaleString('en')} PDF pages.</p>
+    <details><summary>Course coverage</summary><p>{words.length} study entries. The source index records {coverage.sourceWordCandidates.toLocaleString('en')} Dutch candidates and expressions across {coverage.pdfPages.toLocaleString('en')} PDF pages. We update the deck as new course materials are added.</p>
       <p>{((coverage.audit['check-gloss'] ?? 0) + (coverage.audit['check-source'] ?? 0)).toLocaleString('en')} observations still need a source or meaning check. This includes possible OCR errors and non-Dutch text.</p>
       <p className="small"><a href="https://kaikki.org/dictionary/Dutch/">Dictionary data from English Wiktionary via Kaikki</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
     </details>

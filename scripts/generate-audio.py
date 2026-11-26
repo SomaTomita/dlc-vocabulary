@@ -28,11 +28,12 @@ output.mkdir(exist_ok=True, parents=True)
 with TemporaryDirectory() as work:
     wav = Path(work) / "word.wav"
     for text in sorted(texts):
-        key = hashlib.sha256(("rdh-medium:" + text).encode()).hexdigest()[:16] + ".mp3"
+        spoken = "[[s]]" if text == "'s" else text.replace("; ", ". ")
+        key = hashlib.sha256(("rdh-medium:" + (spoken if text == "'s" else text)).encode()).hexdigest()[:16] + ".mp3"
         target = output / key
-        if not target.is_file():
+        if not target.is_file() or target.stat().st_size <= 256:
             with wave.open(str(wav), "wb") as handle:
-                voice.synthesize_wav(text.replace("; ", ". "), handle)
+                voice.synthesize_wav(spoken, handle)
             subprocess.run(["ffmpeg", "-v", "error", "-nostdin", "-y", "-i", str(wav),
                             "-c:a", "libmp3lame", "-b:a", "48k", str(target)], check=True)
         clips[text] = key
