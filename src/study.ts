@@ -12,6 +12,8 @@ export type Review = { due: string; streak: number; missed: boolean };
 export type Session = {
   date: string;
   queue: string[];
+  first?: string;
+  question?: number;
   topic: string;
   retries: Record<string, number>;
   options: string[];
@@ -27,6 +29,8 @@ export type Study = {
 };
 
 export const storageKey = 'dlc-vocabulary.study.v1';
+export const tabKey = 'dlc-vocabulary.practice.v1';
+export type TabPractice = { session: Session; input: string; flipped: boolean };
 export const initialStudy: Study = { history: {}, review: {}, goal: 30 };
 const byId = new Map(words.map(word => [word.id, word]));
 export const getWord = (id: string | undefined) => id ? byId.get(id) : undefined;
@@ -76,15 +80,21 @@ function optionsFor(id: string | undefined, mode: Mode): string[] {
 export function createSession(study: Study, topic = 'All topics', mode: Mode = 'choice'): Session {
   const date = localDay();
   const practiced = new Set(study.history[date]);
-  const pool = shuffle(words.filter(word => topic === 'All topics' || word.topic === topic));
-  const fresh = pool.filter(word => !study.review[word.id]);
-  const due = pool.filter(word => study.review[word.id]?.due <= date && !practiced.has(word.id))
-    .sort((a, b) => Number(study.review[b.id].missed) - Number(study.review[a.id].missed)
-      || study.review[a.id].due.localeCompare(study.review[b.id].due));
-  const reserve = fresh.slice(0, due.length ? 5 : 0);
-  const queue = [...new Set([...due.slice(0, study.goal - reserve.length), ...reserve, ...fresh,
-    ...pool.filter(word => !practiced.has(word.id)), ...pool].map(word => word.id))].slice(0, study.goal);
-  return { date, queue, topic, mode, options: optionsFor(queue[0], mode), retries: {} };
+  const pool = words.filter(word => topic === 'All topics' || word.topic === topic);
+  const previousFirst = study.session?.first ?? study.session?.queue[0];
+  const queue = pool.map(word => {
+    const review = study.review[word.id];
+    // Misses get a small edge without fixing the order of the next round.
+    const weight = review?.missed ? 1.6 : !review || review.due <= date ? 1.2 : 1;
+    return { id: word.id, priority: -Math.log(1 - Math.random()) / weight };
+  }).sort((a, b) => Number(practiced.has(a.id)) - Number(practiced.has(b.id))
+    || a.priority - b.priority)
+    .slice(0, study.goal)
+    .map(item => item.id);
+  if (queue.length > 1 && queue[0] === previousFirst) {
+    [queue[0], queue[1]] = [queue[1], queue[0]];
+  }
+  return { date, queue, first: queue[0], question: 1, topic, mode, options: optionsFor(queue[0], mode), retries: {} };
 }
 
 export function answer(study: Study, session: Session, grade: Rating, selected?: string): Study {
@@ -99,7 +109,8 @@ export function answer(study: Study, session: Session, grade: Rating, selected?:
   const queue = [...session.queue];
   const retries = { ...session.retries };
   if (missed && (retries[id] ?? 0) < 2) {
-    queue.splice(Math.min(4, queue.length), 0, id);
+    const gap = 4 + Math.floor(Math.random() * 3);
+    queue.splice(Math.min(gap, queue.length), 0, id);
     retries[id] = (retries[id] ?? 0) + 1;
   }
   return {
@@ -114,7 +125,17 @@ export function answer(study: Study, session: Session, grade: Rating, selected?:
 
 export function next(session: Session): Session {
   const queue = session.queue.slice(1);
-  return { ...session, queue, options: optionsFor(queue[0], session.mode), result: undefined, selected: undefined };
+  return { ...session, queue, question: session.question === undefined ? undefined : session.question + 1, options: optionsFor(queue[0], session.mode), result: undefined, selected: undefined };
+}
+
+export function restoreTab(): TabPractice | undefined {
+  try {
+    const saved = JSON.parse(sessionStorage.getItem(tabKey) ?? 'null') as TabPractice | null;
+    if (!saved || saved.session.date !== localDay() || saved.session.queue.some(id => !getWord(id))) return;
+    return saved;
+  } catch {
+    return;
+  }
 }
 
 export function restore(): [Study, boolean] {
@@ -126,7 +147,7 @@ export function restore(): [Study, boolean] {
         || data.goal < 5 || data.goal > 100) {
       return [initialStudy, false];
     }
-    if (data.session?.date !== localDay() || data.session.queue.some(id => !getWord(id))) delete data.session;
+    if (data.session?.queue.some(id => !getWord(id))) delete data.session;
     const { history, review, goal, session } = data;
     return [{ history, review, goal, session }, true];
   } catch {

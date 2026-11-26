@@ -4,7 +4,7 @@ import numbers from '../content/numbers.json';
 import { playDutch, stopAudio } from './audio';
 import {
   answer, createSession, expected, getWord, groups, localDay, next,
-  normalize, prompt, restore, storageKey, topics, words,
+  normalize, prompt, restore, restoreTab, storageKey, tabKey, topics, words,
 } from './study';
 import type { Mode, Rating, Word } from './study';
 
@@ -88,11 +88,22 @@ function readView() {
 
 export default function App() {
   const [[initial, storageOk]] = useState(restore);
-  const [study, setStudy] = useState(() => ({ ...initial, session: initial.session ?? createSession(initial) }));
+  const [tab] = useState(() => {
+    const saved = restoreTab();
+    if (saved) return saved;
+    const legacy = initial.session;
+    if (legacy?.date === localDay() && legacy.queue.length && !legacy.first
+        && (legacy.result || initial.history[legacy.date]?.length)) {
+      return { session: { ...legacy, first: legacy.queue[0] }, input: '', flipped: false };
+    }
+  });
+  const [study, setStudy] = useState(() => ({
+    ...initial, session: tab?.session ?? initial.session ?? createSession(initial),
+  }));
   const [view, setView] = useState(readView);
-  const [input, setInput] = useState('');
-  const [flipped, flip] = useState(false);
-  const [started, setStarted] = useState(false);
+  const [input, setInput] = useState(tab?.input ?? '');
+  const [flipped, flip] = useState(tab?.flipped ?? false);
+  const [started, setStarted] = useState(!!tab);
   const [audioError, setAudioError] = useState('');
   const [storageError, setStorageError] = useState(!storageOk);
   const audioTicket = useRef(0);
@@ -104,6 +115,12 @@ export default function App() {
     try { localStorage.setItem(storageKey, JSON.stringify(study)); }
     catch { setStorageError(true); }
   }, [study]);
+
+  useEffect(() => {
+    if (!started) return;
+    try { sessionStorage.setItem(tabKey, JSON.stringify({ session, input, flipped })); }
+    catch { setStorageError(true); }
+  }, [started, session, input, flipped]);
 
   useEffect(() => {
     const change = () => {
@@ -171,7 +188,7 @@ export default function App() {
   else if (view === 'activity') content = <Activity history={study.history} />;
   else if (view === 'settings') content = <section className="surface settings">
     <h1>Settings</h1>
-    <label>Mode<select value={session.mode} onChange={event => newSession(session.topic, event.target.value as Mode)}>
+    <label>Mode<select value={session.mode} disabled={started && !!session.result} onChange={event => newSession(session.topic, event.target.value as Mode)}>
       {Object.entries(modes).map(([value,label]) => <option key={value} value={value}>{label}</option>)}</select></label>
     <label>Daily goal<select value={study.goal} onChange={event => {
       const goal = Number(event.target.value);
@@ -181,15 +198,15 @@ export default function App() {
   </section>;
   else if (!started) content = <section className="surface">
     <button className="primary" onClick={() => {
-      if (!word) newSession();
+      newSession();
       setStarted(true);
-    }}>{initial.session?.queue.length && (initial.session.result || practiced) ? 'Resume' : 'Start'} <Icon name="arrow" /></button>
+    }}>Start <Icon name="arrow" /></button>
   </section>;
   else if (!word) content = <section className="surface"><h1>Round complete</h1><button className="primary" onClick={() => newSession()}>Keep practising <Icon name="arrow" /></button></section>;
   else {
     const dutchPrompt = session.mode !== 'listen' && session.mode !== 'typing' && !(word.kind === 'ordinal' && session.mode === 'choice');
     content = <section className="surface practice" aria-label="Vocabulary question">
-      <div className="question-top"><span>{word.topic}{word.kind === 'ordinal' && session.mode === 'choice' ? ' · Ordinal' : ''}</span>
+      <div className="question-top"><span>{session.question ? 'Question ' + session.question + ' · ' : ''}{word.topic}{word.kind === 'ordinal' && session.mode === 'choice' ? ' · Ordinal' : ''}</span>
         <AudioButton text={word.nl} onPlay={play} />
       </div>
       <h1 key={word.id} lang={dutchPrompt ? 'nl-BE' : 'en'}>{prompt(word, session.mode)}</h1>
@@ -236,7 +253,7 @@ export default function App() {
         <label><span className="sr-only">Topic</span><select value={session.topic} disabled={started && !!session.result} onChange={event => newSession(event.target.value)}>
           {topics.map(topic => <option key={topic}>{topic}</option>)}</select></label>
         <a href="#activity" className="daily"><progress value={Math.min(practiced, study.goal)} max={study.goal} aria-label="Daily goal" />
-          <span>{practiced} / {study.goal}</span></a>
+          <span>Today {practiced} / {study.goal}</span></a>
       </div>}
       {content}
       {audioError && <p role="status" className="small">{audioError}</p>}

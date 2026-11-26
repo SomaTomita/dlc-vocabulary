@@ -1,6 +1,7 @@
 import manifest from '../content/audio.json';
 
 const clips: Record<string, string> = manifest.clips;
+const practiceRate = 0.85;
 let current: HTMLAudioElement | undefined;
 let done: (() => void) | undefined;
 
@@ -23,6 +24,7 @@ export function playDutch(text: string): Promise<void> {
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.voice = voice;
       utterance.lang = 'nl-BE';
+      utterance.rate = practiceRate;
       utterance.onend = () => { done = undefined; resolve(); };
       utterance.onerror = reject;
       speech.speak(utterance);
@@ -30,6 +32,8 @@ export function playDutch(text: string): Promise<void> {
     const clip = clips[text];
     if (!clip) { browserVoice(); return; }
     const audio = new Audio(import.meta.env.BASE_URL + 'audio/' + clip);
+    audio.playbackRate = practiceRate;
+    audio.preservesPitch = true;
     current = audio;
     audio.onended = () => { current = undefined; done = undefined; resolve(); };
     void audio.play().catch(error => {
