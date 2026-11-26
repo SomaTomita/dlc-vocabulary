@@ -6129,6 +6129,20 @@
     }
   },
   {
+    "nl": "de bas",
+    "kind": "noun",
+    "en": "bass (low voice or instrument)",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-cc9fa8a98cb88dc9",
+    "source": {
+      "file": "les-02_01-10-26_pronunciation.md",
+      "location": "line 205"
+    },
+    "imported": true
+  },
+  {
     "nl": "beantwoord",
     "kind": "verb",
     "en": "to answer, reply to (inflected form)",
@@ -6732,6 +6746,20 @@
     }
   },
   {
+    "nl": "Bergstraat",
+    "kind": "word",
+    "en": "Bergstraat, a street in Leuven",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-4f7a6dd778dffa9c",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 21"
+    },
+    "imported": true
+  },
+  {
     "nl": "de beril",
     "kind": "noun",
     "en": "beryl (gemstone)",
@@ -6777,6 +6805,20 @@
       "file": "Dutch Language and Cultures_Les 6_20-10-26.pdf",
       "location": "p. 55"
     }
+  },
+  {
+    "nl": "de bes",
+    "kind": "noun",
+    "en": "berry",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-b33e79c262a007cb",
+    "source": {
+      "file": "les-02_01-10-26_pronunciation.md",
+      "location": "line 205"
+    },
+    "imported": true
   },
   {
     "nl": "best",
@@ -7749,6 +7791,20 @@
     }
   },
   {
+    "nl": "Bondgenotenlaan",
+    "kind": "word",
+    "en": "Bondgenotenlaan, a street in Leuven",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-94a10fa8e6e3b1a5",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 18"
+    },
+    "imported": true
+  },
+  {
     "nl": "bood",
     "kind": "verb",
     "en": "to offer (past-tense form)",
@@ -8003,6 +8059,20 @@
       "file": "Lijst preposities.pdf",
       "location": "p. 1"
     }
+  },
+  {
+    "nl": "Brabant",
+    "kind": "word",
+    "en": "Brabant, the historic region",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-6960367038bf809b",
+    "source": {
+      "file": "practice-questions-2026.md",
+      "location": "line 19"
+    },
+    "imported": true
   },
   {
     "nl": "brainstorm",
@@ -8300,6 +8370,20 @@
       "file": "Dutch Language and Cultures_Les 8_27-10-26.pdf",
       "location": "p. 16"
     }
+  },
+  {
+    "nl": "Brusselsestraat",
+    "kind": "word",
+    "en": "Brusselsestraat, a street in Leuven",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-2efdf6267ebdbc49",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 8_27-10-26.pdf",
+      "location": "p. 92"
+    },
+    "imported": true
   },
   {
     "nl": "de buis",
@@ -9438,6 +9522,20 @@
     }
   },
   {
+    "nl": "de consonant",
+    "kind": "noun",
+    "en": "consonant",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-b05a85b32ccc06be",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
+      "location": "p. 35"
+    },
+    "imported": true
+  },
+  {
     "nl": "construeer",
     "kind": "verb",
     "en": "construct",
@@ -10293,6 +10391,20 @@
     "imported": true
   },
   {
+    "nl": "Dekenstraat",
+    "kind": "word",
+    "en": "Dekenstraat, a street in Leuven",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-9cc0a7ff926bdc1c",
+    "source": {
+      "file": "Dutch Language and Cultures 2025 semester 1_PLANNING.pdf",
+      "location": "p. 1"
+    },
+    "imported": true
+  },
+  {
     "nl": "delen",
     "kind": "verb",
     "en": "to divide, to split up",
@@ -10613,6 +10725,20 @@
       "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
       "location": "p. 26"
     }
+  },
+  {
+    "nl": "Diestsesteenweg",
+    "kind": "word",
+    "en": "Diestsesteenweg, a road in Leuven",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-315ced1d1d231dda",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 93"
+    },
+    "imported": true
   },
   {
     "nl": "digitale",
@@ -11642,6 +11768,20 @@
     }
   },
   {
+    "nl": "ecopremies",
+    "kind": "noun",
+    "en": "environmental grants or rebates",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-b14030a045479e58",
+    "source": {
+      "file": "DLC_Oefenbundel_Deel 2.pdf",
+      "location": "p. 2"
+    },
+    "imported": true
+  },
+  {
     "nl": "Edinburgh",
     "kind": "word",
     "en": "Edinburgh (the capital city of Scotland)",
@@ -12577,6 +12717,20 @@
     "source": {
       "file": "Dutch Language and Cultures_Les 5_13-10-26.pdf",
       "location": "p. 19"
+    },
+    "imported": true
+  },
+  {
+    "nl": "de fanta",
+    "kind": "noun",
+    "en": "Fanta (orange soft drink)",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-9ef4410bacc37b58",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 3_06-10-26.pdf",
+      "location": "p. 48"
     },
     "imported": true
   },
@@ -14287,6 +14441,34 @@
     }
   },
   {
+    "nl": "Goudsbloemstraat",
+    "kind": "word",
+    "en": "Goudsbloemstraat, a street in Leuven",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-ac7eedae008d525a",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 93"
+    },
+    "imported": true
+  },
+  {
+    "nl": "graanproducten",
+    "kind": "noun",
+    "en": "grain products",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-31b20f9f1442e8b8",
+    "source": {
+      "file": "DLC_Oefenbundel_Deel 3.pdf",
+      "location": "p. 1"
+    },
+    "imported": true
+  },
+  {
     "nl": "graden",
     "kind": "noun",
     "en": "degree (plural)",
@@ -14827,6 +15009,20 @@
       "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
       "location": "p. 12"
     }
+  },
+  {
+    "nl": "de ham",
+    "kind": "noun",
+    "en": "ham",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-0eccfe263668d171",
+    "source": {
+      "file": "DLC_Oefenbundel_Deel 3.pdf",
+      "location": "p. 1"
+    },
+    "imported": true
   },
   {
     "nl": "hamburgers",
@@ -15797,6 +15993,20 @@
       "file": "Dutch Language and Cultures_Les 12_19-11-26.pdf",
       "location": "p. 57"
     }
+  },
+  {
+    "nl": "Hooverplein",
+    "kind": "word",
+    "en": "Hoover Square in Leuven",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-a87abbec90162d65",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 81"
+    },
+    "imported": true
   },
   {
     "nl": "hopen",
@@ -17745,6 +17955,20 @@
     }
   },
   {
+    "nl": "kaaskroketten",
+    "kind": "noun",
+    "en": "cheese croquettes",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-5e0c843953520311",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 4_08-10-26.pdf",
+      "location": "p. 76"
+    },
+    "imported": true
+  },
+  {
     "nl": "kalm",
     "kind": "adjective",
     "en": "calm, tranquil, free of noise and disturbance",
@@ -18349,6 +18573,20 @@
       "file": "Dutch Language and Cultures_Les 2_01-10-26.pdf",
       "location": "p. 42"
     }
+  },
+  {
+    "nl": "kipnuggets",
+    "kind": "noun",
+    "en": "chicken nuggets",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-7b64591aee50e9ba",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 4_08-10-26.pdf",
+      "location": "p. 76"
+    },
+    "imported": true
   },
   {
     "nl": "klaar",
@@ -19625,6 +19863,20 @@
       "file": "Deel 1_Les 4_Lied Clouseau_Pronomen_Omcircel het correcte woord.pdf",
       "location": "p. 1"
     }
+  },
+  {
+    "nl": "Ladeuzeplein",
+    "kind": "word",
+    "en": "Ladeuze Square in Leuven",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-87e633461bc46eac",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 18"
+    },
+    "imported": true
   },
   {
     "nl": "de lamp",
@@ -21629,6 +21881,20 @@
     }
   },
   {
+    "nl": "de mantra",
+    "kind": "noun",
+    "en": "mantra",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-cd99760aa9d34304",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 1_29-09-26.pdf",
+      "location": "p. 7"
+    },
+    "imported": true
+  },
+  {
     "nl": "de map",
     "kind": "noun",
     "en": "folder",
@@ -21804,6 +22070,20 @@
     }
   },
   {
+    "nl": "Martelarenplein",
+    "kind": "word",
+    "en": "Martelaren Square in Leuven",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-18765a70502a4041",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 20"
+    },
+    "imported": true
+  },
+  {
     "nl": "massa's",
     "kind": "noun",
     "en": "mass (plural)",
@@ -21939,6 +22219,34 @@
       "file": "DLC_Oefenbundel_Deel 1.pdf",
       "location": "p. 9"
     }
+  },
+  {
+    "nl": "Mechelsestraat",
+    "kind": "word",
+    "en": "Mechelsestraat, a street in Leuven",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-1c739f208291ae86",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 81"
+    },
+    "imported": true
+  },
+  {
+    "nl": "medium",
+    "kind": "adjective",
+    "en": "medium-sized",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-c082456a7766e23a",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 4_08-10-26.pdf",
+      "location": "p. 76"
+    },
+    "imported": true
   },
   {
     "nl": "mee",
@@ -22575,6 +22883,20 @@
     }
   },
   {
+    "nl": "Minckelersstraat",
+    "kind": "word",
+    "en": "Minckelersstraat, a street in Leuven",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-b527b9b933c98d2c",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 8_27-10-26.pdf",
+      "location": "p. 92"
+    },
+    "imported": true
+  },
+  {
     "nl": "mini",
     "kind": "adjective",
     "en": "mini (tiny)",
@@ -23087,6 +23409,20 @@
     }
   },
   {
+    "nl": "Muntstraat",
+    "kind": "word",
+    "en": "Muntstraat, a street in Leuven",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-6f94a49e2058cd98",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 81"
+    },
+    "imported": true
+  },
+  {
     "nl": "de mus",
     "kind": "noun",
     "en": "sparrow, bird of the family Passeridae, especially of the genus Passer and a few other genera",
@@ -23104,6 +23440,20 @@
       "file": "Dutch Language and Cultures_Les 8_27-10-26.pdf",
       "location": "p. 37"
     }
+  },
+  {
+    "nl": "het museum",
+    "kind": "noun",
+    "en": "museum",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-4919063719e8c388",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
+      "location": "p. 87"
+    },
+    "imported": true
   },
   {
     "nl": "museums",
@@ -23208,6 +23558,20 @@
       "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
       "location": "p. 77"
     }
+  },
+  {
+    "nl": "Naamsestraat",
+    "kind": "word",
+    "en": "Naamsestraat, a street in Leuven",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-ddc399fbc14a54b8",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
+      "location": "p. 32"
+    },
+    "imported": true
   },
   {
     "nl": "naar",
@@ -23868,6 +24232,20 @@
     }
   },
   {
+    "nl": "het nomen",
+    "kind": "noun",
+    "en": "noun (grammar term)",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-3e6940236306eda9",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 3_06-10-26.pdf",
+      "location": "p. 31"
+    },
+    "imported": true
+  },
+  {
     "nl": "non-binair",
     "kind": "adjective",
     "en": "non-binary",
@@ -24431,6 +24809,20 @@
       "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
       "location": "p. 63"
     }
+  },
+  {
+    "nl": "oeh",
+    "kind": "phrase",
+    "en": "ooh",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-ed2bd65e5566751c",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 1_29-09-26.pdf",
+      "location": "p. 16"
+    },
+    "imported": true
   },
   {
     "nl": "Oekraïens",
@@ -25947,6 +26339,20 @@
     }
   },
   {
+    "nl": "Parkstraat",
+    "kind": "word",
+    "en": "Parkstraat, a street in Leuven",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-cc005cca5c05a3a4",
+    "source": {
+      "file": "Dutch Language and Cultures 2026 semester 1_PRACTICAL INFORMATION.pdf",
+      "location": "p. 1"
+    },
+    "imported": true
+  },
+  {
     "nl": "het parlement",
     "kind": "noun",
     "en": "parliament",
@@ -26783,6 +27189,20 @@
       "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
       "location": "p. 26"
     }
+  },
+  {
+    "nl": "de playlist",
+    "kind": "noun",
+    "en": "playlist",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-76cd21db00b2a3ee",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 1_29-09-26.pdf",
+      "location": "p. 16"
+    },
+    "imported": true
   },
   {
     "nl": "het plein",
@@ -27803,6 +28223,20 @@
       "file": "Dutch Language and Cultures_Les 12_19-11-26.pdf",
       "location": "p. 48"
     }
+  },
+  {
+    "nl": "random",
+    "kind": "adjective",
+    "en": "random",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-a441b15fe9a3cf56",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 5_13-10-26.pdf",
+      "location": "p. 17"
+    },
+    "imported": true
   },
   {
     "nl": "rangtelwoorden",
@@ -29754,6 +30188,20 @@
     }
   },
   {
+    "nl": "slides",
+    "kind": "noun",
+    "en": "presentation slides",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-fd2c8f1dc03ce50f",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 40"
+    },
+    "imported": true
+  },
+  {
     "nl": "smal",
     "kind": "adjective",
     "en": "narrow",
@@ -29884,6 +30332,20 @@
       "file": "Dutch Language and Cultures_Les 8_27-10-26.pdf",
       "location": "p. 21"
     }
+  },
+  {
+    "nl": "Somerplein",
+    "kind": "word",
+    "en": "Somerplein, a square in Leuven",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-ca03c93d1d81972e",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 12_19-11-26.pdf",
+      "location": "p. 63"
+    },
+    "imported": true
   },
   {
     "nl": "sommige",
@@ -30683,6 +31145,20 @@
     }
   },
   {
+    "nl": "Stationsstraat",
+    "kind": "word",
+    "en": "Station Street",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-9698c4c15c010ce2",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 15"
+    },
+    "imported": true
+  },
+  {
     "nl": "steden",
     "kind": "noun",
     "en": "city, town (plural)",
@@ -31259,6 +31735,20 @@
       "file": "Dutch Language and Cultures_Les 5_13-10-26.pdf",
       "location": "p. 65"
     }
+  },
+  {
+    "nl": "superspeciale",
+    "kind": "adjective",
+    "en": "extra-special",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-d4a0c4dc97bf254d",
+    "source": {
+      "file": "DLC_Oefenbundel_Deel 2.pdf",
+      "location": "p. 2"
+    },
+    "imported": true
   },
   {
     "nl": "Suriname",
@@ -32197,6 +32687,20 @@
     }
   },
   {
+    "nl": "Tiensestraat",
+    "kind": "word",
+    "en": "Tiensestraat, a street in Leuven",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-89292dcb852fcb88",
+    "source": {
+      "file": "DLC_Oefenbundel_Deel 3.pdf",
+      "location": "p. 4"
+    },
+    "imported": true
+  },
+  {
     "nl": "de tijd",
     "kind": "noun",
     "en": "time",
@@ -32609,6 +33113,20 @@
     "source": {
       "file": "les-02_01-10-26_pronunciation.md",
       "location": "line 328"
+    },
+    "imported": true
+  },
+  {
+    "nl": "topics",
+    "kind": "noun",
+    "en": "topics",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-f013aa4b8daf3e22",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 77"
     },
     "imported": true
   },
@@ -34290,6 +34808,20 @@
       "file": "Dutch Language and Cultures_Les 2_01-10-26.pdf",
       "location": "p. 77"
     }
+  },
+  {
+    "nl": "Vesaliusstraat",
+    "kind": "word",
+    "en": "Vesaliusstraat, a street in Leuven",
+    "forms": [],
+    "groups": [],
+    "topic": "Course vocabulary",
+    "id": "course-bf73a47b3f8fe4a3",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 76"
+    },
+    "imported": true
   },
   {
     "nl": "vetgedrukte",
@@ -38598,6 +39130,34 @@
       "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
       "location": "p. 77"
     },
+    "imported": true
+  },
+  {
+    "id": "course-44ada78c062db1ec",
+    "nl": "cornflakes",
+    "en": "cornflakes",
+    "kind": "noun",
+    "topic": "Course vocabulary",
+    "source": {
+      "file": "DLC_Oefenbundel_Deel 3.pdf",
+      "location": "p. 1"
+    },
+    "forms": [],
+    "groups": [],
+    "imported": true
+  },
+  {
+    "id": "course-0515a0cc3dba2fda",
+    "nl": "proficiat",
+    "en": "congratulations!",
+    "kind": "phrase",
+    "topic": "Course vocabulary",
+    "source": {
+      "file": "DLC_Oefenbundel_Deel 3.pdf",
+      "location": "p. 1"
+    },
+    "forms": [],
+    "groups": [],
     "imported": true
   }
 ]

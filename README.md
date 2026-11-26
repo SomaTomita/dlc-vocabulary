@@ -2,7 +2,7 @@
 
 [Open practice](https://somatomita.github.io/dlc-vocabulary/)
 
-The deck has 2,161 study entries, including larger numbers from Lessons 9 and 10. The source extraction records 2,191 Dutch candidates and selected expressions. Inspect the import audit to see which observations still require source or meaning review.
+The deck has 2,201 study entries, including larger numbers from Lessons 9 and 10. A source review of 807 flagged readings confirmed 35 for the deck and ruled out 633. Another 139 OCR-only readings lacked source confirmation and were left out. Checking the original pages also recovered five entries outside that review set. The source index records 2,191 Dutch candidates and selected expressions.
 
 ## Development
 

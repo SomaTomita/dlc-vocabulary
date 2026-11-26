@@ -265,11 +265,13 @@ def main():
               if group.startswith("pair-") for _, dutch, _ in info["rows"]}
     totals = Counter()
     collected = []
+    visual_supplements = 0
     with args.audit.open("w", encoding="utf-8", newline="") as stream:
         report = csv.writer(stream, delimiter="\t")
-        report.writerow(["form", "extraction_status", "decision", "file", "location"])
+        report.writerow(["form", "extraction_status", "decision", "file", "location", "reason"])
         for form, row in sorted(idx.items()):
             source = location(row, records)
+            reason = ""
             channels = {ref["method"] for ref in row["refs"]}
             sightings = {(ref["source"], p) for ref in row["refs"] for p in ref["locations"]}
             match = lexical_match(form, direct, inflected, base)
@@ -280,9 +282,12 @@ def main():
             if form in existing:
                 decision = "existing"
             elif form in authored:
-                nl, kind, en = authored[form]
+                nl, kind, en, *citation = authored[form]
+                if citation:
+                    source = citation[0]
                 if kind == "exclude":
-                    decision = "excluded"
+                    reason = en
+                    decision = "unconfirmed-ocr" if en.startswith("OCR-only reading") else "excluded"
                 else:
                     decision = "authored"
                     collected.append({"nl": nl, "kind": kind, "en": en, "forms": [], "groups": [],
@@ -310,7 +315,18 @@ def main():
                 if decision == "authored":
                     entry["imported"] = True
             totals[decision] += 1
-            report.writerow([form, row["status"], decision, source["file"], source["location"]])
+            report.writerow([form, row["status"], decision, source["file"], source["location"], reason])
+        for form, (nl, kind, en, *citation) in sorted(authored.items()):
+            if form in idx or form in existing or not citation or kind == "exclude":
+                continue
+            source = citation[0]
+            collected.append({
+                "id": "course-" + sha256(form.encode()).hexdigest()[:16], "nl": nl, "en": en,
+                "kind": kind, "topic": "Course vocabulary", "source": source,
+                "forms": [], "groups": [], "imported": True,
+            })
+            visual_supplements += 1
+            report.writerow([form, "visual-supplement", "authored", source["file"], source["location"], "Directly read from the source"])
     if args.write:
         output.write_text(json.dumps(deck + collected, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         previous = read(ROOT / "content/coverage.json")
@@ -321,8 +337,9 @@ def main():
             "pdfPages": len(snapshot["pages"]),
             "sourceWordCandidates": sum(snapshot["candidate_counts"].get(status, 0) for status in candidate_statuses),
             "indexedForms": len(idx),
+            "visualSupplements": visual_supplements,
             "cardCount": len(deck) + len(collected),
-            "audit": dict(totals),
+            "audit": {"check-gloss": 0, "check-source": 0, "unconfirmed-ocr": 0, **dict(totals)},
         }
         (ROOT / "content/coverage.json").write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
     print(dict(totals))

@@ -24,6 +24,36 @@
     "verb",
     "to put on (clothes)"
   ],
+  "aapen": [
+    "aapen",
+    "exclude",
+    "Wrong spelling supplied as a distractor"
+  ],
+  "aar": [
+    "aar",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "aars": [
+    "aars",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "aas": [
+    "aas",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "about": [
+    "about",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "absent": [
+    "absent",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "accent-vorm": [
     "accent-vorm",
     "noun",
@@ -44,6 +74,16 @@
     "noun",
     "sentences for stress practice"
   ],
+  "account": [
+    "account",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "accurate": [
+    "accurate",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "achtentwintigste": [
     "achtentwintigste",
     "ordinal",
@@ -53,6 +93,11 @@
     "achthonderdachtentachtigste",
     "ordinal",
     "888th"
+  ],
+  "act": [
+    "act",
+    "exclude",
+    "Visible typesetting or OCR fragment"
   ],
   "actieverbum": [
     "actieverbum",
@@ -64,6 +109,11 @@
     "noun",
     "action verb"
   ],
+  "address": [
+    "address",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "adreskaartje": [
     "adreskaartje",
     "noun",
@@ -74,20 +124,145 @@
     "verb",
     "to arrange to meet"
   ],
+  "afternoon": [
+    "afternoon",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "age": [
+    "age",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "ages": [
+    "ages",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "ai": [
+    "ai",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "ajdschric": [
+    "ajdschric",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "albert": [
+    "albert",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "aldi": [
+    "aldi",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "ale": [
+    "ale",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "alen": [
+    "alen",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "alex": [
+    "alex",
+    "exclude",
+    "Personal or fictional example name"
+  ],
   "alma": [
     "Alma",
     "word",
     "Alma student restaurant"
+  ],
+  "aloud": [
+    "aloud",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "alp": [
+    "alp",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "alstublie": [
+    "alstublie",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "alstublief": [
+    "alstublief",
+    "exclude",
+    "Visible typesetting or OCR fragment"
   ],
   "alstublieft": [
     "alstublieft",
     "phrase",
     "please (formal)"
   ],
+  "alsublieft": [
+    "alsublieft",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "amen": [
+    "amen",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "amr": [
+    "amr",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "an": [
+    "an",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "and": [
+    "and",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "anderstaligen": [
     "anderstaligen",
     "noun",
     "speakers of other languages"
+  ],
+  "ane": [
+    "ane",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "anna": [
+    "anna",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "annelies": [
+    "annelies",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "annemie": [
+    "annemie",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "ar": [
+    "ar",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "arbkel": [
+    "arbkel",
+    "exclude",
+    "Visible typesetting or OCR fragment"
   ],
   "architecte": [
     "architecte",
@@ -99,10 +274,50 @@
     "exclude",
     "English text in practical information"
   ],
+  "ares": [
+    "ares",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "arkt": [
+    "arkt",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "arleen": [
+    "arleen",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "armstrong": [
+    "armstrong",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "as": [
+    "as",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "at": [
+    "at",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "aten": [
     "aten",
     "verb",
     "ate (plural past of eten)"
+  ],
+  "attachments": [
+    "attachments",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "attend": [
+    "attend",
+    "exclude",
+    "English or another language in the source passage"
   ],
   "audio-opname": [
     "audio-opname",
@@ -119,25 +334,205 @@
     "noun",
     "lecture hall"
   ],
+  "auris": [
+    "auris",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "auw": [
+    "auw",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "avonds": [
+    "avonds",
+    "exclude",
+    "Already represented by the complete expression"
+  ],
+  "aïcha": [
+    "aïcha",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "baal": [
+    "baal",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "bag": [
+    "bag",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "bank": [
     "de bank",
     "noun",
     "bench, sofa or bank"
+  ],
+  "bar": [
+    "bar",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "barack": [
+    "barack",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "barbara": [
+    "barbara",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "barbie": [
+    "barbie",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "bart": [
+    "bart",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "bas": [
+    "de bas",
+    "noun",
+    "bass (low voice or instrument)"
+  ],
+  "be": [
+    "be",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "beef": [
+    "beef",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "beerten": [
+    "beerten",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "bees": [
+    "bees",
+    "exclude",
+    "Label for a classroom phonetic drill"
+  ],
+  "before": [
+    "before",
+    "exclude",
+    "English or another language in the source passage"
   ],
   "bekend om": [
     "bekend om",
     "phrase",
     "known for"
   ],
+  "belgian": [
+    "belgian",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "belgie": [
+    "belgie",
+    "exclude",
+    "Variant represented by its standard spelling"
+  ],
+  "belgium's": [
+    "belgium's",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "beren": [
+    "beren",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "bergstraat": [
+    "Bergstraat",
+    "word",
+    "Bergstraat, a street in Leuven"
+  ],
+  "bert": [
+    "bert",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "bes": [
+    "de bes",
+    "noun",
+    "berry"
+  ],
+  "beyoncé": [
+    "beyoncé",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "bid": [
+    "bid",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "big": [
+    "big",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "bio-ingenieur": [
     "bio-ingenieur",
     "noun",
     "bioscience engineer"
   ],
+  "birth": [
+    "birth",
+    "exclude",
+    "English in the source passage"
+  ],
+  "birthday": [
+    "birthday",
+    "exclude",
+    "English in the source passage"
+  ],
+  "bis": [
+    "bis",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "bit": [
+    "bit",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "bits": [
+    "bits",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
   "bitterballen": [
     "bitterballen",
     "noun",
     "Dutch fried ragout balls"
+  ],
+  "blockbusters": [
+    "blockbusters",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "boeckaert": [
+    "boeckaert",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "boes": [
+    "boes",
+    "exclude",
+    "Label for a classroom phonetic drill"
+  ],
+  "bondgenotenlaan": [
+    "Bondgenotenlaan",
+    "word",
+    "Bondgenotenlaan, a street in Leuven"
   ],
   "boontjes": [
     "boontjes",
@@ -159,25 +554,245 @@
     "noun",
     "butter"
   ],
+  "bouckaert": [
+    "bouckaert",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "brabant": [
+    "Brabant",
+    "word",
+    "Brabant, the historic region"
+  ],
+  "brad": [
+    "brad",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "bram": [
+    "bram",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "bree": [
+    "bree",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
   "brief": [
     "de brief",
     "noun",
     "letter"
+  ],
+  "bring": [
+    "bring",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "britney": [
+    "britney",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "brussels": [
+    "brussels",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "brusselsestraat": [
+    "Brusselsestraat",
+    "word",
+    "Brusselsestraat, a street in Leuven"
+  ],
+  "budget": [
+    "budget",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "buildings": [
+    "buildings",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "business": [
+    "business",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "c's": [
+    "c's",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "ca": [
+    "ca",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "cabulary": [
+    "cabulary",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "capital": [
+    "capital",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "cassanova": [
+    "cassanova",
+    "exclude",
+    "Personal or fictional example name"
   ],
   "cava": [
     "cava",
     "phrase",
     "how's it going? (ça va)"
   ],
+  "cd": [
+    "cd",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "ce": [
+    "ce",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "celsius": [
+    "celsius",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
   "ceremoniële": [
     "ceremoniële",
     "adjective",
     "ceremonial"
   ],
+  "ces": [
+    "ces",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "cf": [
+    "cf",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "ch": [
+    "ch",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "charge": [
+    "charge",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
+  "chat": [
+    "chat",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "check": [
+    "check",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "checklist": [
+    "checklist",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "checkpoint": [
+    "checkpoint",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "chi": [
+    "chi",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
   "chocolademelk": [
     "chocolademelk",
     "noun",
     "chocolate milk"
+  ],
+  "city": [
+    "city",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "claartje": [
+    "claartje",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "claim": [
+    "claim",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "class": [
+    "class",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "classics": [
+    "classics",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "close": [
+    "close",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "closer": [
+    "closer",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "clouseau": [
+    "clouseau",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "coherent": [
+    "coherent",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "columbus": [
+    "columbus",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "combines": [
+    "combines",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "commerce": [
+    "commerce",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "community": [
+    "community",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "compact": [
+    "compact",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "component": [
+    "component",
+    "exclude",
+    "English or another language in the source passage"
   ],
   "computer": [
     "computer",
@@ -194,10 +809,40 @@
     "noun",
     "computer science"
   ],
+  "congolese": [
+    "congolese",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "conjuga": [
+    "conjuga",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "conjugade": [
+    "conjugade",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "consonant": [
+    "de consonant",
+    "noun",
+    "consonant"
+  ],
   "construeer": [
     "construeer",
     "verb",
     "construct"
+  ],
+  "contact": [
+    "contact",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "context": [
+    "context",
+    "exclude",
+    "English or another language in the source passage"
   ],
   "contract": [
     "contract",
@@ -209,10 +854,59 @@
     "noun",
     "contrastive form"
   ],
+  "contrastvormis": [
+    "contrastvormis",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "coppens": [
+    "coppens",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "cornflakes": [
+    "cornflakes",
+    "noun",
+    "cornflakes",
+    {
+      "file": "DLC_Oefenbundel_Deel 3.pdf",
+      "location": "p. 1"
+    }
+  ],
+  "cornwall": [
+    "cornwall",
+    "exclude",
+    "English in the source passage"
+  ],
   "correcte": [
     "correcte",
     "adjective",
     "correct (attributive form)"
+  ],
+  "cuisine": [
+    "cuisine",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "culture": [
+    "culture",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "cultures": [
+    "cultures",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "cup": [
+    "cup",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "curist": [
+    "curist",
+    "exclude",
+    "Visible typesetting or OCR fragment"
   ],
   "cursieve": [
     "cursieve",
@@ -229,60 +923,335 @@
     "word",
     "afterwards"
   ],
+  "dak": [
+    "dak",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "dalecollege": [
+    "dalecollege",
+    "exclude",
+    "Name of a building or institution"
+  ],
+  "damian": [
+    "damian",
+    "exclude",
+    "Personal or fictional example name"
+  ],
   "dans": [
     "dans",
     "noun",
     "dance"
+  ],
+  "das": [
+    "das",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "davide": [
+    "davide",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "day": [
+    "day",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "days": [
+    "days",
+    "exclude",
+    "English or another language in the source passage"
   ],
   "de-woord": [
     "de-woord",
     "noun",
     "noun that takes de"
   ],
+  "debby": [
+    "debby",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "dede": [
+    "dede",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
   "definiet": [
     "definiet",
     "adjective",
     "definite"
+  ],
+  "dek": [
+    "dek",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "dekenstraat": [
+    "Dekenstraat",
+    "word",
+    "Dekenstraat, a street in Leuven"
+  ],
+  "del": [
+    "del",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "delete": [
+    "delete",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "delhaize": [
+    "delhaize",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "deman": [
+    "deman",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "demeester": [
+    "demeester",
+    "exclude",
+    "Personal or fictional example name"
   ],
   "departement": [
     "departement",
     "noun",
     "department"
   ],
+  "des": [
+    "des",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "deschepper": [
+    "deschepper",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "design": [
+    "design",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "desmet": [
+    "desmet",
+    "exclude",
+    "Personal or fictional example name"
+  ],
   "destinatie": [
     "destinatie",
     "noun",
     "destination"
+  ],
+  "deuniversiteit": [
+    "deuniversiteit",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "devos": [
+    "devos",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "diagnose": [
+    "diagnose",
+    "exclude",
+    "English in the source passage"
   ],
   "dicteer": [
     "dicteer",
     "verb",
     "dictate"
   ],
+  "diestsesteenweg": [
+    "Diestsesteenweg",
+    "word",
+    "Diestsesteenweg, a road in Leuven"
+  ],
+  "different": [
+    "different",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "diminutief": [
     "diminutief",
     "noun",
     "diminutive"
+  ],
+  "dis": [
+    "dis",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "dj": [
+    "dj",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "dlc": [
+    "dlc",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "docente's": [
+    "docente's",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "does": [
+    "does",
+    "exclude",
+    "English or another language in the source passage"
   ],
   "doffe": [
     "doffe",
     "adjective",
     "unstressed (attributive form)"
   ],
+  "doing": [
+    "doing",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "dominika": [
+    "dominika",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "doo": [
+    "doo",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "dorien": [
+    "dorien",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "drew": [
+    "drew",
+    "exclude",
+    "Personal or fictional example name"
+  ],
   "drieëntwintigste": [
     "drieëntwintigste",
     "ordinal",
     "23rd"
+  ],
+  "du": [
+    "du",
+    "exclude",
+    "Visible typesetting or OCR fragment"
   ],
   "duo-dictee": [
     "duo-dictee",
     "noun",
     "pair dictation"
   ],
+  "dutc": [
+    "dutc",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "dutch": [
+    "dutch",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "dé": [
+    "dé",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "eat": [
+    "eat",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "eb": [
+    "eb",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "ecopremies": [
+    "ecopremies",
+    "noun",
+    "environmental grants or rebates"
+  ],
+  "ede": [
+    "ede",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "eden": [
+    "eden",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "eed": [
+    "eed",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "eek": [
+    "eek",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
   "een beetje": [
     "een beetje",
     "phrase",
     "a little"
+  ],
+  "eend": [
+    "eend",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "eenieder": [
+    "eenieder",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "eer": [
+    "eer",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "ees": [
+    "ees",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "efe": [
+    "efe",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "efen": [
+    "efen",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "eg": [
+    "eg",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "egat": [
+    "egat",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "eh": [
+    "eh",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
   ],
   "eindgroep": [
     "eindgroep",
@@ -304,10 +1273,150 @@
     "noun",
     "end point"
   ],
+  "einstein": [
+    "einstein",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "eis": [
+    "eis",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "el": [
+    "el",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "elegant": [
+    "elegant",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "elisabetta": [
+    "elisabetta",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "elite": [
+    "elite",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "ell": [
+    "ell",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "ellen": [
+    "ellen",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "emoe": [
+    "emoe",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "ene": [
+    "ene",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "enen": [
+    "enen",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "enge": [
+    "enge",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "enig": [
+    "enig",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "enjoy": [
+    "enjoy",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "enn": [
+    "enn",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "ens": [
+    "ens",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "enter": [
+    "enter",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "eon": [
+    "eon",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "epe": [
+    "epe",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "erg": [
+    "erg",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "erlijnd": [
+    "erlijnd",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
   "ermee": [
     "ermee",
     "word",
     "with it"
+  ],
+  "ers": [
+    "ers",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "est": [
+    "est",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "et": [
+    "et",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "ette": [
+    "ette",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "eu": [
+    "eu",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "evening": [
+    "evening",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "events": [
+    "events",
+    "exclude",
+    "English or another language in the source passage"
   ],
   "ex-collega": [
     "ex-collega",
@@ -319,15 +1428,145 @@
     "noun",
     "exam questions"
   ],
+  "fa": [
+    "fa",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
   "familiewoorden": [
     "familiewoorden",
     "noun",
     "family words"
   ],
+  "family": [
+    "family",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "famous": [
+    "famous",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "fanta": [
+    "de fanta",
+    "noun",
+    "Fanta (orange soft drink)"
+  ],
+  "fantastic": [
+    "fantastic",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "fe": [
+    "fe",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "feel": [
+    "feel",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "fel": [
+    "fel",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "fes": [
+    "fes",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "fi": [
+    "fi",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "fik": [
+    "fik",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "fil": [
+    "fil",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "filip": [
+    "filip",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "fin": [
+    "fin",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "finish": [
+    "finish",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "firmanaam": [
     "firmanaam",
     "noun",
     "company name"
+  ],
+  "first": [
+    "first",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "flamingo": [
+    "flamingo",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "folder": [
+    "folder",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "follow-up": [
+    "follow-up",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "follow-ups": [
+    "follow-ups",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "for": [
+    "for",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "formats": [
+    "formats",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "forward": [
+    "forward",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "foundation": [
+    "foundation",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "fraeters": [
+    "fraeters",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "friendly": [
+    "friendly",
+    "exclude",
+    "English or another language in the source passage"
   ],
   "friet": [
     "de friet",
@@ -339,15 +1578,75 @@
     "noun",
     "chips or fries"
   ],
+  "from": [
+    "from",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "futuris": [
+    "futuris",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "gaa": [
+    "gaa",
+    "exclude",
+    "Wrong spelling supplied as a distractor"
+  ],
+  "gaga": [
+    "gaga",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "gap": [
+    "gap",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "garden": [
+    "garden",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "gare": [
+    "gare",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "gen": [
+    "gen",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
+  "gene": [
+    "gene",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
   "gerechten": [
     "gerechten",
     "noun",
     "dishes (food)"
   ],
+  "geren": [
+    "geren",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
   "gesproken": [
     "gesproken",
     "verb",
     "spoken"
+  ],
+  "geste": [
+    "geste",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "gever": [
+    "gever",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
   ],
   "gezond": [
     "gezond",
@@ -359,6 +1658,41 @@
     "adjective",
     "urbanised"
   ],
+  "gian": [
+    "gian",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "gift": [
+    "gift",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "gino": [
+    "gino",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "girl": [
+    "girl",
+    "exclude",
+    "English or a proper name on a graphic"
+  ],
+  "gl": [
+    "gl",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "glynn": [
+    "glynn",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "go": [
+    "go",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "goeie": [
     "goeie",
     "adjective",
@@ -369,20 +1703,163 @@
     "phrase",
     "good evening"
   ],
+  "google": [
+    "google",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "goris": [
+    "goris",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "goudsbloemstraat": [
+    "Goudsbloemstraat",
+    "word",
+    "Goudsbloemstraat, a street in Leuven"
+  ],
+  "graanproducten": [
+    "graanproducten",
+    "noun",
+    "grain products",
+    {
+      "file": "DLC_Oefenbundel_Deel 3.pdf",
+      "location": "p. 1"
+    }
+  ],
+  "green": [
+    "green",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "griekse": [
     "Griekse",
     "adjective",
     "Greek (attributive form)"
+  ],
+  "guide": [
+    "guide",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "ha": [
+    "ha",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "habsburg": [
+    "habsburg",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "haddy": [
+    "haddy",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "halfdan": [
+    "halfdan",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "ham": [
+    "de ham",
+    "noun",
+    "ham",
+    {
+      "file": "DLC_Oefenbundel_Deel 3.pdf",
+      "location": "p. 1"
+    }
+  ],
+  "harry": [
+    "harry",
+    "exclude",
+    "Personal or fictional example name"
   ],
   "havermout": [
     "havermout",
     "noun",
     "oatmeal"
   ],
+  "he": [
+    "he",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "heea": [
+    "heea",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "heed": [
+    "heed",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "heer": [
+    "heer",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "heijn": [
+    "heijn",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "helga": [
+    "helga",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "hello": [
+    "hello",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "help": [
+    "help",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "hels": [
+    "hels",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "hengsten": [
+    "hengsten",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "hens": [
+    "hens",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "her": [
+    "her",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
+  "herbert": [
+    "herbert",
+    "exclude",
+    "Personal or fictional example name"
+  ],
   "herenkapper": [
     "herenkapper",
     "noun",
     "men's hairdresser"
+  ],
+  "hert": [
+    "hert",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "hes": [
+    "hes",
+    "exclude",
+    "OCR fragment in surrounding source text"
   ],
   "het-woord": [
     "het-woord",
@@ -399,10 +1876,30 @@
     "word",
     "Heverlee, a district of Leuven"
   ],
+  "high": [
+    "high",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "hij-vorm": [
     "hij-vorm",
     "noun",
     "he form"
+  ],
+  "hilde": [
+    "hilde",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "hm": [
+    "hm",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "hobbies": [
+    "hobbies",
+    "exclude",
+    "English or another language in the source passage"
   ],
   "hoe heet je": [
     "hoe heet je",
@@ -414,20 +1911,105 @@
     "word",
     "how long"
   ],
+  "hoes": [
+    "hoes",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "home": [
+    "home",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "homer": [
+    "homer",
+    "exclude",
+    "Personal or fictional example name"
+  ],
   "honderdtwintig": [
     "honderdtwintig",
     "cardinal",
     "120"
+  ],
+  "honnden": [
+    "honnden",
+    "exclude",
+    "Wrong spelling supplied as a distractor"
+  ],
+  "hooverplein": [
+    "Hooverplein",
+    "word",
+    "Hoover Square in Leuven"
+  ],
+  "how": [
+    "how",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "huiswer": [
+    "huiswer",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "hup": [
+    "hup",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
   ],
   "héél": [
     "héél",
     "word",
     "very (emphatic)"
   ],
+  "ia": [
+    "ia",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "iden": [
+    "iden",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
   "identiteitskaartje": [
     "identiteitskaartje",
     "noun",
     "identity card"
+  ],
+  "iding": [
+    "iding",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "iedere": [
+    "iedere",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "iel": [
+    "iel",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "ier": [
+    "ier",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "ii": [
+    "ii",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "ijl": [
+    "ijl",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "ijn": [
+    "ijn",
+    "exclude",
+    "Visible typesetting or OCR fragment"
   ],
   "ik kom uit": [
     "ik kom uit",
@@ -444,6 +2026,16 @@
     "noun",
     "I form"
   ],
+  "ilt": [
+    "ilt",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "ilt-bookshop": [
+    "ilt-bookshop",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
   "in de namiddag": [
     "in de namiddag",
     "preposition",
@@ -459,20 +2051,60 @@
     "preposition",
     "at the weekend"
   ],
+  "incomplete": [
+    "incomplete",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "incorrect": [
+    "incorrect",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "indefiniet": [
     "indefiniet",
     "adjective",
     "indefinite"
+  ],
+  "ines": [
+    "ines",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "infinitef": [
+    "infinitef",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "informa": [
+    "informa",
+    "exclude",
+    "Visible typesetting or OCR fragment"
   ],
   "informatica": [
     "informatica",
     "noun",
     "computer science"
   ],
+  "ing": [
+    "ing",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
   "inhoudstafel": [
     "inhoudstafel",
     "noun",
     "table of contents"
+  ],
+  "ins": [
+    "ins",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "intense": [
+    "intense",
+    "exclude",
+    "English or another language in the source passage"
   ],
   "interferentie": [
     "interferentie",
@@ -494,6 +2126,16 @@
     "adjective",
     "irregular (attributive form)"
   ],
+  "it": [
+    "it",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "itie": [
+    "itie",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
   "ja": [
     "ja",
     "word",
@@ -504,40 +2146,298 @@
     "noun",
     "yes-or-no question"
   ],
+  "jak": [
+    "jak",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "jan": [
+    "jan",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "jansen": [
+    "jansen",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "jazz": [
+    "jazz",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "jdschrig": [
+    "jdschrig",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
   "je-vorm": [
     "je-vorm",
     "noun",
     "you form"
+  ],
+  "jee": [
+    "jee",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "jeff": [
+    "jeff",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "jen": [
+    "jen",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "jennifer": [
+    "jennifer",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "jeroen": [
+    "jeroen",
+    "exclude",
+    "Personal or fictional example name"
   ],
   "jij-vorm": [
     "jij-vorm",
     "noun",
     "stressed you form"
   ],
+  "jj": [
+    "jj",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "jl": [
+    "jl",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "jn": [
+    "jn",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "jo": [
+    "jo",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
+  "johan": [
+    "johan",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "john": [
+    "john",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "jol": [
+    "jol",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "jolien": [
+    "jolien",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "josé": [
+    "josé",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "jouwnaam": [
+    "jouwnaam",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "ju": [
+    "ju",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
+  "juan": [
+    "juan",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "julie": [
+    "julie",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "ka": [
+    "ka",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "kaaskroketten": [
+    "kaaskroketten",
+    "noun",
+    "cheese croquettes",
+    {
+      "file": "Dutch Language and Cultures_Les 4_08-10-26.pdf",
+      "location": "p. 76"
+    }
+  ],
+  "kaf": [
+    "kaf",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "kam": [
+    "kam",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "karel": [
+    "karel",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "karoliina": [
+    "karoliina",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "kas": [
+    "kas",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "kassandra": [
+    "kassandra",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "katen": [
+    "katen",
+    "exclude",
+    "Wrong spelling supplied as a distractor"
+  ],
+  "kea": [
+    "kea",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "keep": [
+    "keep",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "kel": [
+    "kel",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "kels": [
+    "kels",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
   "kessel-lo": [
     "Kessel-Lo",
     "word",
     "Kessel-Lo, a district of Leuven"
+  ],
+  "ket": [
+    "ket",
+    "exclude",
+    "OCR fragment in surrounding source text"
   ],
   "kijken naar": [
     "kijken naar",
     "verb",
     "to look at or watch"
   ],
+  "kik": [
+    "kik",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
   "kikongo": [
     "Kikongo",
     "word",
     "Kikongo (Kongo language)"
+  ],
+  "kil": [
+    "kil",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
   ],
   "kilo": [
     "kilo",
     "noun",
     "kilogram"
   ],
+  "kin": [
+    "kin",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "kinepolis": [
+    "kinepolis",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "kipnuggets": [
+    "kipnuggets",
+    "noun",
+    "chicken nuggets",
+    {
+      "file": "Dutch Language and Cultures_Les 4_08-10-26.pdf",
+      "location": "p. 76"
+    }
+  ],
+  "kirsi": [
+    "kirsi",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "kitty": [
+    "kitty",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "kjdschril": [
+    "kjdschril",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "klerk": [
+    "klerk",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
   "klontjes": [
     "klontjes",
     "noun",
     "small lumps or cubes"
+  ],
+  "km": [
+    "km",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "known": [
+    "known",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "ko": [
+    "ko",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "kof": [
+    "kof",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
   ],
   "koffiekoek": [
     "koffiekoek",
@@ -549,15 +2449,160 @@
     "noun",
     "breakfast pastries"
   ],
+  "kol": [
+    "kol",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "koom": [
+    "koom",
+    "exclude",
+    "Wrong spelling supplied as a distractor"
+  ],
+  "kout": [
+    "kout",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
   "krachttraining": [
     "krachttraining",
     "noun",
     "strength training"
   ],
+  "krc": [
+    "krc",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "kristel": [
+    "kristel",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "kristien": [
+    "kristien",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "krzysztof": [
+    "krzysztof",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "ku": [
+    "ku",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "kuleuven": [
+    "kuleuven",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "label": [
+    "label",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "ladeuzeplein": [
+    "Ladeuzeplein",
+    "word",
+    "Ladeuze Square in Leuven"
+  ],
+  "laf": [
+    "laf",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "language": [
+    "language",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "languages": [
+    "languages",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "laps": [
+    "laps",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "las": [
+    "las",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "last": [
+    "last",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "lat": [
+    "lat",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "later": [
+    "later",
+    "exclude",
+    "English in the source passage"
+  ],
+  "lawrence": [
+    "lawrence",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "le": [
+    "le",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "lecture": [
+    "lecture",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "lectures": [
+    "lectures",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "leesoefening": [
     "leesoefening",
     "noun",
     "reading exercise"
+  ],
+  "lef": [
+    "lef",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "lefers": [
+    "lefers",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "leg": [
+    "leg",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "lel": [
+    "lel",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "leonardo": [
+    "leonardo",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "letop": [
+    "letop",
+    "exclude",
+    "Visible typesetting or OCR fragment"
   ],
   "leuvens": [
     "leuvens",
@@ -569,15 +2614,195 @@
     "noun",
     "liberalism"
   ],
+  "libertad": [
+    "libertad",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "liep": [
+    "liep",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "liese": [
+    "liese",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "lij": [
+    "lij",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "lijp": [
+    "lijp",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "lijven": [
+    "lijven",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
   "links": [
     "links",
     "word",
     "to the left"
   ],
+  "linsey": [
+    "linsey",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "lippens": [
+    "lippens",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "lis": [
+    "lis",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "lisa": [
+    "lisa",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "list": [
+    "list",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "liu": [
+    "liu",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "lk": [
+    "lk",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "lniet": [
+    "lniet",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "lo": [
+    "lo",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "lof": [
+    "lof",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "log": [
+    "log",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "long": [
+    "long",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "look": [
+    "look",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "looks": [
+    "looks",
+    "exclude",
+    "English or a proper name on a graphic"
+  ],
+  "love": [
+    "love",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "ls": [
+    "ls",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "luigi": [
+    "luigi",
+    "exclude",
+    "Personal or fictional example name"
+  ],
   "luisteroefening": [
     "luisteroefening",
     "noun",
     "listening exercise"
+  ],
+  "made": [
+    "made",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "maggie": [
+    "maggie",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "maja": [
+    "maja",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "mam": [
+    "mam",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "mand": [
+    "mand",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "mandatory": [
+    "mandatory",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "mans": [
+    "mans",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "mantra": [
+    "de mantra",
+    "noun",
+    "mantra"
+  ],
+  "many": [
+    "many",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "marco": [
+    "marco",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "mare": [
+    "mare",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "margot": [
+    "margot",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "market": [
+    "market",
+    "exclude",
+    "English or another language in the source passage"
   ],
   "marketing": [
     "marketing",
@@ -589,25 +2814,305 @@
     "noun",
     "marketing manager"
   ],
+  "marks": [
+    "marks",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "marlies": [
+    "marlies",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "married": [
+    "married",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "martelarenplein": [
+    "Martelarenplein",
+    "word",
+    "Martelaren Square in Leuven"
+  ],
+  "master": [
+    "master",
+    "exclude",
+    "English or a proper name on a graphic"
+  ],
   "mathematica": [
     "mathematica",
     "noun",
     "mathematics"
+  ],
+  "mathilde": [
+    "mathilde",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "matter": [
+    "matter",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "may": [
+    "may",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "md": [
+    "md",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "mechelsestraat": [
+    "Mechelsestraat",
+    "word",
+    "Mechelsestraat, a street in Leuven"
+  ],
+  "med": [
+    "med",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "mede": [
+    "mede",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "meden": [
+    "meden",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "media": [
+    "media",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "medium": [
+    "medium",
+    "adjective",
+    "medium-sized"
+  ],
+  "meeting": [
+    "meeting",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "meghan": [
+    "meghan",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "mem": [
+    "mem",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "merde": [
+    "merde",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "mert": [
+    "mert",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "michelangelo": [
+    "michelangelo",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "michele": [
+    "michele",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "michelle": [
+    "michelle",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "middags": [
+    "middags",
+    "exclude",
+    "Already represented by the complete expression"
   ],
   "middellandse": [
     "middellandse",
     "adjective",
     "Mediterranean (in the name of the sea)"
   ],
+  "mie": [
+    "mie",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "miguel": [
+    "miguel",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "min": [
+    "min",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "minckelersstraat": [
+    "Minckelersstraat",
+    "word",
+    "Minckelersstraat, a street in Leuven"
+  ],
+  "minister": [
+    "minister",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "mit": [
+    "mit",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "mix": [
+    "mix",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "model": [
+    "model",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "moeren": [
+    "moeren",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "month": [
+    "month",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "more": [
+    "more",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "morning": [
+    "morning",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "morra": [
+    "morra",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "most": [
+    "most",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "mot": [
+    "mot",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "mother": [
+    "mother",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "mother's": [
+    "mother's",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "mri": [
+    "mri",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "mu": [
+    "mu",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "muntstraat": [
+    "Muntstraat",
+    "word",
+    "Muntstraat, a street in Leuven"
+  ],
+  "museum": [
+    "het museum",
+    "noun",
+    "museum"
+  ],
+  "naamis": [
+    "naamis",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "naamsestraat": [
+    "Naamsestraat",
+    "word",
+    "Naamsestraat, a street in Leuven"
+  ],
   "naar": [
     "naar",
     "preposition",
     "to or towards"
   ],
+  "nabil": [
+    "nabil",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "nachts": [
+    "nachts",
+    "exclude",
+    "Already represented by the complete expression"
+  ],
+  "name": [
+    "name",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "nan": [
+    "nan",
+    "exclude",
+    "Personal or fictional example name"
+  ],
   "nanotechnologie": [
     "nanotechnologie",
     "noun",
     "nanotechnology"
+  ],
+  "nathalie": [
+    "nathalie",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "nationalist": [
+    "nationalist",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "nazar": [
+    "nazar",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "nd": [
+    "nd",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "ne": [
+    "ne",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
   ],
   "nee-vraag": [
     "nee-vraag",
@@ -619,60 +3124,270 @@
     "noun",
     "no questions"
   ],
+  "neemje": [
+    "neemje",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
   "neen": [
     "neen",
     "word",
     "no"
+  ],
+  "neer": [
+    "neer",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "nen": [
+    "nen",
+    "exclude",
+    "Parenthesised partial plural ending"
+  ],
+  "nep": [
+    "nep",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "ner": [
+    "ner",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "nes": [
+    "nes",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "net": [
+    "net",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "new": [
+    "new",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "ng": [
+    "ng",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "ngmanager": [
+    "ngmanager",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "ni": [
+    "ni",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "nice": [
+    "nice",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "nie": [
+    "nie",
+    "exclude",
+    "Visible typesetting or OCR fragment"
   ],
   "niet-personen": [
     "niet-personen",
     "noun",
     "non-person referents"
   ],
+  "nizotets": [
+    "nizotets",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "nk": [
+    "nk",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "nnen": [
+    "nnen",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "no": [
+    "no",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "nom": [
+    "nom",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "nomen": [
+    "het nomen",
+    "noun",
+    "noun (grammar term)"
+  ],
+  "non-fiction": [
+    "non-fiction",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "noon": [
+    "noon",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "noordzee": [
     "Noordzee",
     "word",
     "North Sea"
+  ],
+  "nope": [
+    "nope",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "nouveau": [
+    "nouveau",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "nt": [
+    "nt",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "number": [
+    "number",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "numbers": [
+    "numbers",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "obama": [
+    "obama",
+    "exclude",
+    "Personal or fictional example name"
   ],
   "objectspronomen": [
     "objectspronomen",
     "noun",
     "object pronoun"
   ],
+  "occupation": [
+    "occupation",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "ochtend": [
     "ochtend",
     "noun",
     "morning"
+  ],
+  "ochtends": [
+    "ochtends",
+    "exclude",
+    "Already represented by the complete expression"
+  ],
+  "oe": [
+    "oe",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
   ],
   "oefenbundel": [
     "oefenbundel",
     "noun",
     "exercise booklet"
   ],
+  "oeh": [
+    "oeh",
+    "phrase",
+    "ooh"
+  ],
+  "oei": [
+    "oei",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "oen": [
+    "oen",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
+  "oer": [
+    "oer",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "offer": [
+    "offer",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "official": [
+    "official",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "oh": [
     "oh",
     "phrase",
     "oh"
+  ],
+  "ohij": [
+    "ohij",
+    "exclude",
+    "Visible typesetting or OCR fragment"
   ],
   "ok": [
     "ok",
     "phrase",
     "okay"
   ],
+  "old": [
+    "old",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "omcirkel": [
     "omcirkel",
     "verb",
     "circle"
+  ],
+  "ond": [
+    "ond",
+    "exclude",
+    "Visible typesetting or OCR fragment"
   ],
   "onderlijnde": [
     "onderlijnde",
     "adjective",
     "underlined"
   ],
+  "ontbijtje": [
+    "ontbijtje",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
   "ontbrekende": [
     "ontbrekende",
     "adjective",
     "missing (attributive form)"
+  ],
+  "oo": [
+    "oo",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "oon": [
+    "oon",
+    "exclude",
+    "OCR fragment in surrounding source text"
   ],
   "oost-azië": [
     "Oost-Azië",
@@ -694,35 +3409,270 @@
     "adjective",
     "public (attributive form)"
   ],
+  "oppenheimer": [
+    "oppenheimer",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "or": [
+    "or",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "order": [
+    "order",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "ordinaal": [
     "ordinaal",
     "noun",
     "ordinal number"
+  ],
+  "ordinal": [
+    "ordinal",
+    "exclude",
+    "English or another language in the source passage"
   ],
   "organisatie": [
     "organisatie",
     "noun",
     "organisation"
   ],
+  "ork": [
+    "ork",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "oss": [
+    "oss",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "ou": [
+    "ou",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "out": [
+    "out",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "ouwe": [
+    "ouwe",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "ov": [
+    "ov",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "pa": [
+    "pa",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "page": [
+    "page",
+    "exclude",
+    "English or a proper name on a graphic"
+  ],
+  "pan": [
+    "pan",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "paolo": [
+    "paolo",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "paper": [
+    "paper",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "parallelle": [
     "parallelle",
     "adjective",
     "parallel (attributive form)"
+  ],
+  "parden": [
+    "parden",
+    "exclude",
+    "Wrong spelling supplied as a distractor"
+  ],
+  "parkstraat": [
+    "Parkstraat",
+    "word",
+    "Parkstraat, a street in Leuven"
+  ],
+  "part": [
+    "part",
+    "exclude",
+    "English or another language in the source passage"
   ],
   "paspoortcontrole": [
     "paspoortcontrole",
     "noun",
     "passport control"
   ],
+  "past": [
+    "past",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "pat": [
+    "pat",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "paulo": [
+    "paulo",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "pauwels": [
+    "pauwels",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "pdf": [
+    "pdf",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "pee": [
+    "pee",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "pees": [
+    "pees",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "peeters": [
+    "peeters",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "pel": [
+    "pel",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "people": [
+    "people",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "peppe": [
+    "peppe",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "person": [
+    "person",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "pet": [
     "pet",
     "noun",
     "cap"
   ],
+  "pg": [
+    "pg",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "pi": [
+    "pi",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "pieter": [
+    "pieter",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "pij": [
+    "pij",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
+  "pin": [
+    "pin",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "ping": [
+    "ping",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "pitt": [
+    "pitt",
+    "exclude",
+    "Personal or fictional example name"
+  ],
   "pizza": [
     "pizza",
     "noun",
     "pizza"
+  ],
+  "places": [
+    "places",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "platform": [
+    "platform",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "playlist": [
+    "de playlist",
+    "noun",
+    "playlist"
+  ],
+  "please": [
+    "please",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "plus": [
+    "plus",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "pm": [
+    "pm",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "po": [
+    "po",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
+  "pommelien": [
+    "pommelien",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "por": [
+    "por",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
+  "port": [
+    "port",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
   ],
   "possessief": [
     "possessief",
@@ -734,10 +3684,25 @@
     "adjective",
     "possessive (attributive form)"
   ],
+  "postal": [
+    "postal",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "preposi": [
+    "preposi",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
   "presens": [
     "presens",
     "noun",
     "present tense"
+  ],
+  "produce": [
+    "produce",
+    "exclude",
+    "English or another language in the source passage"
   ],
   "proefexamen": [
     "proefexamen",
@@ -754,6 +3719,30 @@
     "noun",
     "professor"
   ],
+  "proficiat": [
+    "proficiat",
+    "phrase",
+    "congratulations!",
+    {
+      "file": "DLC_Oefenbundel_Deel 3.pdf",
+      "location": "p. 1"
+    }
+  ],
+  "programme": [
+    "programme",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "project": [
+    "project",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "prompt": [
+    "prompt",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "pronomina-mix": [
     "pronomina-mix",
     "noun",
@@ -764,20 +3753,275 @@
     "noun",
     "pronunciation"
   ],
+  "prove": [
+    "prove",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "ps": [
+    "ps",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "put": [
+    "put",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "pv": [
+    "pv",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "pwerk": [
+    "pwerk",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "quality": [
+    "quality",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "qui": [
+    "qui",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "ra": [
+    "ra",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "race": [
+    "race",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "rad": [
+    "rad",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "raden": [
+    "raden",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "raf": [
+    "raf",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "rafaela": [
+    "rafaela",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "rag": [
+    "rag",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "rakt": [
+    "rakt",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "random": [
+    "random",
+    "adjective",
+    "random"
+  ],
+  "rav": [
+    "rav",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "rd": [
+    "rd",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "rden": [
+    "rden",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "record": [
+    "record",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "rect": [
+    "rect",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "red": [
+    "red",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "ree": [
+    "ree",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
+  "rees": [
+    "rees",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "reet": [
+    "reet",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
   "referentiewoorden": [
     "referentiewoorden",
     "noun",
     "reference words"
+  ],
+  "regime": [
+    "regime",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "register": [
+    "register",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "relations": [
+    "relations",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "relaxed": [
+    "relaxed",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "relevant": [
+    "relevant",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "ren": [
+    "ren",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "renaissance": [
+    "renaissance",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "rep": [
+    "rep",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
   ],
   "reportage": [
     "reportage",
     "noun",
     "news report"
   ],
+  "reserve": [
+    "reserve",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "rien": [
+    "rien",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "riet": [
+    "riet",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "rit": [
+    "rit",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "robert": [
+    "robert",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "roel": [
+    "roel",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "ronaldo": [
+    "ronaldo",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "room": [
+    "room",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "routine": [
     "routine",
     "noun",
     "routine"
+  ],
+  "royal": [
+    "royal",
+    "exclude",
+    "English or a proper name on a graphic"
+  ],
+  "rt": [
+    "rt",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "rubber": [
+    "rubber",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "run": [
+    "run",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "runners": [
+    "runners",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "rz": [
+    "rz",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "safe": [
+    "safe",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "sam": [
+    "sam",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "san": [
+    "san",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "sandra": [
+    "sandra",
+    "exclude",
+    "Personal or fictional example name"
   ],
   "sandwich": [
     "sandwich",
@@ -789,25 +4033,145 @@
     "noun",
     "sandwiches"
   ],
+  "sans": [
+    "sans",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "sanseverino": [
+    "sanseverino",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "sar": [
+    "sar",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "sarah": [
+    "sarah",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "sas": [
+    "sas",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "scan": [
+    "scan",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "scenes": [
+    "scenes",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "scha": [
+    "scha",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
   "scheidbare": [
     "scheidbare",
     "adjective",
     "separable (attributive form)"
+  ],
+  "schoenaerts": [
+    "schoenaerts",
+    "exclude",
+    "Personal or fictional example name"
   ],
   "schrijfexamen": [
     "schrijfexamen",
     "noun",
     "written exam"
   ],
+  "scope": [
+    "scope",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "script": [
+    "script",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "see": [
+    "see",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "segers": [
+    "segers",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "selects": [
+    "selects",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "sels": [
+    "sels",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "sem": [
+    "sem",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "sen": [
+    "sen",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
   "september": [
     "september",
     "noun",
     "September"
   ],
+  "service": [
+    "service",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "sharyne": [
+    "sharyne",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "show": [
+    "show",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "shrek": [
+    "shrek",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "si": [
+    "si",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "siblings": [
+    "siblings",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "sinaasappelsap": [
     "sinaasappelsap",
     "noun",
     "orange juice"
+  ],
+  "sis": [
+    "sis",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
   ],
   "situering": [
     "situering",
@@ -824,15 +4188,85 @@
     "noun",
     "snake or hose"
   ],
+  "slides": [
+    "slides",
+    "noun",
+    "presentation slides"
+  ],
+  "slot": [
+    "slot",
+    "exclude",
+    "English in the source passage"
+  ],
+  "sm": [
+    "sm",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "smeer": [
+    "smeer",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "snack": [
+    "snack",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "sofie": [
+    "sofie",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "som": [
+    "som",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "somerplein": [
+    "Somerplein",
+    "word",
+    "Somerplein, a square in Leuven"
+  ],
+  "sophie": [
+    "sophie",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "sp": [
+    "sp",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "space": [
+    "space",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "spaghetti": [
     "spaghetti",
     "noun",
     "spaghetti"
   ],
+  "speak": [
+    "speak",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "special": [
+    "special",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "spin": [
     "de spin",
     "noun",
     "spider"
+  ],
+  "split": [
+    "split",
+    "exclude",
+    "English or another language in the source passage"
   ],
   "spreekexamen": [
     "spreekexamen",
@@ -849,10 +4283,25 @@
     "adjective",
     "speaking"
   ],
+  "ss": [
+    "ss",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "staar": [
+    "staar",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
   "stadskantoor": [
     "stadskantoor",
     "noun",
     "city administration office"
+  ],
+  "starting": [
+    "starting",
+    "exclude",
+    "English or another language in the source passage"
   ],
   "startmoment": [
     "startmoment",
@@ -869,6 +4318,66 @@
     "noun",
     "base form"
   ],
+  "statement": [
+    "statement",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "stationsstraat": [
+    "Stationsstraat",
+    "word",
+    "Station Street"
+  ],
+  "status": [
+    "status",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "ste": [
+    "ste",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "street": [
+    "street",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "struc": [
+    "struc",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "struggle": [
+    "struggle",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "studio": [
+    "studio",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "study": [
+    "study",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "superspeciale": [
+    "superspeciale",
+    "adjective",
+    "extra-special"
+  ],
+  "surname": [
+    "surname",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "sven": [
+    "sven",
+    "exclude",
+    "Personal or fictional example name"
+  ],
   "t-shirt": [
     "T-shirt",
     "noun",
@@ -884,10 +4393,50 @@
     "noun",
     "language centre"
   ],
+  "talk": [
+    "talk",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "tb": [
+    "tb",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "tbs": [
+    "tbs",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
+  "tech": [
+    "tech",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "tee": [
+    "tee",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "teer": [
+    "teer",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
   "tegen": [
     "tegen",
     "preposition",
     "against"
+  ],
+  "teitskaart": [
+    "teitskaart",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "teitskaartje": [
+    "teitskaartje",
+    "exclude",
+    "Visible typesetting or OCR fragment"
   ],
   "tekenen": [
     "tekenen",
@@ -899,20 +4448,160 @@
     "noun",
     "speech bubbles"
   ],
+  "telen": [
+    "telen",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "tell": [
+    "tell",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "tender": [
+    "tender",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "ter": [
+    "ter",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "thanks": [
+    "thanks",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "the": [
+    "the",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "there": [
+    "there",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "these": [
+    "these",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "thijs": [
+    "thijs",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "tiensestraat": [
+    "Tiensestraat",
+    "word",
+    "Tiensestraat, a street in Leuven"
+  ],
   "tijdsmoment": [
     "tijdsmoment",
     "noun",
     "point in time"
+  ],
+  "tim": [
+    "tim",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "time": [
+    "time",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "timing": [
+    "timing",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "tine": [
+    "tine",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "tje": [
+    "tje",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "tok": [
+    "tok",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
+  "tokyo": [
+    "tokyo",
+    "exclude",
+    "Variant represented by its standard spelling"
+  ],
+  "toledo": [
+    "toledo",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "ton": [
+    "ton",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
   ],
   "tong": [
     "de tong",
     "noun",
     "tongue"
   ],
+  "tongue": [
+    "tongue",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "top": [
+    "top",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "topics": [
+    "topics",
+    "noun",
+    "topics"
+  ],
+  "tor": [
+    "tor",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "toyota": [
+    "toyota",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "toyota's": [
+    "toyota's",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "track": [
+    "track",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "transfer": [
+    "transfer",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "transportmiddel": [
     "transportmiddel",
     "noun",
     "means of transport"
+  ],
+  "turn": [
+    "turn",
+    "exclude",
+    "English or another language in the source passage"
   ],
   "tuut": [
     "tuut",
@@ -934,6 +4623,76 @@
     "cardinal",
     "20,000"
   ],
+  "typical": [
+    "typical",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "uistpraak": [
+    "uistpraak",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "uk": [
+    "uk",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "um": [
+    "um",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "union": [
+    "union",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "units": [
+    "units",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "url": [
+    "url",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "us": [
+    "us",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "usually": [
+    "usually",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "uu": [
+    "uu",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "uut": [
+    "uut",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "vaan": [
+    "vaan",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "vakan": [
+    "vakan",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "val": [
+    "val",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
   "van beroep": [
     "van beroep",
     "preposition",
@@ -954,15 +4713,65 @@
     "word",
     "by itself"
   ],
+  "vb": [
+    "vb",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "ve": [
+    "ve",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "vee": [
+    "vee",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "ven": [
+    "ven",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "vene": [
+    "vene",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
+  "verander": [
+    "verander",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
   "verdeler": [
     "verdeler",
     "noun",
     "distributor"
   ],
+  "vereer": [
+    "vereer",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
+  "veren": [
+    "veren",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
+  "vering": [
+    "vering",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
   "verpleegster": [
     "verpleegster",
     "noun",
     "female nurse"
+  ],
+  "verse": [
+    "verse",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
   ],
   "versus": [
     "versus",
@@ -974,10 +4783,35 @@
     "verb",
     "confuse"
   ],
+  "vesalius": [
+    "vesalius",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "vesaliusstraat": [
+    "Vesaliusstraat",
+    "word",
+    "Vesaliusstraat, a street in Leuven"
+  ],
+  "vet": [
+    "vet",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
   "vetgedrukte": [
     "vetgedrukte",
     "adjective",
     "printed in bold"
+  ],
+  "vi": [
+    "vi",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "viewers": [
+    "viewers",
+    "exclude",
+    "English or another language in the source passage"
   ],
   "vijfenvijftigste": [
     "vijfenvijftigste",
@@ -989,15 +4823,40 @@
     "ordinal",
     "75th"
   ],
+  "vin": [
+    "vin",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
+  "ving": [
+    "ving",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
+  "vo": [
+    "vo",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
   "vocabularium": [
     "vocabularium",
     "noun",
     "vocabulary"
   ],
+  "vof": [
+    "vof",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
   "vol-au-vent": [
     "vol-au-vent",
     "noun",
     "vol-au-vent, a puff pastry dish"
+  ],
+  "voorber": [
+    "voorber",
+    "exclude",
+    "Visible typesetting or OCR fragment"
   ],
   "voorbereiding": [
     "voorbereiding",
@@ -1024,20 +4883,50 @@
     "noun",
     "questions introduced by a question word"
   ],
+  "vrt": [
+    "vrt",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "vs": [
+    "vs",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "vv": [
+    "vv",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
   "wa": [
     "wa",
     "word",
     "what (colloquial Flemish)"
+  ],
+  "waan": [
+    "waan",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
   ],
   "waar woon je": [
     "waar woon je",
     "phrase",
     "where do you live?"
   ],
+  "wal": [
+    "wal",
+    "exclude",
+    "English or a proper name on a graphic"
+  ],
   "wapenstilstand": [
     "wapenstilstand",
     "noun",
     "ceasefire"
+  ],
+  "war": [
+    "war",
+    "exclude",
+    "English or another language in the source passage"
   ],
   "waren": [
     "waren",
@@ -1049,25 +4938,140 @@
     "adjective",
     "warm (attributive form)"
   ],
+  "watis": [
+    "watis",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "wauters": [
+    "wauters",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "wb": [
+    "wb",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "wed": [
+    "wed",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "weent": [
+    "weent",
+    "exclude",
+    "OCR fragment in surrounding source text"
+  ],
+  "well": [
+    "well",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "wend": [
+    "wend",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "were": [
+    "were",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "werkboek": [
     "het werkboek",
     "noun",
     "workbook"
+  ],
+  "wet": [
+    "wet",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
+  "wh": [
+    "wh",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "what": [
+    "what",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "when": [
+    "when",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "where": [
+    "where",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "which": [
+    "which",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "who": [
+    "who",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "wijk": [
+    "wijk",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
   ],
   "wijn": [
     "de wijn",
     "noun",
     "wine"
   ],
+  "wiktionary": [
+    "wiktionary",
+    "exclude",
+    "Organisation, product, title or brand"
+  ],
+  "wim": [
+    "wim",
+    "exclude",
+    "Personal or fictional example name"
+  ],
+  "win": [
+    "win",
+    "exclude",
+    "OCR reading contradicted by the rendered source page"
+  ],
   "winst": [
     "winst",
     "noun",
     "profit"
   ],
+  "wis": [
+    "wis",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
   "witloof": [
     "witloof",
     "noun",
     "Belgian endive"
+  ],
+  "wk": [
+    "wk",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "wo": [
+    "wo",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "woo": [
+    "woo",
+    "exclude",
+    "Visible typesetting or OCR fragment"
   ],
   "wooncultuur": [
     "wooncultuur",
@@ -1084,6 +5088,41 @@
     "noun",
     "word parts"
   ],
+  "word": [
+    "word",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "work": [
+    "work",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "www": [
+    "www",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "xamen": [
+    "xamen",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "xc": [
+    "xc",
+    "exclude",
+    "Phonetic segment, abbreviation or worksheet notation"
+  ],
+  "xxx": [
+    "xxx",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "yo": [
+    "yo",
+    "exclude",
+    "OCR-only reading without corroboration in the source review"
+  ],
   "yoga": [
     "yoga",
     "noun",
@@ -1094,10 +5133,30 @@
     "noun",
     "yogurt"
   ],
+  "york": [
+    "york",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "you": [
+    "you",
+    "exclude",
+    "English or another language in the source passage"
+  ],
+  "your": [
+    "your",
+    "exclude",
+    "English or another language in the source passage"
+  ],
   "zesentwintigste": [
     "zesentwintigste",
     "ordinal",
     "26th"
+  ],
+  "ziens": [
+    "ziens",
+    "exclude",
+    "Already represented by the complete expression"
   ],
   "zij-vorm": [
     "zij-vorm",
@@ -1113,6 +5172,31 @@
     "zullen we",
     "phrase",
     "shall we?"
+  ],
+  "àhij": [
+    "àhij",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "àik": [
+    "àik",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "àja": [
+    "àja",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "àsuggestie": [
+    "àsuggestie",
+    "exclude",
+    "Visible typesetting or OCR fragment"
+  ],
+  "àzij": [
+    "àzij",
+    "exclude",
+    "Visible typesetting or OCR fragment"
   ],
   "én": [
     "én",

@@ -295,6 +295,7 @@ export default function App() {
     return () => window.removeEventListener('keydown', key);
   });
 
+  const pendingCoverage = (coverage.audit['check-gloss'] ?? 0) + (coverage.audit['check-source'] ?? 0);
   const navigation = [['practice','Practice'], ['words','Words'], ['activity','Activity'], ['settings','Settings']];
   let content: ReactNode;
   if (view === 'words') content = <Browse onPlay={play} />;
@@ -310,7 +311,8 @@ export default function App() {
     <TopicPicker selection={selection} onChange={updateTopics} />
     <button className="text-button" onClick={clearStudyHistory}>Clear study history</button>
     <details><summary>Course coverage</summary><p>{words.length} study entries. The source index records {coverage.sourceWordCandidates.toLocaleString('en')} Dutch candidates and expressions across {coverage.pdfPages.toLocaleString('en')} PDF pages. We update the deck as new course materials are added.</p>
-      <p>{((coverage.audit['check-gloss'] ?? 0) + (coverage.audit['check-source'] ?? 0)).toLocaleString('en')} observations still need a source or meaning check. This includes possible OCR errors and non-Dutch text.</p>
+      {pendingCoverage > 0 && <p>{pendingCoverage.toLocaleString('en')} observations await a source or meaning check.</p>}
+      {(coverage.audit['unconfirmed-ocr'] ?? 0) > 0 && <p>{coverage.audit['unconfirmed-ocr']} OCR-only readings lacked source confirmation and were left out of the deck.</p>}
       <p className="small"><a href="https://kaikki.org/dictionary/Dutch/">Dictionary data from English Wiktionary via Kaikki</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
     </details>
   </section>;

@@ -3,14 +3,16 @@
   "pdfPages": 1060,
   "sourceWordCandidates": 2191,
   "indexedForms": 5477,
-  "cardCount": 2161,
+  "visualSupplements": 2,
+  "cardCount": 2201,
   "audit": {
-    "authored": 219,
+    "check-gloss": 0,
+    "check-source": 0,
+    "unconfirmed-ocr": 139,
+    "authored": 257,
     "existing": 192,
     "dictionary": 1721,
-    "no-lexical-match": 2536,
-    "excluded": 2,
-    "check-gloss": 448,
-    "check-source": 359
+    "no-lexical-match": 2533,
+    "excluded": 635
   }
 }
