@@ -110,6 +110,8 @@ export default function App() {
   const session = study.session;
   const word = getWord(session.queue[0]);
   const practiced = study.history[localDay()]?.length ?? 0;
+  const nextSize = Math.min(study.goal, words.filter(entry =>
+    session.topic === 'All topics' || entry.topic === session.topic).length);
 
   useEffect(() => {
     try { localStorage.setItem(storageKey, JSON.stringify(study)); }
@@ -202,7 +204,11 @@ export default function App() {
       setStarted(true);
     }}>Start <Icon name="arrow" /></button>
   </section>;
-  else if (!word) content = <section className="surface"><h1>Round complete</h1><button className="primary" onClick={() => newSession()}>Keep practising <Icon name="arrow" /></button></section>;
+  else if (!word) content = <section className="surface">
+    <h1>Round complete</h1>
+    {session.completed && <p>{session.completed.length} words this round</p>}
+    <button className="primary" onClick={() => newSession()}>Start next {nextSize} <Icon name="arrow" /></button>
+  </section>;
   else {
     const dutchPrompt = session.mode !== 'listen' && session.mode !== 'typing' && !(word.kind === 'ordinal' && session.mode === 'choice');
     content = <section className="surface practice" aria-label="Vocabulary question">
@@ -253,8 +259,11 @@ export default function App() {
         <label><span className="sr-only">Topic</span><select value={session.topic} disabled={started && !!session.result} onChange={event => newSession(event.target.value)}>
           {topics.map(topic => <option key={topic}>{topic}</option>)}</select></label>
         <a href="#activity" className="daily"><progress value={Math.min(practiced, study.goal)} max={study.goal} aria-label="Daily goal" />
-          <span>Today {practiced} / {study.goal}</span></a>
+          <span>Today {practiced}{practiced <= study.goal ? ' / ' + study.goal : ''}</span></a>
       </div>}
+      {view === 'practice' && started && session.size && <p className="small round-progress">
+        Round {session.completed?.length ?? 0} / {session.size}
+      </p>}
       {content}
       {audioError && <p role="status" className="small">{audioError}</p>}
       {storageError && <p role="status" className="small">Saved progress could not be restored or saved in this browser.</p>}

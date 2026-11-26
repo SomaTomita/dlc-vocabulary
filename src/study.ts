@@ -14,6 +14,8 @@ export type Session = {
   queue: string[];
   first?: string;
   question?: number;
+  size?: number;
+  completed?: string[];
   topic: string;
   retries: Record<string, number>;
   options: string[];
@@ -86,15 +88,20 @@ export function createSession(study: Study, topic = 'All topics', mode: Mode = '
     const review = study.review[word.id];
     // Misses get a small edge without fixing the order of the next round.
     const weight = review?.missed ? 1.6 : !review || review.due <= date ? 1.2 : 1;
-    return { id: word.id, priority: -Math.log(1 - Math.random()) / weight };
-  }).sort((a, b) => Number(practiced.has(a.id)) - Number(practiced.has(b.id))
-    || a.priority - b.priority)
+    return {
+      id: word.id, priority: -Math.log(1 - Math.random()) / weight,
+      alreadyPractised: practiced.has(word.id) && !review?.missed,
+    };
+  }).sort((a, b) => Number(a.alreadyPractised) - Number(b.alreadyPractised) || a.priority - b.priority)
     .slice(0, study.goal)
     .map(item => item.id);
   if (queue.length > 1 && queue[0] === previousFirst) {
     [queue[0], queue[1]] = [queue[1], queue[0]];
   }
-  return { date, queue, first: queue[0], question: 1, topic, mode, options: optionsFor(queue[0], mode), retries: {} };
+  return {
+    date, queue, first: queue[0], question: 1, size: queue.length, completed: [],
+    topic, mode, options: optionsFor(queue[0], mode), retries: {},
+  };
 }
 
 export function answer(study: Study, session: Session, grade: Rating, selected?: string): Study {
@@ -115,7 +122,10 @@ export function answer(study: Study, session: Session, grade: Rating, selected?:
   }
   return {
     ...study,
-    session: { ...session, queue, retries, result: grade, selected },
+    session: {
+      ...session, queue, retries, result: grade, selected,
+      completed: session.completed && [...new Set([...session.completed, id])],
+    },
     review: { ...study.review, [id]: { due: localDay(interval), streak, missed: missed || alreadyMissed } },
     history: grade === 'reveal' ? study.history : {
       ...study.history, [today]: [...new Set([...(study.history[today] ?? []), id])],
@@ -124,7 +134,8 @@ export function answer(study: Study, session: Session, grade: Rating, selected?:
 }
 
 export function next(session: Session): Session {
-  const queue = session.queue.slice(1);
+  const roundDone = session.size !== undefined && session.completed?.length === session.size;
+  const queue = roundDone ? [] : session.queue.slice(1);
   return { ...session, queue, question: session.question === undefined ? undefined : session.question + 1, options: optionsFor(queue[0], session.mode), result: undefined, selected: undefined };
 }
 

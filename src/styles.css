@@ -79,3 +79,4 @@ input:not([type="checkbox"]), select { min-height: 44px; border: 1px solid var(-
   nav a { flex: 1; text-align: center; }
   main { margin-top: 14px; }
 }
+.round-progress { margin: 0 0 10px; text-align: end; }
