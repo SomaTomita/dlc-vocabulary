@@ -23,12 +23,11 @@ export type Study = {
   history: Record<string, string[]>;
   review: Record<string, Review>;
   session?: Session;
-  auto: boolean;
   goal: number;
 };
 
 export const storageKey = 'dlc-vocabulary.study.v1';
-export const initialStudy: Study = { history: {}, review: {}, auto: true, goal: 30 };
+export const initialStudy: Study = { history: {}, review: {}, goal: 30 };
 const byId = new Map(words.map(word => [word.id, word]));
 export const getWord = (id: string | undefined) => id ? byId.get(id) : undefined;
 
@@ -124,11 +123,12 @@ export function restore(): [Study, boolean] {
     if (!raw) return [initialStudy, true];
     const data = JSON.parse(raw) as Study;
     if (!data || !data.history || !data.review || !Number.isInteger(data.goal)
-        || data.goal < 5 || data.goal > 100 || typeof data.auto !== 'boolean') {
+        || data.goal < 5 || data.goal > 100) {
       return [initialStudy, false];
     }
     if (data.session?.date !== localDay() || data.session.queue.some(id => !getWord(id))) delete data.session;
-    return [data, true];
+    const { history, review, goal, session } = data;
+    return [{ history, review, goal, session }, true];
   } catch {
     return [initialStudy, false];
   }

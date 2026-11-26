@@ -92,10 +92,9 @@ export default function App() {
   const [view, setView] = useState(readView);
   const [input, setInput] = useState('');
   const [flipped, flip] = useState(false);
-  const [frozen, freeze] = useState(false);
+  const [started, setStarted] = useState(false);
   const [audioError, setAudioError] = useState('');
   const [storageError, setStorageError] = useState(!storageOk);
-  const [playing, setPlaying] = useState(false);
   const audioTicket = useRef(0);
   const session = study.session;
   const word = getWord(session.queue[0]);
@@ -110,7 +109,6 @@ export default function App() {
     const change = () => {
       audioTicket.current++;
       stopAudio();
-      setPlaying(false);
       setAudioError('');
       setView(readView());
     };
@@ -120,12 +118,9 @@ export default function App() {
 
   function play(text: string) {
     const ticket = ++audioTicket.current;
-    setPlaying(true);
     setAudioError('');
     void playDutch(text).catch(() => {
       if (ticket === audioTicket.current) setAudioError('Audio could not play. Tap the speaker to try again.');
-    }).finally(() => {
-      if (ticket === audioTicket.current) setPlaying(false);
     });
   }
 
@@ -134,20 +129,18 @@ export default function App() {
     stopAudio();
     setInput('');
     flip(false);
-    setPlaying(false);
     setAudioError('');
-    freeze(false);
-    setStudy(current => ({ ...current, session: next(current.session) }));
+    setStudy(current => current.session.result
+      ? { ...current, session: next(current.session) }
+      : current);
   }
 
   function newSession(topic = session.topic, mode = session.mode) {
     audioTicket.current++;
     stopAudio();
-    setPlaying(false);
     setAudioError('');
     setInput('');
     flip(false);
-    freeze(false);
     setStudy(current => ({ ...current, session: createSession(current, topic, mode) }));
   }
 
@@ -162,18 +155,11 @@ export default function App() {
   }
 
   useEffect(() => {
-    if (view !== 'practice' || session.result !== 'correct' || frozen || playing || !study.auto) return;
-    const timer = window.setTimeout(advance, 1800);
-    return () => window.clearTimeout(timer);
-  }, [view, session, frozen, playing, study.auto]);
-
-  useEffect(() => {
     const key = (event: KeyboardEvent) => {
-      if (view !== 'practice' || event.repeat || event.altKey || event.ctrlKey || event.metaKey
+      if (!started || view !== 'practice' || session.result || event.repeat || event.altKey || event.ctrlKey || event.metaKey
           || (event.target instanceof HTMLElement && ['INPUT', 'SELECT', 'BUTTON', 'SUMMARY', 'A'].includes(event.target.tagName))) return;
-      if (event.key === 'Enter' && session.result) { event.preventDefault(); advance(); }
       const option = session.options[Number(event.key) - 1];
-      if (!session.result && option && /^[1-4]$/.test(event.key)) { event.preventDefault(); submit(option); }
+      if (option && /^[1-4]$/.test(event.key)) { event.preventDefault(); submit(option); }
     };
     window.addEventListener('keydown', key);
     return () => window.removeEventListener('keydown', key);
@@ -191,11 +177,13 @@ export default function App() {
       const goal = Number(event.target.value);
       setStudy(current => ({ ...current, goal }));
     }}>{[10,20,30,40,50].map(goal => <option key={goal}>{goal}</option>)}</select></label>
-    <label>Auto-advance after correct answers<input type="checkbox" checked={study.auto} onChange={event => {
-      const auto = event.target.checked;
-      setStudy(current => ({ ...current, auto }));
-    }} /></label>
     <details><summary>Course coverage</summary><p>{words.length} study entries in the initial release. The source inventory has 2,191 Dutch candidates and selected expressions. Full vocabulary review is in progress.</p></details>
+  </section>;
+  else if (!started) content = <section className="surface">
+    <button className="primary" onClick={() => {
+      if (!word) newSession();
+      setStarted(true);
+    }}>{initial.session?.queue.length && (initial.session.result || practiced) ? 'Resume' : 'Start'} <Icon name="arrow" /></button>
   </section>;
   else if (!word) content = <section className="surface"><h1>Round complete</h1><button className="primary" onClick={() => newSession()}>Keep practising <Icon name="arrow" /></button></section>;
   else {
@@ -228,7 +216,7 @@ export default function App() {
         if (session.mode === 'flashcards') flip(true);
         else rate('reveal');
       }}>Show answer</button>}
-      {session.result && <div className="result" onPointerDown={() => freeze(true)} onFocusCapture={() => freeze(true)}>
+      {session.result && <div className="result">
         <p role="status" className={session.result === 'wrong' ? 'wrong-text' : ''}>
           {session.result === 'correct' ? 'Correct' : session.result === 'wrong' ? 'Answer' : 'Revealed'} · <span lang="nl-BE">{word.nl}</span> · {word.en}
         </p>
@@ -245,7 +233,7 @@ export default function App() {
     </header>
     <main>
       {view === 'practice' && <div className="session-bar">
-        <label><span className="sr-only">Topic</span><select value={session.topic} onChange={event => newSession(event.target.value)}>
+        <label><span className="sr-only">Topic</span><select value={session.topic} disabled={started && !!session.result} onChange={event => newSession(event.target.value)}>
           {topics.map(topic => <option key={topic}>{topic}</option>)}</select></label>
         <a href="#activity" className="daily"><progress value={Math.min(practiced, study.goal)} max={study.goal} aria-label="Daily goal" />
           <span>{practiced} / {study.goal}</span></a>
