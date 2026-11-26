@@ -4,19 +4,42 @@ import review from '../content/review.json';
 export type Word = (typeof vocabulary)[number];
 export const words = vocabulary;
 export const groups: Record<string, { title: string; rows: string[][] }> = review;
-export const topics = ['All topics', ...new Set(words.map(word => word.topic))];
+export const allTopics = 'All topics';
+export const withoutNumbers = 'All except numbers';
+const wordKinds = { Nouns: 'noun', Verbs: 'verb', Adjectives: 'adjective' };
+export const topics = [allTopics, withoutNumbers, ...Object.keys(wordKinds),
+  ...[...new Set(words.map(word => word.topic))].filter(topic => !(topic in wordKinds))];
+
+function matchesTopic(word: Word, topic: string): boolean {
+  if (topic === allTopics) return true;
+  if (topic === withoutNumbers) return word.topic !== 'Numbers';
+  const kind = wordKinds[topic as keyof typeof wordKinds];
+  return kind ? word.kind === kind : word.topic === topic;
+}
+
+export const topicCounts = Object.fromEntries(topics.map(topic => [
+  topic, words.filter(word => matchesTopic(word, topic)).length,
+]));
+
+export function availableWords(selection: string[]) {
+  const includedTopics = selection.filter(topic => topic !== withoutNumbers);
+  return words.filter(word => (!selection.includes(withoutNumbers) || word.topic !== 'Numbers')
+    && (includedTopics.length === 0 || includedTopics.some(topic => matchesTopic(word, topic))));
+}
 
 export type Mode = 'choice' | 'listen' | 'typing' | 'flashcards';
 export type Rating = 'correct' | 'wrong' | 'reveal';
-export type Review = { due: string; streak: number; missed: boolean };
+export type Review = { due: string; streak: number; missed: boolean; updatedAt?: number };
 export type Session = {
   date: string;
   queue: string[];
   first?: string;
   question?: number;
   size?: number;
+  target?: number;
   completed?: string[];
   topic: string;
+  topics?: string[];
   retries: Record<string, number>;
   options: string[];
   mode: Mode;
@@ -28,11 +51,13 @@ export type Study = {
   review: Record<string, Review>;
   session?: Session;
   goal: number;
+  activityReset?: number;
+  studyReset?: number;
 };
 
 export const storageKey = 'dlc-vocabulary.study.v1';
 export const tabKey = 'dlc-vocabulary.practice.v1';
-export type TabPractice = { session: Session; input: string; flipped: boolean };
+export type TabPractice = { session: Session; input: string; flipped: boolean; studyReset?: number };
 export const initialStudy: Study = { history: {}, review: {}, goal: 30 };
 const byId = new Map(words.map(word => [word.id, word]));
 export const getWord = (id: string | undefined) => id ? byId.get(id) : undefined;
@@ -79,29 +104,63 @@ function optionsFor(id: string | undefined, mode: Mode): string[] {
   return shuffle([answer, ...[...new Set(distractors)].filter(option => !excluded.has(option)).slice(0, 3)]);
 }
 
-export function createSession(study: Study, topic = 'All topics', mode: Mode = 'choice'): Session {
+export function selectedTopics(session: Session): string[] {
+  return session.topics ?? (session.topic === allTopics ? [] : [session.topic]);
+}
+
+export function createSession(
+  study: Study, selection: string[] = [], mode: Mode = 'choice', excluded: ReadonlySet<string> = new Set(),
+): Session {
   const date = localDay();
   const practiced = new Set(study.history[date]);
-  const pool = words.filter(word => topic === 'All topics' || word.topic === topic);
+  const pool = availableWords(selection).filter(word => !excluded.has(word.id));
   const previousFirst = study.session?.first ?? study.session?.queue[0];
-  const queue = pool.map(word => {
+  const ranked = pool.map(word => {
     const review = study.review[word.id];
     // Misses get a small edge without fixing the order of the next round.
     const weight = review?.missed ? 1.6 : !review || review.due <= date ? 1.2 : 1;
     return {
-      id: word.id, priority: -Math.log(1 - Math.random()) / weight,
+      word, priority: -Math.log(1 - Math.random()) / weight,
       alreadyPractised: practiced.has(word.id) && !review?.missed,
     };
-  }).sort((a, b) => Number(a.alreadyPractised) - Number(b.alreadyPractised) || a.priority - b.priority)
-    .slice(0, study.goal)
-    .map(item => item.id);
+  }).sort((a, b) => Number(a.alreadyPractised) - Number(b.alreadyPractised) || a.priority - b.priority);
+  let selected = ranked.slice(0, study.goal);
+  if (selection.length === 0) {
+    const mainKinds = new Set(['verb', 'adjective', 'noun']);
+    const included = new Set(ranked
+      .filter(item => !item.alreadyPractised && mainKinds.has(item.word.kind))
+      .slice(0, Math.ceil(study.goal * 0.7)));
+    const numberLimit = Math.max(1, Math.floor(study.goal / 10));
+    let numbers = 0;
+    for (const item of ranked) {
+      if (included.size === study.goal) break;
+      if (item.word.topic === 'Numbers') {
+        if (numbers === numberLimit) continue;
+        numbers++;
+      }
+      included.add(item);
+    }
+    selected = ranked.filter(item => included.has(item));
+  }
+  const queue = selected.map(item => item.word.id);
   if (queue.length > 1 && queue[0] === previousFirst) {
     [queue[0], queue[1]] = [queue[1], queue[0]];
   }
   return {
-    date, queue, first: queue[0], question: 1, size: queue.length, completed: [],
-    topic, mode, options: optionsFor(queue[0], mode), retries: {},
+    date, queue, first: queue[0], question: 1, size: queue.length, target: study.goal, completed: [],
+    topics: selection, topic: selection.length === 1 ? selection[0] : allTopics, mode, options: optionsFor(queue[0], mode), retries: {},
   };
+}
+
+export function changeTopics(study: Study, session: Session, selection: string[]): Session {
+  const updated = { ...session, topics: selection, topic: selection.length === 1 ? selection[0] : allTopics };
+  const current = session.queue[0];
+  if (!current) return updated;
+  const completed = session.completed ?? [];
+  const seen = new Set([...completed, current]);
+  const goal = Math.max(0, (session.target ?? study.goal) - seen.size);
+  const remaining = createSession({ ...study, goal }, selection, session.mode, seen).queue;
+  return { ...updated, queue: [current, ...remaining], size: seen.size + remaining.length, completed };
 }
 
 export function answer(study: Study, session: Session, grade: Rating, selected?: string): Study {
@@ -126,7 +185,7 @@ export function answer(study: Study, session: Session, grade: Rating, selected?:
       ...session, queue, retries, result: grade, selected,
       completed: session.completed && [...new Set([...session.completed, id])],
     },
-    review: { ...study.review, [id]: { due: localDay(interval), streak, missed: missed || alreadyMissed } },
+    review: { ...study.review, [id]: { due: localDay(interval), streak, missed: missed || alreadyMissed, updatedAt: Date.now() } },
     history: grade === 'reveal' ? study.history : {
       ...study.history, [today]: [...new Set([...(study.history[today] ?? []), id])],
     },
@@ -137,6 +196,23 @@ export function next(session: Session): Session {
   const roundDone = session.size !== undefined && session.completed?.length === session.size;
   const queue = roundDone ? [] : session.queue.slice(1);
   return { ...session, queue, question: session.question === undefined ? undefined : session.question + 1, options: optionsFor(queue[0], session.mode), result: undefined, selected: undefined };
+}
+
+export function mergeStudy(study: Study, saved: Study): Study {
+  const history = { ...study.history };
+  if ((study.activityReset ?? 0) === (saved.activityReset ?? 0)) {
+    for (const [day, ids] of Object.entries(saved.history)) {
+      history[day] = [...new Set([...ids, ...(history[day] ?? [])])];
+    }
+  }
+  const review = { ...study.review };
+  if ((study.studyReset ?? 0) === (saved.studyReset ?? 0)) {
+    for (const [id, item] of Object.entries(saved.review)) {
+      const current = review[id];
+      if (!current || (item.updatedAt ?? 0) > (current.updatedAt ?? 0)) review[id] = item;
+    }
+  }
+  return { ...study, history, review };
 }
 
 export function restoreTab(): TabPractice | undefined {
@@ -159,8 +235,8 @@ export function restore(): [Study, boolean] {
       return [initialStudy, false];
     }
     if (data.session?.queue.some(id => !getWord(id))) delete data.session;
-    const { history, review, goal, session } = data;
-    return [{ history, review, goal, session }, true];
+    const { history, review, goal, session, activityReset, studyReset } = data;
+    return [{ history, review, goal, session, activityReset, studyReset }, true];
   } catch {
     return [initialStudy, false];
   }

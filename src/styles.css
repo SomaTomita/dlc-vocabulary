@@ -80,3 +80,21 @@ input:not([type="checkbox"]), select { min-height: 44px; border: 1px solid var(-
   main { margin-top: 14px; }
 }
 .round-progress { margin: 0 0 10px; text-align: end; }
+.start-screen { display: grid; place-items: center; min-height: clamp(210px, 48svh, 420px); }
+.round-complete { display: grid; justify-items: center; text-align: center; }
+.round-complete p { margin: 0 0 20px; }
+.session-bar { justify-content: flex-end; }
+.topic-picker { padding: 0; border: 0; margin: 0 0 14px; min-width: 0; }
+.topic-picker legend { padding: 0; color: var(--muted); font-size: .85rem; margin-bottom: 6px; }
+.topic-options { display: flex; flex-wrap: wrap; gap: 6px; }
+.topic-picker .topic-option {
+  display: inline-flex; align-items: center; justify-content: flex-start; gap: 6px; margin: 0;
+  min-height: 44px; padding: 4px 9px; border: 1px solid var(--line); border-radius: 8px;
+  font-size: .85rem; color: var(--muted); cursor: pointer;
+}
+.topic-option:has(input:checked) { color: var(--accent); background: var(--tint); }
+.topic-option input { margin: 0; accent-color: var(--accent); cursor: inherit; }
+.word-row > div { min-width: 0; overflow-wrap: anywhere; }
+.topic-count { font-size: .76rem; font-variant-numeric: tabular-nums; }
+.surface + .topic-picker { margin-top: 14px; }
+.topic-toggle { margin: 0 auto 0 0; }

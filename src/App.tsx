@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import type { FormEvent, ReactNode } from 'react';
 import numbers from '../content/numbers.json';
+import coverage from '../content/coverage.json';
 import { playDutch, stopAudio } from './audio';
 import {
-  answer, createSession, expected, getWord, groups, localDay, next,
-  normalize, prompt, restore, restoreTab, storageKey, tabKey, topics, words,
+  allTopics, answer, availableWords, changeTopics, createSession, expected, getWord, groups, localDay, mergeStudy, next,
+  normalize, prompt, restore, restoreTab, selectedTopics, storageKey, tabKey, topicCounts, topics, withoutNumbers, words,
 } from './study';
 import type { Mode, Rating, Word } from './study';
 
@@ -27,7 +28,7 @@ function AudioButton({ text, onPlay, compact = false }: { text: string; onPlay: 
 function Feedback({ word, onPlay, expanded = false }: { word: Word; onPlay: (text: string) => void; expanded?: boolean }) {
   return <div className="feedback-detail">
     {!!word.forms.length && <dl className="forms">
-      {word.kind === 'noun' && <div><dt>Singular</dt><dd><span lang="nl-BE">{word.nl}</span><AudioButton text={word.nl} onPlay={onPlay} compact /></dd></div>}
+      {word.kind === 'noun' && word.forms.some(form => form.label === 'Plural') && <div><dt>Singular</dt><dd><span lang="nl-BE">{word.nl}</span><AudioButton text={word.nl} onPlay={onPlay} compact /></dd></div>}
       {word.forms.map(form => <div key={form.label}><dt>{form.label}</dt><dd><span lang="nl-BE">{form.text}</span><AudioButton text={form.text} onPlay={onPlay} compact /></dd></div>)}
     </dl>}
     {word.groups.map(key => <details key={key} open={expanded || undefined}>
@@ -37,7 +38,7 @@ function Feedback({ word, onPlay, expanded = false }: { word: Word; onPlay: (tex
         <td><AudioButton text={dutch} onPlay={onPlay} compact /></td>
       </tr>)}</tbody></table>
     </details>)}
-    {word.topic === 'Numbers' && <details>
+    {word.forms.some(form => form.label === 'Ordinal') && <details>
       <summary>Number patterns</summary>
       <p className="small">1–19 usually take <b>-de</b>. Remember <span lang="nl-BE">eerste, derde, achtste</span>. From 20 onward, look for <b>-ste</b>.</p>
       <table><thead><tr><th>Number</th><th>Cardinal</th><th>Ordinal</th></tr></thead>
@@ -47,12 +48,14 @@ function Feedback({ word, onPlay, expanded = false }: { word: Word; onPlay: (tex
   </div>;
 }
 
-function Activity({ history }: { history: Record<string, string[]> }) {
+function Activity({ history, onClear }: { history: Record<string, string[]>; onClear: () => void }) {
   const [date, select] = useState(localDay());
   const dates = Array.from({ length: 84 }, (_, i) => localDay(i - 83));
   const selectedCount = history[date]?.length ?? 0;
+  const studyDays = Object.values(history).filter(day => day.length > 0).length;
   return <section className="surface">
     <h1>Activity</h1>
+    <p className="small">{studyDays} {studyDays === 1 ? 'study day' : 'study days'}</p>
     <div className="calendar" aria-label="Daily practice over the last 12 weeks">
       {dates.map(day => {
         const count = history[day]?.length ?? 0;
@@ -62,23 +65,50 @@ function Activity({ history }: { history: Record<string, string[]> }) {
       })}
     </div>
     <p aria-live="polite">{date} · {selectedCount} {selectedCount === 1 ? 'word' : 'words'}</p>
+    <button className="text-button" onClick={onClear} disabled={!studyDays}>Clear activity</button>
   </section>;
 }
 
 function Browse({ onPlay }: { onPlay: (text: string) => void }) {
   const [query, setQuery] = useState('');
+  const [limit, setLimit] = useState(60);
   const results = words.filter(word => normalize([word.nl, word.en, ...word.forms.map(form => form.text)].join(' ')).includes(normalize(query)));
   return <section className="surface">
     <h1>Words</h1>
-    <input className="search" aria-label="Search Dutch or English" placeholder="Search Dutch or English" value={query} onChange={event => setQuery(event.target.value)} />
+    <input className="search" aria-label="Search Dutch or English" placeholder="Search Dutch or English" value={query} onChange={event => { setQuery(event.target.value); setLimit(60); }} />
     <p className="small">{results.length} entries</p>
-    <div className="word-list">{results.map(word => <article key={word.id}>
+    <div className="word-list">{results.slice(0,limit).map(word => <article key={word.id}>
       <div className="word-row"><div><b lang="nl-BE">{word.nl}</b><p>{word.en}</p></div><AudioButton text={word.nl} onPlay={onPlay} /></div>
       <details><summary>Word details</summary><Feedback word={word} onPlay={onPlay} />
         <p className="small">{word.source.file}, {word.source.location}</p>
+        {'dictionary' in word && typeof word.dictionary === 'string' &&
+          <p className="small"><a href={'https://en.wiktionary.org/wiki/' + encodeURIComponent(word.dictionary) + '#Dutch'}>Dictionary source</a></p>}
       </details>
     </article>)}</div>
+    {results.length > limit && <button className="text-button" onClick={() => setLimit(current => current + 60)}>Load more</button>}
   </section>;
+}
+
+function TopicPicker({ selection, onChange, disabled }: {
+  selection: string[];
+  onChange: (selection: string[]) => void;
+  disabled?: boolean;
+}) {
+  return <fieldset className="topic-picker" disabled={disabled}>
+    <legend>Topics</legend>
+    <div className="topic-options">
+      {topics.map(topic => <label key={topic} className="topic-option">
+        <input type="checkbox" checked={topic === allTopics ? selection.length === 0 : selection.includes(topic)}
+          onChange={event => {
+            if (topic === allTopics) { onChange([]); return; }
+            if (!event.target.checked) { onChange(selection.filter(item => item !== topic)); return; }
+            const conflict = topic === withoutNumbers ? 'Numbers' : topic === 'Numbers' ? withoutNumbers : '';
+            onChange([...selection.filter(item => item !== conflict), topic]);
+          }} />
+        {topic} <span className="topic-count">{topicCounts[topic]}</span>
+      </label>)}
+    </div>
+  </fieldset>;
 }
 
 function readView() {
@@ -90,10 +120,10 @@ export default function App() {
   const [[initial, storageOk]] = useState(restore);
   const [tab] = useState(() => {
     const saved = restoreTab();
-    if (saved) return saved;
+    if (saved && (saved.studyReset ?? 0) === (initial.studyReset ?? 0)) return saved;
     const legacy = initial.session;
     if (legacy?.date === localDay() && legacy.queue.length && !legacy.first
-        && (legacy.result || initial.history[legacy.date]?.length)) {
+        && !initial.studyReset && (legacy.result || initial.history[legacy.date]?.length)) {
       return { session: { ...legacy, first: legacy.queue[0] }, input: '', flipped: false };
     }
   });
@@ -104,25 +134,63 @@ export default function App() {
   const [input, setInput] = useState(tab?.input ?? '');
   const [flipped, flip] = useState(tab?.flipped ?? false);
   const [started, setStarted] = useState(!!tab);
+  const [topicsOpen, setTopicsOpen] = useState(false);
   const [audioError, setAudioError] = useState('');
   const [storageError, setStorageError] = useState(!storageOk);
   const audioTicket = useRef(0);
   const session = study.session;
   const word = getWord(session.queue[0]);
   const practiced = study.history[localDay()]?.length ?? 0;
-  const nextSize = Math.min(study.goal, words.filter(entry =>
-    session.topic === 'All topics' || entry.topic === session.topic).length);
+  const remaining = words.filter(entry => !study.review[entry.id]).length;
+  const selection = selectedTopics(session);
+  const nextSize = Math.min(study.goal, availableWords(selection).length);
 
   useEffect(() => {
-    try { localStorage.setItem(storageKey, JSON.stringify(study)); }
-    catch { setStorageError(true); }
+    try {
+      const [saved] = restore();
+      if ((saved.activityReset ?? 0) > (study.activityReset ?? 0)
+          || (saved.studyReset ?? 0) > (study.studyReset ?? 0)) return;
+      localStorage.setItem(storageKey, JSON.stringify(mergeStudy(study, saved)));
+    } catch { setStorageError(true); }
   }, [study]);
 
   useEffect(() => {
-    if (!started) return;
-    try { sessionStorage.setItem(tabKey, JSON.stringify({ session, input, flipped })); }
-    catch { setStorageError(true); }
-  }, [started, session, input, flipped]);
+    try {
+      if (started) {
+        sessionStorage.setItem(tabKey, JSON.stringify({ session, input, flipped, studyReset: study.studyReset }));
+      } else {
+        sessionStorage.removeItem(tabKey);
+      }
+    } catch { setStorageError(true); }
+  }, [started, session, input, flipped, study.studyReset]);
+
+  useEffect(() => {
+    function syncResets(event: StorageEvent) {
+      if (event.key !== storageKey) return;
+      const [saved, valid] = restore();
+      if (!valid) return;
+      const clearedActivity = (saved.activityReset ?? 0) > (study.activityReset ?? 0);
+      const clearedStudy = (saved.studyReset ?? 0) > (study.studyReset ?? 0);
+      if (!clearedActivity && !clearedStudy) return;
+      if (clearedStudy) {
+        audioTicket.current++;
+        stopAudio();
+        setStarted(false);
+        setInput('');
+        flip(false);
+        setAudioError('');
+      }
+      setStudy(current => {
+        const history = clearedActivity ? saved.history : current.history;
+        const base = { ...current, history, activityReset: clearedActivity ? saved.activityReset : current.activityReset };
+        if (!clearedStudy) return base;
+        const reset = { ...base, review: saved.review, studyReset: saved.studyReset, session: undefined };
+        return { ...reset, session: createSession(reset, selectedTopics(current.session), current.session.mode) };
+      });
+    }
+    window.addEventListener('storage', syncResets);
+    return () => window.removeEventListener('storage', syncResets);
+  }, [study.activityReset, study.studyReset]);
 
   useEffect(() => {
     const change = () => {
@@ -154,13 +222,43 @@ export default function App() {
       : current);
   }
 
-  function newSession(topic = session.topic, mode = session.mode) {
+  function newSession(nextTopics = selection, mode = session.mode) {
     audioTicket.current++;
     stopAudio();
     setAudioError('');
     setInput('');
     flip(false);
-    setStudy(current => ({ ...current, session: createSession(current, topic, mode) }));
+    setStudy(current => ({ ...current, session: createSession(current, nextTopics, mode) }));
+  }
+
+  function updateTopics(nextTopics: string[]) {
+    setStudy(current => ({
+      ...current,
+      session: started
+        ? changeTopics(current, current.session, nextTopics)
+        : createSession(current, nextTopics, current.session.mode),
+    }));
+  }
+
+  function clearActivity() {
+    if (!window.confirm('Clear the activity calendar and daily counts? Word progress will be kept.')) return;
+    setStudy(current => ({
+      ...current, history: {}, activityReset: Math.max(Date.now(), (current.activityReset ?? 0) + 1),
+    }));
+  }
+
+  function clearStudyHistory() {
+    if (!window.confirm('Clear word progress, reviews and the current round? Activity will be kept.')) return;
+    audioTicket.current++;
+    stopAudio();
+    setStarted(false);
+    setInput('');
+    flip(false);
+    setAudioError('');
+    setStudy(current => {
+      const reset = { ...current, review: {}, studyReset: Math.max(Date.now(), (current.studyReset ?? 0) + 1), session: undefined };
+      return { ...reset, session: createSession(reset, selectedTopics(current.session), current.session.mode) };
+    });
   }
 
   function submit(value: string) {
@@ -187,24 +285,29 @@ export default function App() {
   const navigation = [['practice','Practice'], ['words','Words'], ['activity','Activity'], ['settings','Settings']];
   let content: ReactNode;
   if (view === 'words') content = <Browse onPlay={play} />;
-  else if (view === 'activity') content = <Activity history={study.history} />;
+  else if (view === 'activity') content = <Activity history={study.history} onClear={clearActivity} />;
   else if (view === 'settings') content = <section className="surface settings">
     <h1>Settings</h1>
-    <label>Mode<select value={session.mode} disabled={started && !!session.result} onChange={event => newSession(session.topic, event.target.value as Mode)}>
+    <label>Mode<select value={session.mode} disabled={started && !!session.result} onChange={event => newSession(selection, event.target.value as Mode)}>
       {Object.entries(modes).map(([value,label]) => <option key={value} value={value}>{label}</option>)}</select></label>
     <label>Daily goal<select value={study.goal} onChange={event => {
       const goal = Number(event.target.value);
       setStudy(current => ({ ...current, goal }));
     }}>{[10,20,30,40,50].map(goal => <option key={goal}>{goal}</option>)}</select></label>
-    <details><summary>Course coverage</summary><p>{words.length} study entries in the initial release. The source inventory has 2,191 Dutch candidates and selected expressions. Full vocabulary review is in progress.</p></details>
+    <TopicPicker selection={selection} onChange={updateTopics} />
+    <button className="text-button" onClick={clearStudyHistory}>Clear study history</button>
+    <details><summary>Course coverage</summary><p>{words.length} study entries. The source index records {coverage.sourceWordCandidates.toLocaleString('en')} Dutch candidates and expressions across {coverage.pdfPages.toLocaleString('en')} PDF pages.</p>
+      <p>{((coverage.audit['check-gloss'] ?? 0) + (coverage.audit['check-source'] ?? 0)).toLocaleString('en')} observations still need a source or meaning check. This includes possible OCR errors and non-Dutch text.</p>
+      <p className="small"><a href="https://kaikki.org/dictionary/Dutch/">Dictionary data from English Wiktionary via Kaikki</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+    </details>
   </section>;
-  else if (!started) content = <section className="surface">
+  else if (!started) content = <section className="surface start-screen">
     <button className="primary" onClick={() => {
       newSession();
       setStarted(true);
     }}>Start <Icon name="arrow" /></button>
   </section>;
-  else if (!word) content = <section className="surface">
+  else if (!word) content = <section className="surface round-complete">
     <h1>Round complete</h1>
     {session.completed && <p>{session.completed.length} words this round</p>}
     <button className="primary" onClick={() => newSession()}>Start next {nextSize} <Icon name="arrow" /></button>
@@ -256,15 +359,20 @@ export default function App() {
     </header>
     <main>
       {view === 'practice' && <div className="session-bar">
-        <label><span className="sr-only">Topic</span><select value={session.topic} disabled={started && !!session.result} onChange={event => newSession(event.target.value)}>
-          {topics.map(topic => <option key={topic}>{topic}</option>)}</select></label>
+        {started && word && <button className="text-button topic-toggle" aria-expanded={topicsOpen}
+          onClick={() => setTopicsOpen(open => !open)}>Topics</button>}
         <a href="#activity" className="daily"><progress value={Math.min(practiced, study.goal)} max={study.goal} aria-label="Daily goal" />
           <span>Today {practiced}{practiced <= study.goal ? ' / ' + study.goal : ''}</span></a>
       </div>}
-      {view === 'practice' && started && session.size && <p className="small round-progress">
-        Round {session.completed?.length ?? 0} / {session.size}
+      {view === 'practice' && <p className="small round-progress">
+        {started && session.size ? `Round ${session.completed?.length ?? 0} / ${session.size} · ` : ''}
+        {remaining} of {words.length} words left
       </p>}
+      {view === 'practice' && started && word && topicsOpen &&
+        <TopicPicker selection={selection} onChange={updateTopics} />}
       {content}
+      {view === 'practice' && (!started || !word) &&
+        <TopicPicker selection={selection} onChange={updateTopics} />}
       {audioError && <p role="status" className="small">{audioError}</p>}
       {storageError && <p role="status" className="small">Saved progress could not be restored or saved in this browser.</p>}
     </main>

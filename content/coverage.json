@@ -1,0 +1,16 @@
+{
+  "snapshot": "2026-11-26",
+  "pdfPages": 1060,
+  "sourceWordCandidates": 2191,
+  "indexedForms": 5477,
+  "cardCount": 2161,
+  "audit": {
+    "authored": 219,
+    "existing": 192,
+    "dictionary": 1721,
+    "no-lexical-match": 2536,
+    "excluded": 2,
+    "check-gloss": 448,
+    "check-source": 359
+  }
+}
