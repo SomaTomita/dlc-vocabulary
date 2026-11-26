@@ -1,0 +1,3978 @@
+[
+  {
+    "id": "alsjeblieft-66ab72",
+    "nl": "alsjeblieft",
+    "en": "please",
+    "kind": "phrase",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 12_19-11-26.pdf",
+      "location": "p. 53"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "goedenavond-276e40",
+    "nl": "goedenavond",
+    "en": "good evening",
+    "kind": "phrase",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 2"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "goedemiddag-624859",
+    "nl": "goedemiddag",
+    "en": "good afternoon",
+    "kind": "phrase",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 2_01-10-26.pdf",
+      "location": "p. 21"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "goedemorgen-75fceb",
+    "nl": "goedemorgen",
+    "en": "good morning",
+    "kind": "phrase",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 2_01-10-26.pdf",
+      "location": "p. 57"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "tot-ziens-1ad351",
+    "nl": "tot ziens",
+    "en": "goodbye",
+    "kind": "phrase",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 2_01-10-26.pdf",
+      "location": "p. 57"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "aangenaam-cb0900",
+    "nl": "aangenaam",
+    "en": "pleased to meet you",
+    "kind": "phrase",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 1_29-09-26.pdf",
+      "location": "p. 2"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "dank-je-a0b91f",
+    "nl": "dank je",
+    "en": "thank you",
+    "kind": "phrase",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 1_29-09-26.pdf",
+      "location": "p. 4"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "hoe-gaat-het-94a5c3",
+    "nl": "hoe gaat het",
+    "en": "how are you?",
+    "kind": "phrase",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 3"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "graag-f5896e",
+    "nl": "graag",
+    "en": "gladly",
+    "kind": "word",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 20"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "misschien-093e0e",
+    "nl": "misschien",
+    "en": "perhaps",
+    "kind": "word",
+    "topic": "Essentials",
+    "source": {
+      "file": "Deel 2_Les 6_Negatie_AB spreekoefening.pdf",
+      "location": "p. 2"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "altijd-206594",
+    "nl": "altijd",
+    "en": "always",
+    "kind": "word",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 12_19-11-26.pdf",
+      "location": "p. 22"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "nooit-cb5daa",
+    "nl": "nooit",
+    "en": "never",
+    "kind": "word",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
+      "location": "p. 9"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "meestal-92d3ca",
+    "nl": "meestal",
+    "en": "usually",
+    "kind": "word",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 66"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "vaak-ec4578",
+    "nl": "vaak",
+    "en": "often",
+    "kind": "word",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
+      "location": "p. 9"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "soms-b21b61",
+    "nl": "soms",
+    "en": "sometimes",
+    "kind": "word",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
+      "location": "p. 11"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "ongeveer-f8f580",
+    "nl": "ongeveer",
+    "en": "approximately",
+    "kind": "word",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 77"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "alleen-b19157",
+    "nl": "alleen",
+    "en": "alone",
+    "kind": "word",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 69"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "samen-863819",
+    "nl": "samen",
+    "en": "together",
+    "kind": "word",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 12"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "hier-529cbc",
+    "nl": "hier",
+    "en": "here",
+    "kind": "word",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 12_19-11-26.pdf",
+      "location": "p. 39"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "daar-f554dc",
+    "nl": "daar",
+    "en": "there",
+    "kind": "word",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 12_19-11-26.pdf",
+      "location": "p. 49"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "vandaag-d4241b",
+    "nl": "vandaag",
+    "en": "today",
+    "kind": "word",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 26"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "morgen-eb26d4",
+    "nl": "morgen",
+    "en": "tomorrow",
+    "kind": "word",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 56"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "gisteren-09756d",
+    "nl": "gisteren",
+    "en": "yesterday",
+    "kind": "word",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 56"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "heel-aee12e",
+    "nl": "heel",
+    "en": "very",
+    "kind": "word",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 3"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "niet-accd17",
+    "nl": "niet",
+    "en": "not",
+    "kind": "word",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 3"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "geen-8aa4ce",
+    "nl": "geen",
+    "en": "no (before a noun)",
+    "kind": "word",
+    "topic": "Essentials",
+    "source": {
+      "file": "Dutch Language and Cultures 2025 semester 1_PLANNING.pdf",
+      "location": "p. 1"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "de-voornaam-dcbffc",
+    "nl": "de voornaam",
+    "en": "first name",
+    "kind": "noun",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 1_29-09-26.pdf",
+      "location": "p. 23"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de voornamen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-achternaam-2b8504",
+    "nl": "de achternaam",
+    "en": "surname",
+    "kind": "noun",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 1_29-09-26.pdf",
+      "location": "p. 23"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de achternamen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-familienaam-d3b363",
+    "nl": "de familienaam",
+    "en": "family name",
+    "kind": "noun",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 1_29-09-26.pdf",
+      "location": "p. 23"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de familienamen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-moeder-bd0572",
+    "nl": "de moeder",
+    "en": "mother",
+    "kind": "noun",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 24"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de moeders"
+      }
+    ],
+    "groups": [
+      "family"
+    ]
+  },
+  {
+    "id": "de-vader-9f5c31",
+    "nl": "de vader",
+    "en": "father",
+    "kind": "noun",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 3_06-10-26.pdf",
+      "location": "p. 70"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de vaders"
+      }
+    ],
+    "groups": [
+      "family"
+    ]
+  },
+  {
+    "id": "de-broer-ddbb06",
+    "nl": "de broer",
+    "en": "brother",
+    "kind": "noun",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 61"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de broers"
+      }
+    ],
+    "groups": [
+      "family"
+    ]
+  },
+  {
+    "id": "de-zus-61aa29",
+    "nl": "de zus",
+    "en": "sister",
+    "kind": "noun",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
+      "location": "p. 80"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de zussen"
+      }
+    ],
+    "groups": [
+      "family"
+    ]
+  },
+  {
+    "id": "de-zoon-3e5517",
+    "nl": "de zoon",
+    "en": "son",
+    "kind": "noun",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 5_13-10-26.pdf",
+      "location": "p. 21"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de zonen"
+      }
+    ],
+    "groups": [
+      "family"
+    ]
+  },
+  {
+    "id": "de-dochter-e00d16",
+    "nl": "de dochter",
+    "en": "daughter",
+    "kind": "noun",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 12_19-11-26.pdf",
+      "location": "p. 17"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de dochters"
+      }
+    ],
+    "groups": [
+      "family"
+    ]
+  },
+  {
+    "id": "het-kind-a66da7",
+    "nl": "het kind",
+    "en": "child",
+    "kind": "noun",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 19"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de kinderen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "het-gezin-7dc39e",
+    "nl": "het gezin",
+    "en": "household or immediate family",
+    "kind": "noun",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 19"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de gezinnen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-familie-12469f",
+    "nl": "de familie",
+    "en": "family",
+    "kind": "noun",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 77"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de families"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-ouders-76f6b6",
+    "nl": "de ouders",
+    "en": "parents",
+    "kind": "noun",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 87"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "de-collega-7f6b36",
+    "nl": "de collega",
+    "en": "colleague",
+    "kind": "noun",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 15"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de collega's"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-buur-306070",
+    "nl": "de buur",
+    "en": "neighbour",
+    "kind": "noun",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 66"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de buren"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-student-e49b9e",
+    "nl": "de student",
+    "en": "student",
+    "kind": "noun",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 47"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de studenten"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-docent-0958c5",
+    "nl": "de docent",
+    "en": "teacher",
+    "kind": "noun",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures 2025 semester 1_PLANNING.pdf",
+      "location": "p. 1"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de docenten"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "het-beroep-14e23c",
+    "nl": "het beroep",
+    "en": "occupation",
+    "kind": "noun",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 2_01-10-26.pdf",
+      "location": "p. 6"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de beroepen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-moedertaal-5aa87a",
+    "nl": "de moedertaal",
+    "en": "native language",
+    "kind": "noun",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 1_29-09-26.pdf",
+      "location": "p. 30"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de moedertalen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-taal-878dac",
+    "nl": "de taal",
+    "en": "language",
+    "kind": "noun",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 12_19-11-26.pdf",
+      "location": "p. 22"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de talen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "getrouwd-fdc8ba",
+    "nl": "getrouwd",
+    "en": "married",
+    "kind": "adjective",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 12_19-11-26.pdf",
+      "location": "p. 39"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "geboren-ff4c1c",
+    "nl": "geboren",
+    "en": "born",
+    "kind": "adjective",
+    "topic": "People",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 46"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "het-adres-109f18",
+    "nl": "het adres",
+    "en": "address",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 12"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de adressen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-straat-2ec1a4",
+    "nl": "de straat",
+    "en": "street",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 13"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de straten"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-stad-ea037e",
+    "nl": "de stad",
+    "en": "city",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 17"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de steden"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "het-land-7f050b",
+    "nl": "het land",
+    "en": "country",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 20"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de landen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-hoofdstad-f59227",
+    "nl": "de hoofdstad",
+    "en": "capital city",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 4_08-10-26.pdf",
+      "location": "p. 60"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de hoofdsteden"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-inwoner-2588e5",
+    "nl": "de inwoner",
+    "en": "resident",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 8_27-10-26.pdf",
+      "location": "p. 46"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de inwoners"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-postcode-95b55b",
+    "nl": "de postcode",
+    "en": "postal code",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 13"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de postcodes"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "het-huisnummer-5fa176",
+    "nl": "het huisnummer",
+    "en": "house number",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 13"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de huisnummers"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-verdieping-2375b7",
+    "nl": "de verdieping",
+    "en": "floor or storey",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 87"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de verdiepingen"
+      }
+    ],
+    "groups": [
+      "dates"
+    ]
+  },
+  {
+    "id": "het-appartement-87231a",
+    "nl": "het appartement",
+    "en": "apartment",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 87"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de appartementen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "het-huis-e667cb",
+    "nl": "het huis",
+    "en": "house",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 17"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de huizen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-universiteit-abbffc",
+    "nl": "de universiteit",
+    "en": "university",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 20"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de universiteiten"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "het-station-f38295",
+    "nl": "het station",
+    "en": "station",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
+      "location": "p. 29"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de stations"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-trein-8c6179",
+    "nl": "de trein",
+    "en": "train",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 29"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de treinen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-fiets-5993aa",
+    "nl": "de fiets",
+    "en": "bicycle",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 3_06-10-26.pdf",
+      "location": "p. 48"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de fietsen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-auto-db3e10",
+    "nl": "de auto",
+    "en": "car",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 36"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de auto's"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-rivier-ee9338",
+    "nl": "de rivier",
+    "en": "river",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Lijst preposities.pdf",
+      "location": "p. 1"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de rivieren"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-berg-8c8cad",
+    "nl": "de berg",
+    "en": "mountain",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 2"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de bergen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-deur-87302b",
+    "nl": "de deur",
+    "en": "door",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 70"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de deuren"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "het-raam-5575b1",
+    "nl": "het raam",
+    "en": "window",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 12_19-11-26.pdf",
+      "location": "p. 44"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de ramen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-tafel-c302ba",
+    "nl": "de tafel",
+    "en": "table",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
+      "location": "p. 52"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de tafels"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-stoel-ebd367",
+    "nl": "de stoel",
+    "en": "chair",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 12_19-11-26.pdf",
+      "location": "p. 55"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de stoelen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-winkel-660897",
+    "nl": "de winkel",
+    "en": "shop",
+    "kind": "noun",
+    "topic": "Places",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 5_13-10-26.pdf",
+      "location": "p. 42"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de winkels"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "het-ontbijt-8ff33f",
+    "nl": "het ontbijt",
+    "en": "breakfast",
+    "kind": "noun",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
+      "location": "p. 35"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de ontbijten"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-lunch-349ba1",
+    "nl": "de lunch",
+    "en": "lunch",
+    "kind": "noun",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 66"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de lunches"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-koffie-f5b83b",
+    "nl": "de koffie",
+    "en": "coffee",
+    "kind": "noun",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 63"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "de-thee-85f9c0",
+    "nl": "de thee",
+    "en": "tea",
+    "kind": "noun",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 63"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "het-brood-7fe75b",
+    "nl": "het brood",
+    "en": "bread",
+    "kind": "noun",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 9_29-10-26.pdf",
+      "location": "p. 11"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de broden"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-soep-b1b74d",
+    "nl": "de soep",
+    "en": "soup",
+    "kind": "noun",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 61"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de soepen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-salade-83033f",
+    "nl": "de salade",
+    "en": "salad",
+    "kind": "noun",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 61"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de salades"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-banaan-c4d84c",
+    "nl": "de banaan",
+    "en": "banana",
+    "kind": "noun",
+    "topic": "Daily life",
+    "source": {
+      "file": "Deel 2_Les 6_Negatie_AB spreekoefening.pdf",
+      "location": "p. 1"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de bananen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-aardappel-67876d",
+    "nl": "de aardappel",
+    "en": "potato",
+    "kind": "noun",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 8_27-10-26.pdf",
+      "location": "p. 93"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de aardappelen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "het-frietje-f17565",
+    "nl": "het frietje",
+    "en": "chip or fry",
+    "kind": "noun",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 3"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de frietjes"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-film-f6b27a",
+    "nl": "de film",
+    "en": "film",
+    "kind": "noun",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 6_20-10-26.pdf",
+      "location": "p. 79"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de films"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "het-boek-dd3a9c",
+    "nl": "het boek",
+    "en": "book",
+    "kind": "noun",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 17"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de boeken"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "het-weekend-2b3b5a",
+    "nl": "het weekend",
+    "en": "weekend",
+    "kind": "noun",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 28"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de weekenden"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-verjaardag-95e6dc",
+    "nl": "de verjaardag",
+    "en": "birthday",
+    "kind": "noun",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 48"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de verjaardagen"
+      }
+    ],
+    "groups": [
+      "dates"
+    ]
+  },
+  {
+    "id": "de-datum-e5397f",
+    "nl": "de datum",
+    "en": "date",
+    "kind": "noun",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 25"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de datums"
+      }
+    ],
+    "groups": [
+      "dates"
+    ]
+  },
+  {
+    "id": "het-uur-0c94e5",
+    "nl": "het uur",
+    "en": "hour",
+    "kind": "noun",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 58"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de uren"
+      }
+    ],
+    "groups": [
+      "clock"
+    ]
+  },
+  {
+    "id": "het-kwartier-b404a2",
+    "nl": "het kwartier",
+    "en": "quarter of an hour",
+    "kind": "noun",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
+      "location": "p. 8"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de kwartieren"
+      }
+    ],
+    "groups": [
+      "clock"
+    ]
+  },
+  {
+    "id": "de-minuut-45edf6",
+    "nl": "de minuut",
+    "en": "minute",
+    "kind": "noun",
+    "topic": "Daily life",
+    "source": {
+      "file": "les-02_01-10-26_pronunciation.md",
+      "location": "line 304"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de minuten"
+      }
+    ],
+    "groups": [
+      "clock"
+    ]
+  },
+  {
+    "id": "de-voormiddag-3e06c3",
+    "nl": "de voormiddag",
+    "en": "late morning",
+    "kind": "noun",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 58"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de voormiddagen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "de-namiddag-715531",
+    "nl": "de namiddag",
+    "en": "afternoon",
+    "kind": "noun",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 58"
+    },
+    "forms": [
+      {
+        "label": "Plural",
+        "text": "de namiddagen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "s-ochtends-4c5ca3",
+    "nl": "'s ochtends",
+    "en": "in the morning",
+    "kind": "phrase",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 58"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "s-avonds-6871f2",
+    "nl": "'s avonds",
+    "en": "in the evening",
+    "kind": "phrase",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 58"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "s-nachts-8a8dc1",
+    "nl": "'s nachts",
+    "en": "at night",
+    "kind": "phrase",
+    "topic": "Daily life",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 60"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "zijn-bb07d1",
+    "nl": "zijn",
+    "en": "to be",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 19"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik ben; jij bent; hij is"
+      },
+      {
+        "label": "Past",
+        "text": "was; waren"
+      },
+      {
+        "label": "Past participle",
+        "text": "geweest"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "hebben-6a346c",
+    "nl": "hebben",
+    "en": "to have",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 72"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik heb; jij hebt"
+      },
+      {
+        "label": "Past",
+        "text": "had; hadden"
+      },
+      {
+        "label": "Past participle",
+        "text": "gehad"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "gaan-c62d45",
+    "nl": "gaan",
+    "en": "to go",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 70"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik ga; jij gaat"
+      },
+      {
+        "label": "Past",
+        "text": "ging; gingen"
+      },
+      {
+        "label": "Past participle",
+        "text": "gegaan"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "komen-d865e1",
+    "nl": "komen",
+    "en": "to come",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 69"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik kom; jij komt"
+      },
+      {
+        "label": "Past",
+        "text": "kwam; kwamen"
+      },
+      {
+        "label": "Past participle",
+        "text": "gekomen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "wonen-b3a41f",
+    "nl": "wonen",
+    "en": "to live somewhere",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 20"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik woon; jij woont"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "studeren-056e08",
+    "nl": "studeren",
+    "en": "to study",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 66"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik studeer; jij studeert"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "werken-904b35",
+    "nl": "werken",
+    "en": "to work",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 61"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik werk; jij werkt"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "spreken-a39611",
+    "nl": "spreken",
+    "en": "to speak",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 19"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik spreek; jij spreekt"
+      },
+      {
+        "label": "Past",
+        "text": "sprak; spraken"
+      },
+      {
+        "label": "Past participle",
+        "text": "gesproken"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "zeggen-eb6446",
+    "nl": "zeggen",
+    "en": "to say",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
+      "location": "p. 39"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik zeg; jij zegt"
+      },
+      {
+        "label": "Past",
+        "text": "zei; zeiden"
+      },
+      {
+        "label": "Past participle",
+        "text": "gezegd"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "eten-1f9d63",
+    "nl": "eten",
+    "en": "to eat",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 12"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik eet; jij eet"
+      },
+      {
+        "label": "Past",
+        "text": "at; aten"
+      },
+      {
+        "label": "Past participle",
+        "text": "gegeten"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "drinken-051edd",
+    "nl": "drinken",
+    "en": "to drink",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 68"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik drink; jij drinkt"
+      },
+      {
+        "label": "Past",
+        "text": "dronk; dronken"
+      },
+      {
+        "label": "Past participle",
+        "text": "gedronken"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "slapen-942e1a",
+    "nl": "slapen",
+    "en": "to sleep",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 66"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik slaap; jij slaapt"
+      },
+      {
+        "label": "Past",
+        "text": "sliep; sliepen"
+      },
+      {
+        "label": "Past participle",
+        "text": "geslapen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "lezen-ba5076",
+    "nl": "lezen",
+    "en": "to read",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 14"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik lees; jij leest"
+      },
+      {
+        "label": "Past",
+        "text": "las; lazen"
+      },
+      {
+        "label": "Past participle",
+        "text": "gelezen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "kijken-bf49be",
+    "nl": "kijken",
+    "en": "to look or watch",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
+      "location": "p. 34"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik kijk; jij kijkt"
+      },
+      {
+        "label": "Past",
+        "text": "keek; keken"
+      },
+      {
+        "label": "Past participle",
+        "text": "gekeken"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "luisteren-3bddf5",
+    "nl": "luisteren",
+    "en": "to listen",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 23"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik luister; jij luistert"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "koken-1cf4bf",
+    "nl": "koken",
+    "en": "to cook",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 66"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik kook; jij kookt"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "lopen-4396b7",
+    "nl": "lopen",
+    "en": "to walk",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 8_27-10-26.pdf",
+      "location": "p. 44"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik loop; jij loopt"
+      },
+      {
+        "label": "Past",
+        "text": "liep; liepen"
+      },
+      {
+        "label": "Past participle",
+        "text": "gelopen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "fietsen-da56f3",
+    "nl": "fietsen",
+    "en": "to cycle",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 75"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik fiets; jij fietst"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "kopen-255b97",
+    "nl": "kopen",
+    "en": "to buy",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 66"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik koop; jij koopt"
+      },
+      {
+        "label": "Past",
+        "text": "kocht; kochten"
+      },
+      {
+        "label": "Past participle",
+        "text": "gekocht"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "zoeken-b35b1d",
+    "nl": "zoeken",
+    "en": "to look for",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 75"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik zoek; jij zoekt"
+      },
+      {
+        "label": "Past",
+        "text": "zocht; zochten"
+      },
+      {
+        "label": "Past participle",
+        "text": "gezocht"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "vinden-5124fa",
+    "nl": "vinden",
+    "en": "to find",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 86"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik vind; jij vindt"
+      },
+      {
+        "label": "Past",
+        "text": "vond; vonden"
+      },
+      {
+        "label": "Past participle",
+        "text": "gevonden"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "geven-5f7d19",
+    "nl": "geven",
+    "en": "to give",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 75"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik geef; jij geeft"
+      },
+      {
+        "label": "Past",
+        "text": "gaf; gaven"
+      },
+      {
+        "label": "Past participle",
+        "text": "gegeven"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "nemen-95a572",
+    "nl": "nemen",
+    "en": "to take",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 68"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik neem; jij neemt"
+      },
+      {
+        "label": "Past",
+        "text": "nam; namen"
+      },
+      {
+        "label": "Past participle",
+        "text": "genomen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "vragen-c5757c",
+    "nl": "vragen",
+    "en": "to ask",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 24"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik vraag; jij vraagt"
+      },
+      {
+        "label": "Past",
+        "text": "vroeg; vroegen"
+      },
+      {
+        "label": "Past participle",
+        "text": "gevraagd"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "antwoorden-681f4a",
+    "nl": "antwoorden",
+    "en": "to answer",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
+      "location": "p. 81"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik antwoord; jij antwoordt"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "begrijpen-439e6f",
+    "nl": "begrijpen",
+    "en": "to understand",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 9_29-10-26.pdf",
+      "location": "p. 33"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik begrijp; jij begrijpt"
+      },
+      {
+        "label": "Past",
+        "text": "begreep; begrepen"
+      },
+      {
+        "label": "Past participle",
+        "text": "begrepen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "schrijven-44e56f",
+    "nl": "schrijven",
+    "en": "to write",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 76"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik schrijf; jij schrijft"
+      },
+      {
+        "label": "Past",
+        "text": "schreef; schreven"
+      },
+      {
+        "label": "Past participle",
+        "text": "geschreven"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "opstaan-5efcce",
+    "nl": "opstaan",
+    "en": "to get up",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
+      "location": "p. 59"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik sta op; jij staat op"
+      },
+      {
+        "label": "Past",
+        "text": "stond op; stonden op"
+      },
+      {
+        "label": "Past participle",
+        "text": "opgestaan"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "vertrekken-bb8f30",
+    "nl": "vertrekken",
+    "en": "to depart",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
+      "location": "p. 36"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik vertrek; jij vertrekt"
+      },
+      {
+        "label": "Past",
+        "text": "vertrok; vertrokken"
+      },
+      {
+        "label": "Past participle",
+        "text": "vertrokken"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "aankomen-cc1e41",
+    "nl": "aankomen",
+    "en": "to arrive",
+    "kind": "verb",
+    "topic": "Verbs",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
+      "location": "p. 59"
+    },
+    "forms": [
+      {
+        "label": "Present",
+        "text": "ik kom aan; jij komt aan"
+      },
+      {
+        "label": "Past",
+        "text": "kwam aan; kwamen aan"
+      },
+      {
+        "label": "Past participle",
+        "text": "aangekomen"
+      }
+    ],
+    "groups": []
+  },
+  {
+    "id": "groot-c76d9d",
+    "nl": "groot",
+    "en": "big",
+    "kind": "adjective",
+    "topic": "Descriptions",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 71"
+    },
+    "forms": [],
+    "groups": [
+      "size"
+    ]
+  },
+  {
+    "id": "klein-e12689",
+    "nl": "klein",
+    "en": "small",
+    "kind": "adjective",
+    "topic": "Descriptions",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 71"
+    },
+    "forms": [],
+    "groups": [
+      "size"
+    ]
+  },
+  {
+    "id": "warm-0f0aa4",
+    "nl": "warm",
+    "en": "warm",
+    "kind": "adjective",
+    "topic": "Descriptions",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 80"
+    },
+    "forms": [],
+    "groups": [
+      "temperature"
+    ]
+  },
+  {
+    "id": "koud-b54e62",
+    "nl": "koud",
+    "en": "cold",
+    "kind": "adjective",
+    "topic": "Descriptions",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 81"
+    },
+    "forms": [],
+    "groups": [
+      "temperature"
+    ]
+  },
+  {
+    "id": "duur-26925b",
+    "nl": "duur",
+    "en": "expensive",
+    "kind": "adjective",
+    "topic": "Descriptions",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 29"
+    },
+    "forms": [],
+    "groups": [
+      "price"
+    ]
+  },
+  {
+    "id": "goedkoop-6a85ea",
+    "nl": "goedkoop",
+    "en": "cheap",
+    "kind": "adjective",
+    "topic": "Descriptions",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 76"
+    },
+    "forms": [],
+    "groups": [
+      "price"
+    ]
+  },
+  {
+    "id": "moeilijk-a403e4",
+    "nl": "moeilijk",
+    "en": "difficult",
+    "kind": "adjective",
+    "topic": "Descriptions",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 12_19-11-26.pdf",
+      "location": "p. 19"
+    },
+    "forms": [],
+    "groups": [
+      "difficulty"
+    ]
+  },
+  {
+    "id": "gemakkelijk-ed64ce",
+    "nl": "gemakkelijk",
+    "en": "easy",
+    "kind": "adjective",
+    "topic": "Descriptions",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 87"
+    },
+    "forms": [],
+    "groups": [
+      "difficulty"
+    ]
+  },
+  {
+    "id": "oud-1dd573",
+    "nl": "oud",
+    "en": "old",
+    "kind": "adjective",
+    "topic": "Descriptions",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 19"
+    },
+    "forms": [],
+    "groups": [
+      "age"
+    ]
+  },
+  {
+    "id": "jong-520be1",
+    "nl": "jong",
+    "en": "young",
+    "kind": "adjective",
+    "topic": "Descriptions",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 78"
+    },
+    "forms": [],
+    "groups": [
+      "age"
+    ]
+  },
+  {
+    "id": "langzaam-5561a3",
+    "nl": "langzaam",
+    "en": "slow",
+    "kind": "adjective",
+    "topic": "Descriptions",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 1_29-09-26.pdf",
+      "location": "p. 51"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "snel-6438e7",
+    "nl": "snel",
+    "en": "fast",
+    "kind": "adjective",
+    "topic": "Descriptions",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 12_19-11-26.pdf",
+      "location": "p. 16"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "druk-63e001",
+    "nl": "druk",
+    "en": "busy",
+    "kind": "adjective",
+    "topic": "Descriptions",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 70"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "rustig-90ab08",
+    "nl": "rustig",
+    "en": "quiet",
+    "kind": "adjective",
+    "topic": "Descriptions",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 70"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "gematigd-35f879",
+    "nl": "gematigd",
+    "en": "temperate",
+    "kind": "adjective",
+    "topic": "Descriptions",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
+      "location": "p. 23"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "vlak-1f5e95",
+    "nl": "vlak",
+    "en": "flat",
+    "kind": "adjective",
+    "topic": "Descriptions",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
+      "location": "p. 24"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "juist-b2338e",
+    "nl": "juist",
+    "en": "correct",
+    "kind": "adjective",
+    "topic": "Descriptions",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
+      "location": "p. 21"
+    },
+    "forms": [],
+    "groups": []
+  },
+  {
+    "id": "op-maandag-eaf677",
+    "nl": "op maandag",
+    "en": "on Monday",
+    "kind": "preposition",
+    "topic": "Prepositions",
+    "source": {
+      "file": "Lijst preposities.pdf",
+      "location": "p. 2 (usage reference)"
+    },
+    "forms": [],
+    "groups": [
+      "time-preps"
+    ]
+  },
+  {
+    "id": "om-acht-uur-ad7f86",
+    "nl": "om acht uur",
+    "en": "at eight o'clock",
+    "kind": "preposition",
+    "topic": "Prepositions",
+    "source": {
+      "file": "Lijst preposities.pdf",
+      "location": "p. 2 (usage reference)"
+    },
+    "forms": [],
+    "groups": [
+      "time-preps"
+    ]
+  },
+  {
+    "id": "in-december-01efd3",
+    "nl": "in december",
+    "en": "in December",
+    "kind": "preposition",
+    "topic": "Prepositions",
+    "source": {
+      "file": "Lijst preposities.pdf",
+      "location": "p. 1 (usage reference)"
+    },
+    "forms": [],
+    "groups": [
+      "time-preps"
+    ]
+  },
+  {
+    "id": "in-leuven-6413a1",
+    "nl": "in Leuven",
+    "en": "in Leuven",
+    "kind": "preposition",
+    "topic": "Prepositions",
+    "source": {
+      "file": "Lijst preposities.pdf",
+      "location": "p. 1 (usage reference)"
+    },
+    "forms": [],
+    "groups": [
+      "place-preps"
+    ]
+  },
+  {
+    "id": "op-tafel-44401a",
+    "nl": "op tafel",
+    "en": "on the table",
+    "kind": "preposition",
+    "topic": "Prepositions",
+    "source": {
+      "file": "Lijst preposities.pdf",
+      "location": "p. 2 (usage reference)"
+    },
+    "forms": [],
+    "groups": [
+      "place-preps"
+    ]
+  },
+  {
+    "id": "bij-de-bakker-ec66ec",
+    "nl": "bij de bakker",
+    "en": "at the baker's",
+    "kind": "preposition",
+    "topic": "Prepositions",
+    "source": {
+      "file": "Lijst preposities.pdf",
+      "location": "p. 1 (usage reference)"
+    },
+    "forms": [],
+    "groups": [
+      "place-preps"
+    ]
+  },
+  {
+    "id": "naar-brussel-b2e42e",
+    "nl": "naar Brussel",
+    "en": "to Brussels",
+    "kind": "preposition",
+    "topic": "Prepositions",
+    "source": {
+      "file": "Lijst preposities.pdf",
+      "location": "p. 1 (usage reference)"
+    },
+    "forms": [],
+    "groups": [
+      "place-preps"
+    ]
+  },
+  {
+    "id": "uit-gent-7c0aa7",
+    "nl": "uit Gent",
+    "en": "from Ghent",
+    "kind": "preposition",
+    "topic": "Prepositions",
+    "source": {
+      "file": "Lijst preposities.pdf",
+      "location": "p. 2 (usage reference)"
+    },
+    "forms": [],
+    "groups": [
+      "place-preps"
+    ]
+  },
+  {
+    "id": "met-de-trein-416cd1",
+    "nl": "met de trein",
+    "en": "by train",
+    "kind": "preposition",
+    "topic": "Prepositions",
+    "source": {
+      "file": "Lijst preposities.pdf",
+      "location": "p. 1 (usage reference)"
+    },
+    "forms": [],
+    "groups": [
+      "place-preps"
+    ]
+  },
+  {
+    "id": "aan-de-deur-2c8ddf",
+    "nl": "aan de deur",
+    "en": "at the door",
+    "kind": "preposition",
+    "topic": "Prepositions",
+    "source": {
+      "file": "Lijst preposities.pdf",
+      "location": "p. 1 (usage reference)"
+    },
+    "forms": [],
+    "groups": [
+      "place-preps"
+    ]
+  },
+  {
+    "id": "achter-de-kast-b0d258",
+    "nl": "achter de kast",
+    "en": "behind the cupboard",
+    "kind": "preposition",
+    "topic": "Prepositions",
+    "source": {
+      "file": "Lijst preposities.pdf",
+      "location": "p. 1 (usage reference)"
+    },
+    "forms": [],
+    "groups": [
+      "place-preps"
+    ]
+  },
+  {
+    "id": "boven-de-tafel-7d1993",
+    "nl": "boven de tafel",
+    "en": "above the table",
+    "kind": "preposition",
+    "topic": "Prepositions",
+    "source": {
+      "file": "Lijst preposities.pdf",
+      "location": "p. 1 (usage reference)"
+    },
+    "forms": [],
+    "groups": [
+      "place-preps"
+    ]
+  },
+  {
+    "id": "naast-het-bed-59ab4b",
+    "nl": "naast het bed",
+    "en": "next to the bed",
+    "kind": "preposition",
+    "topic": "Prepositions",
+    "source": {
+      "file": "Lijst preposities.pdf",
+      "location": "p. 2 (usage reference)"
+    },
+    "forms": [],
+    "groups": [
+      "place-preps"
+    ]
+  },
+  {
+    "id": "langs-de-rivier-8bc572",
+    "nl": "langs de rivier",
+    "en": "along the river",
+    "kind": "preposition",
+    "topic": "Prepositions",
+    "source": {
+      "file": "Lijst preposities.pdf",
+      "location": "p. 1 (usage reference)"
+    },
+    "forms": [],
+    "groups": [
+      "place-preps"
+    ]
+  },
+  {
+    "id": "door-de-straat-07f4cf",
+    "nl": "door de straat",
+    "en": "through the street",
+    "kind": "preposition",
+    "topic": "Prepositions",
+    "source": {
+      "file": "Lijst preposities.pdf",
+      "location": "p. 1 (usage reference)"
+    },
+    "forms": [],
+    "groups": [
+      "place-preps"
+    ]
+  },
+  {
+    "id": "tot-negen-uur-c2e32c",
+    "nl": "tot negen uur",
+    "en": "until nine o'clock",
+    "kind": "preposition",
+    "topic": "Prepositions",
+    "source": {
+      "file": "Lijst preposities.pdf",
+      "location": "p. 2 (usage reference)"
+    },
+    "forms": [],
+    "groups": [
+      "place-preps"
+    ]
+  },
+  {
+    "id": "een-5b4412",
+    "nl": "een",
+    "en": "1",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 13"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "een"
+      },
+      {
+        "label": "Ordinal",
+        "text": "eerste"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "1"
+  },
+  {
+    "id": "eerste-a221b9",
+    "nl": "eerste",
+    "en": "1st",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 32"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "een"
+      },
+      {
+        "label": "Ordinal",
+        "text": "eerste"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "1st"
+  },
+  {
+    "id": "twee-faa726",
+    "nl": "twee",
+    "en": "2",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 18"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "twee"
+      },
+      {
+        "label": "Ordinal",
+        "text": "tweede"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "2"
+  },
+  {
+    "id": "tweede-750175",
+    "nl": "tweede",
+    "en": "2nd",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 2"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "twee"
+      },
+      {
+        "label": "Ordinal",
+        "text": "tweede"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "2nd"
+  },
+  {
+    "id": "drie-aa85fe",
+    "nl": "drie",
+    "en": "3",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
+      "location": "p. 18"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "drie"
+      },
+      {
+        "label": "Ordinal",
+        "text": "derde"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "3"
+  },
+  {
+    "id": "derde-3c33fa",
+    "nl": "derde",
+    "en": "3rd",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 32"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "drie"
+      },
+      {
+        "label": "Ordinal",
+        "text": "derde"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "3rd"
+  },
+  {
+    "id": "vier-6b8bac",
+    "nl": "vier",
+    "en": "4",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
+      "location": "p. 46"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "vier"
+      },
+      {
+        "label": "Ordinal",
+        "text": "vierde"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "4"
+  },
+  {
+    "id": "vierde-23b317",
+    "nl": "vierde",
+    "en": "4th",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 33"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "vier"
+      },
+      {
+        "label": "Ordinal",
+        "text": "vierde"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "4th"
+  },
+  {
+    "id": "vijf-f982d5",
+    "nl": "vijf",
+    "en": "5",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
+      "location": "p. 42"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "vijf"
+      },
+      {
+        "label": "Ordinal",
+        "text": "vijfde"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "5"
+  },
+  {
+    "id": "vijfde-7b0bc0",
+    "nl": "vijfde",
+    "en": "5th",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 33"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "vijf"
+      },
+      {
+        "label": "Ordinal",
+        "text": "vijfde"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "5th"
+  },
+  {
+    "id": "zes-068e8c",
+    "nl": "zes",
+    "en": "6",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
+      "location": "p. 44"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "zes"
+      },
+      {
+        "label": "Ordinal",
+        "text": "zesde"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "6"
+  },
+  {
+    "id": "zesde-866eb3",
+    "nl": "zesde",
+    "en": "6th",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 33"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "zes"
+      },
+      {
+        "label": "Ordinal",
+        "text": "zesde"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "6th"
+  },
+  {
+    "id": "zeven-14858f",
+    "nl": "zeven",
+    "en": "7",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
+      "location": "p. 43"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "zeven"
+      },
+      {
+        "label": "Ordinal",
+        "text": "zevende"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "7"
+  },
+  {
+    "id": "zevende-e540be",
+    "nl": "zevende",
+    "en": "7th",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 33"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "zeven"
+      },
+      {
+        "label": "Ordinal",
+        "text": "zevende"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "7th"
+  },
+  {
+    "id": "acht-fb33ab",
+    "nl": "acht",
+    "en": "8",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
+      "location": "p. 45"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "acht"
+      },
+      {
+        "label": "Ordinal",
+        "text": "achtste"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "8"
+  },
+  {
+    "id": "achtste-d5182e",
+    "nl": "achtste",
+    "en": "8th",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 33"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "acht"
+      },
+      {
+        "label": "Ordinal",
+        "text": "achtste"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "8th"
+  },
+  {
+    "id": "negen-95ebb9",
+    "nl": "negen",
+    "en": "9",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
+      "location": "p. 35"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "negen"
+      },
+      {
+        "label": "Ordinal",
+        "text": "negende"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "9"
+  },
+  {
+    "id": "negende-630867",
+    "nl": "negende",
+    "en": "9th",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 33"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "negen"
+      },
+      {
+        "label": "Ordinal",
+        "text": "negende"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "9th"
+  },
+  {
+    "id": "tien-4edd77",
+    "nl": "tien",
+    "en": "10",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 14"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "tien"
+      },
+      {
+        "label": "Ordinal",
+        "text": "tiende"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "10"
+  },
+  {
+    "id": "tiende-f2e66a",
+    "nl": "tiende",
+    "en": "10th",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 33"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "tien"
+      },
+      {
+        "label": "Ordinal",
+        "text": "tiende"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "10th"
+  },
+  {
+    "id": "elf-780d84",
+    "nl": "elf",
+    "en": "11",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
+      "location": "p. 18"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "elf"
+      },
+      {
+        "label": "Ordinal",
+        "text": "elfde"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "11"
+  },
+  {
+    "id": "elfde-04792a",
+    "nl": "elfde",
+    "en": "11th",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 33"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "elf"
+      },
+      {
+        "label": "Ordinal",
+        "text": "elfde"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "11th"
+  },
+  {
+    "id": "twaalf-5373cf",
+    "nl": "twaalf",
+    "en": "12",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 8"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "twaalf"
+      },
+      {
+        "label": "Ordinal",
+        "text": "twaalfde"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "12"
+  },
+  {
+    "id": "twaalfde-d6322b",
+    "nl": "twaalfde",
+    "en": "12th",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 33"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "twaalf"
+      },
+      {
+        "label": "Ordinal",
+        "text": "twaalfde"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "12th"
+  },
+  {
+    "id": "dertien-c4ef4c",
+    "nl": "dertien",
+    "en": "13",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 9_29-10-26.pdf",
+      "location": "p. 37"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "dertien"
+      },
+      {
+        "label": "Ordinal",
+        "text": "dertiende"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "13"
+  },
+  {
+    "id": "dertiende-05430f",
+    "nl": "dertiende",
+    "en": "13th",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 33"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "dertien"
+      },
+      {
+        "label": "Ordinal",
+        "text": "dertiende"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "13th"
+  },
+  {
+    "id": "veertien-3dac07",
+    "nl": "veertien",
+    "en": "14",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 9_29-10-26.pdf",
+      "location": "p. 37"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "veertien"
+      },
+      {
+        "label": "Ordinal",
+        "text": "veertiende"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "14"
+  },
+  {
+    "id": "veertiende-ca1490",
+    "nl": "veertiende",
+    "en": "14th",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 33"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "veertien"
+      },
+      {
+        "label": "Ordinal",
+        "text": "veertiende"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "14th"
+  },
+  {
+    "id": "vijftien-93422b",
+    "nl": "vijftien",
+    "en": "15",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 9_29-10-26.pdf",
+      "location": "p. 37"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "vijftien"
+      },
+      {
+        "label": "Ordinal",
+        "text": "vijftiende"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "15"
+  },
+  {
+    "id": "vijftiende-b327b6",
+    "nl": "vijftiende",
+    "en": "15th",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 33"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "vijftien"
+      },
+      {
+        "label": "Ordinal",
+        "text": "vijftiende"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "15th"
+  },
+  {
+    "id": "zestien-8f24e1",
+    "nl": "zestien",
+    "en": "16",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 9_29-10-26.pdf",
+      "location": "p. 37"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "zestien"
+      },
+      {
+        "label": "Ordinal",
+        "text": "zestiende"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "16"
+  },
+  {
+    "id": "zestiende-bb26fd",
+    "nl": "zestiende",
+    "en": "16th",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 33"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "zestien"
+      },
+      {
+        "label": "Ordinal",
+        "text": "zestiende"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "16th"
+  },
+  {
+    "id": "zeventien-f20b36",
+    "nl": "zeventien",
+    "en": "17",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 43"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "zeventien"
+      },
+      {
+        "label": "Ordinal",
+        "text": "zeventiende"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "17"
+  },
+  {
+    "id": "zeventiende-06ca1a",
+    "nl": "zeventiende",
+    "en": "17th",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 33"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "zeventien"
+      },
+      {
+        "label": "Ordinal",
+        "text": "zeventiende"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "17th"
+  },
+  {
+    "id": "achttien-0161bb",
+    "nl": "achttien",
+    "en": "18",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 9_29-10-26.pdf",
+      "location": "p. 37"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "achttien"
+      },
+      {
+        "label": "Ordinal",
+        "text": "achttiende"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "18"
+  },
+  {
+    "id": "achttiende-31188c",
+    "nl": "achttiende",
+    "en": "18th",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 33"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "achttien"
+      },
+      {
+        "label": "Ordinal",
+        "text": "achttiende"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "18th"
+  },
+  {
+    "id": "negentien-4b2b8e",
+    "nl": "negentien",
+    "en": "19",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 42"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "negentien"
+      },
+      {
+        "label": "Ordinal",
+        "text": "negentiende"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "19"
+  },
+  {
+    "id": "negentiende-966a32",
+    "nl": "negentiende",
+    "en": "19th",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 33"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "negentien"
+      },
+      {
+        "label": "Ordinal",
+        "text": "negentiende"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "19th"
+  },
+  {
+    "id": "twintig-b89da7",
+    "nl": "twintig",
+    "en": "20",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 14"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "twintig"
+      },
+      {
+        "label": "Ordinal",
+        "text": "twintigste"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "20"
+  },
+  {
+    "id": "twintigste-61ad8c",
+    "nl": "twintigste",
+    "en": "20th",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 34"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "twintig"
+      },
+      {
+        "label": "Ordinal",
+        "text": "twintigste"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "20th"
+  },
+  {
+    "id": "eenentwintigste-694128",
+    "nl": "eenentwintigste",
+    "en": "21st",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 34"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "eenentwintig"
+      },
+      {
+        "label": "Ordinal",
+        "text": "eenentwintigste"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "21st"
+  },
+  {
+    "id": "tweeentwintig-11f41e",
+    "nl": "tweeëntwintig",
+    "en": "22",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 9_29-10-26.pdf",
+      "location": "p. 41"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "tweeëntwintig"
+      },
+      {
+        "label": "Ordinal",
+        "text": "tweeëntwintigste"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "22"
+  },
+  {
+    "id": "tweeentwintigste-e66271",
+    "nl": "tweeëntwintigste",
+    "en": "22nd",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 34"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "tweeëntwintig"
+      },
+      {
+        "label": "Ordinal",
+        "text": "tweeëntwintigste"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "22nd"
+  },
+  {
+    "id": "drieentwintig-174a20",
+    "nl": "drieëntwintig",
+    "en": "23",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
+      "location": "p. 39"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "drieëntwintig"
+      },
+      {
+        "label": "Ordinal",
+        "text": "drieëntwintigste"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "23"
+  },
+  {
+    "id": "drieentwintigste-62d991",
+    "nl": "drieëntwintigste",
+    "en": "23rd",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 34"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "drieëntwintig"
+      },
+      {
+        "label": "Ordinal",
+        "text": "drieëntwintigste"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "23rd"
+  },
+  {
+    "id": "dertig-7c4ed8",
+    "nl": "dertig",
+    "en": "30",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 14"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "dertig"
+      },
+      {
+        "label": "Ordinal",
+        "text": "dertigste"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "30"
+  },
+  {
+    "id": "dertigste-6b6250",
+    "nl": "dertigste",
+    "en": "30th",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 34"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "dertig"
+      },
+      {
+        "label": "Ordinal",
+        "text": "dertigste"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "30th"
+  },
+  {
+    "id": "honderd-951cb6",
+    "nl": "honderd",
+    "en": "100",
+    "kind": "cardinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 8"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "honderd"
+      },
+      {
+        "label": "Ordinal",
+        "text": "honderdste"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "100"
+  },
+  {
+    "id": "honderdste-0f677b",
+    "nl": "honderdste",
+    "en": "100th",
+    "kind": "ordinal",
+    "topic": "Numbers",
+    "source": {
+      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
+      "location": "p. 39"
+    },
+    "forms": [
+      {
+        "label": "Cardinal",
+        "text": "honderd"
+      },
+      {
+        "label": "Ordinal",
+        "text": "honderdste"
+      }
+    ],
+    "groups": [
+      "dates"
+    ],
+    "numeral": "100th"
+  }
+]

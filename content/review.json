@@ -1,0 +1,177 @@
+{
+  "time-preps": {
+    "title": "Time prepositions",
+    "rows": [
+      [
+        "Day",
+        "op maandag",
+        "on Monday"
+      ],
+      [
+        "Clock time",
+        "om acht uur",
+        "at eight o’clock"
+      ],
+      [
+        "Month",
+        "in december",
+        "in December"
+      ]
+    ]
+  },
+  "place-preps": {
+    "title": "Place and direction",
+    "rows": [
+      [
+        "City",
+        "in Leuven",
+        "in Leuven"
+      ],
+      [
+        "Surface",
+        "op tafel",
+        "on the table"
+      ],
+      [
+        "Destination",
+        "naar Brussel",
+        "to Brussels"
+      ]
+    ]
+  },
+  "family": {
+    "title": "Family",
+    "rows": [
+      [
+        "",
+        "de broer",
+        "brother"
+      ],
+      [
+        "",
+        "de zus",
+        "sister"
+      ],
+      [
+        "",
+        "de ouders",
+        "parents"
+      ]
+    ]
+  },
+  "clock": {
+    "title": "Clock words",
+    "rows": [
+      [
+        "",
+        "uur",
+        "hour"
+      ],
+      [
+        "",
+        "kwart",
+        "quarter"
+      ],
+      [
+        "",
+        "half",
+        "half"
+      ]
+    ]
+  },
+  "dates": {
+    "title": "Dates and order",
+    "rows": [
+      [
+        "",
+        "datum",
+        "date"
+      ],
+      [
+        "",
+        "verjaardag",
+        "birthday"
+      ],
+      [
+        "",
+        "verdieping",
+        "floor or storey"
+      ]
+    ]
+  },
+  "size": {
+    "title": "Opposites",
+    "rows": [
+      [
+        "",
+        "groot",
+        "big"
+      ],
+      [
+        "",
+        "klein",
+        "small"
+      ]
+    ]
+  },
+  "temperature": {
+    "title": "Opposites",
+    "rows": [
+      [
+        "",
+        "warm",
+        "warm"
+      ],
+      [
+        "",
+        "koud",
+        "cold"
+      ]
+    ]
+  },
+  "price": {
+    "title": "Opposites",
+    "rows": [
+      [
+        "",
+        "duur",
+        "expensive"
+      ],
+      [
+        "",
+        "goedkoop",
+        "cheap"
+      ]
+    ]
+  },
+  "difficulty": {
+    "title": "Opposites",
+    "rows": [
+      [
+        "",
+        "moeilijk",
+        "difficult"
+      ],
+      [
+        "",
+        "gemakkelijk",
+        "easy"
+      ]
+    ]
+  },
+  "age": {
+    "title": "Opposites",
+    "rows": [
+      [
+        "",
+        "oud",
+        "old"
+      ],
+      [
+        "",
+        "jong",
+        "young"
+      ]
+    ]
+  }
+}
