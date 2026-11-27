@@ -250,6 +250,7 @@ def main():
     actual_dutch, actual_english = source_context(idx, records, args.cache)
     direct, inflected, base = dictionary(args.dictionary, set(idx))
     output = ROOT / "content/words.json"
+    meaning_overrides = read(ROOT / "content/course-meanings.json")
     deck = [word for word in read(output) if not word.get("dictionary") and not word.get("imported")]
     existing = {norm(word["nl"]) for word in deck}
     for word in deck:
@@ -328,7 +329,8 @@ def main():
             visual_supplements += 1
             report.writerow([form, "visual-supplement", "authored", source["file"], source["location"], "Directly read from the source"])
     if args.write:
-        output.write_text(json.dumps(deck + collected, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        cards = [{**card, **meaning_overrides.get(card["id"], {})} for card in deck + collected]
+        output.write_text(json.dumps(cards, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         previous = read(ROOT / "content/coverage.json")
         snapshot = read(args.index_dir / "coverage.json")
         candidate_statuses = ("dutch-candidate", "expression", "visually-verified")

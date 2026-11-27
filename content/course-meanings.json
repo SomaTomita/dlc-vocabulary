@@ -1,0 +1,583 @@
+{
+  "course-037aeaeaf4bbf26d": {
+    "en": "on (with a day or date); on top of",
+    "kind": "preposition",
+    "groups": [
+      "time-preps"
+    ]
+  },
+  "course-074f08fb33c3b655": {
+    "en": "to call (by phone); to ring"
+  },
+  "course-1994d77b7cf4860a": {
+    "en": "pull; put on or take off with aan or uit",
+    "nl": "trek",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "trekken"
+      }
+    ],
+    "dictionary": "trekken"
+  },
+  "course-218ae6b44966c8a9": {
+    "en": "drink (ik or command)",
+    "nl": "drink",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "drinken"
+      }
+    ],
+    "dictionary": "drinken"
+  },
+  "course-2448e3fd93b22b6d": {
+    "en": "stands; is written or located",
+    "nl": "staat",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "staan"
+      }
+    ],
+    "dictionary": "staan"
+  },
+  "course-254637f72efcddb6": {
+    "en": "walk (ik or command)",
+    "nl": "loop",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "lopen"
+      }
+    ],
+    "dictionary": "lopen"
+  },
+  "course-2abd3a9b9056adea": {
+    "en": "live or reside (ik)",
+    "nl": "woon",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "wonen"
+      }
+    ],
+    "dictionary": "wonen"
+  },
+  "course-2b74f271f08c63a3": {
+    "en": "look for (ik or command)",
+    "nl": "zoek",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "zoeken"
+      }
+    ],
+    "dictionary": "zoeken"
+  },
+  "course-2c2b76080bad0b14": {
+    "en": "smoke (ik or command)",
+    "nl": "rook",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "roken"
+      }
+    ],
+    "dictionary": "roken"
+  },
+  "course-2e23f8b81d15612b": {
+    "en": "at (with a clock time)"
+  },
+  "course-330d9bed0e5551d6": {
+    "en": "job; position"
+  },
+  "course-39a4520b12f0f018": {
+    "en": "use (ik or command)",
+    "nl": "gebruik",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "gebruiken"
+      }
+    ],
+    "dictionary": "gebruiken"
+  },
+  "course-41ce4b07d17d772e": {
+    "en": "spell (ik or command)",
+    "nl": "spel",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "spellen"
+      }
+    ],
+    "dictionary": "spellen"
+  },
+  "course-482389584f0d112b": {
+    "en": "asks (a question); introduces (stelt iemand voor)",
+    "nl": "stelt",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "stellen"
+      }
+    ],
+    "dictionary": "stellen"
+  },
+  "course-503126878d17fcd6": {
+    "en": "off; separable particle in een examen afleggen (to take an exam)"
+  },
+  "course-517c6ecec57d1d4a": {
+    "en": "will (je, jij or u)",
+    "nl": "zult",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "zullen"
+      }
+    ],
+    "dictionary": "zullen"
+  },
+  "course-532472d37d14805e": {
+    "en": "reads; are reading (je)",
+    "nl": "leest",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "lezen"
+      }
+    ],
+    "dictionary": "lezen"
+  },
+  "course-5871c5f5d92dc15c": {
+    "en": "more",
+    "dictionary": "meer"
+  },
+  "course-5f4f045d317c6bb4": {
+    "en": "calls by phone",
+    "nl": "belt",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "bellen"
+      }
+    ],
+    "dictionary": "bellen"
+  },
+  "course-5f7a7782ce42501d": {
+    "en": "from (country or place of origin); out of",
+    "kind": "preposition"
+  },
+  "course-6351825030155836": {
+    "en": "already; by now"
+  },
+  "course-65065c1424b06e0a": {
+    "en": "call out (ik or command)",
+    "nl": "roep",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "roepen"
+      }
+    ],
+    "dictionary": "roepen"
+  },
+  "course-6700869c8ff7480e": {
+    "en": "am (ik); are (je or jij after the verb)",
+    "nl": "ben",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "zijn"
+      }
+    ],
+    "dictionary": "zijn"
+  },
+  "course-68419b272cd4eb1b": {
+    "en": "the (neuter article); it"
+  },
+  "course-72231043bc1807e6": {
+    "en": "post (ik or command)",
+    "nl": "post",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "posten"
+      }
+    ],
+    "dictionary": "posten"
+  },
+  "course-72d7027887e4341e": {
+    "en": "put or place (ik or command)",
+    "nl": "zet",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "zetten"
+      }
+    ],
+    "dictionary": "zetten"
+  },
+  "course-763c741afee91d4b": {
+    "en": "at midday; in the afternoon"
+  },
+  "course-77a8bfd3bc411f3a": {
+    "en": "sleep (ik or command)",
+    "nl": "slaap",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "slapen"
+      }
+    ],
+    "dictionary": "slapen"
+  },
+  "course-799ef92a11af918e": {
+    "en": "do (ik or command)",
+    "nl": "doe",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "doen"
+      }
+    ],
+    "dictionary": "doen"
+  },
+  "course-7c64c18dbe11b4ba": {
+    "en": "give (ik or command)",
+    "nl": "geef",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "geven"
+      }
+    ],
+    "dictionary": "geven"
+  },
+  "course-810a06d65455200f": {
+    "en": "hear (ik or command)",
+    "nl": "hoor",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "horen"
+      }
+    ],
+    "dictionary": "horen"
+  },
+  "course-82dcc8e2b25f3a72": {
+    "en": "at (an institution); on or attached to"
+  },
+  "course-885fe2169ca8ee63": {
+    "en": "buy (ik or command)",
+    "nl": "koop",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "kopen"
+      }
+    ],
+    "dictionary": "kopen"
+  },
+  "course-88c0a2817d5440d9": {
+    "en": "free; off (from work or school)"
+  },
+  "course-8ccb033c0e48b27f": {
+    "en": "measure (ik or command)",
+    "nl": "meet",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "meten"
+      }
+    ],
+    "dictionary": "meten"
+  },
+  "course-90038b3e25c48431": {
+    "en": "are (je, jij or u)",
+    "nl": "bent",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "zijn"
+      }
+    ],
+    "dictionary": "zijn"
+  },
+  "course-9074952e6a25b155": {
+    "en": "think or find something a certain way (ik vind)",
+    "nl": "vind",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "vinden"
+      }
+    ],
+    "dictionary": "vinden"
+  },
+  "course-9237acf929aadbf0": {
+    "en": "talk or speak (present form)",
+    "nl": "praat",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "praten"
+      }
+    ],
+    "dictionary": "praten"
+  },
+  "course-929c3fbefd3b3626": {
+    "en": "children"
+  },
+  "course-93b761aa470d86fb": {
+    "en": "better",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "goed"
+      }
+    ]
+  },
+  "course-94bb4fb87acf9557": {
+    "en": "preparation",
+    "nl": "de voorbereiding"
+  },
+  "course-99eaec408595c902": {
+    "en": "ask (a question); suggest (iets voorstellen)",
+    "nl": "stel",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "stellen"
+      }
+    ],
+    "dictionary": "stellen"
+  },
+  "course-a2f45baa601696cc": {
+    "en": "can; be able to",
+    "nl": "kan",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "kunnen"
+      }
+    ],
+    "dictionary": "kunnen"
+  },
+  "course-a5698b27e5024589": {
+    "en": "is situated; lies",
+    "nl": "ligt",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "liggen"
+      }
+    ],
+    "dictionary": "liggen"
+  },
+  "course-af5652d95e6f2840": {
+    "en": "say (ik or command)",
+    "nl": "zeg",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "zeggen"
+      }
+    ],
+    "dictionary": "zeggen"
+  },
+  "course-b20a7d254bdab4ee": {
+    "en": "would (singular conditional)",
+    "nl": "zou",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "zullen"
+      }
+    ],
+    "dictionary": "zullen"
+  },
+  "course-b63b99f6383ba713": {
+    "en": "was (singular past of zijn)",
+    "nl": "was",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "zijn"
+      }
+    ],
+    "dictionary": "zijn"
+  },
+  "course-b9e16c3eee5a495c": {
+    "en": "shall or will; used to make a suggestion"
+  },
+  "course-ba31188f8190c477": {
+    "en": "work (ik or command)",
+    "nl": "werk",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "werken"
+      }
+    ],
+    "dictionary": "werken"
+  },
+  "course-bce4c6057ef0a2dd": {
+    "en": "look or watch (ik or command)",
+    "nl": "kijk",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "kijken"
+      }
+    ],
+    "dictionary": "kijken"
+  },
+  "course-be99d7122a591433": {
+    "en": "sit; be seated",
+    "nl": "zit",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "zitten"
+      }
+    ],
+    "dictionary": "zitten"
+  },
+  "course-c25fc7c69ca0173f": {
+    "en": "sisters"
+  },
+  "course-c2a8a0028ad7d584": {
+    "en": "textbook"
+  },
+  "course-cb801e60d8a1f3c1": {
+    "en": "mock exam",
+    "nl": "het proefexamen"
+  },
+  "course-ce89241f600c9ea1": {
+    "en": "pencils"
+  },
+  "course-d1271b8d299a2c65": {
+    "en": "teeth"
+  },
+  "course-d3a9a2f814c063a9": {
+    "en": "weather",
+    "nl": "het weer",
+    "kind": "noun",
+    "forms": []
+  },
+  "course-e2e631e8a8999eb9": {
+    "en": "know (a fact)",
+    "nl": "weet",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "weten"
+      }
+    ],
+    "dictionary": "weten"
+  },
+  "course-e8279948dbb73e50": {
+    "en": "is raining; rains",
+    "nl": "regent",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "regenen"
+      }
+    ],
+    "dictionary": "regenen"
+  },
+  "course-eda5a835fd21f514": {
+    "en": "to ask (a question); to place"
+  },
+  "course-ee7637bd419d4a00": {
+    "en": "as (in “as lunch”); if or when"
+  },
+  "course-f3ed26b0bf5802c1": {
+    "en": "come (ik or command)",
+    "nl": "kom",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "komen"
+      }
+    ],
+    "dictionary": "komen"
+  },
+  "course-f8f0b056d2457ac6": {
+    "en": "love or like (ik hou van)",
+    "nl": "hou",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "houden"
+      }
+    ],
+    "dictionary": "houden"
+  },
+  "course-fa51fd49abf67705": {
+    "en": "is (hij, zij or het)",
+    "nl": "is",
+    "kind": "verb",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "zijn"
+      }
+    ],
+    "dictionary": "zijn"
+  },
+  "course-fbdb8f16d9c03190": {
+    "en": "brothers"
+  },
+  "course-ff96bd8f8884a4dd": {
+    "en": "last; final; most recent"
+  },
+  "vinden-5124fa": {
+    "en": "to find; to think or consider"
+  },
+  "zijn-bb07d1": {
+    "en": "to be; his (possessive)"
+  }
+}

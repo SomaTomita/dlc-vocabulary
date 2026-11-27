@@ -443,5 +443,90 @@
         "below"
       ]
     ]
+  },
+  "irregular-plurals": {
+    "title": "Exceptions · irregular plurals",
+    "members": [
+      "het kind",
+      "de stad",
+      "het ei"
+    ],
+    "rows": [
+      [
+        "het kind",
+        "de kinderen",
+        "children"
+      ],
+      [
+        "de stad",
+        "de steden",
+        "cities"
+      ],
+      [
+        "het ei",
+        "de eieren",
+        "eggs"
+      ]
+    ]
+  },
+  "irregular-verbs": {
+    "title": "Exceptions · common irregular verbs",
+    "members": [
+      "zijn",
+      "hebben",
+      "gaan",
+      "doen"
+    ],
+    "rows": [
+      [
+        "zijn · past participle",
+        "geweest",
+        "been"
+      ],
+      [
+        "hebben · past participle",
+        "gehad",
+        "had"
+      ],
+      [
+        "gaan · past participle",
+        "gegaan",
+        "gone"
+      ],
+      [
+        "doen · past participle",
+        "gedaan",
+        "done"
+      ]
+    ]
+  },
+  "irregular-ordinals": {
+    "title": "Exceptions · first, third and eighth",
+    "members": [
+      "een",
+      "één",
+      "drie",
+      "acht",
+      "eerste",
+      "derde",
+      "achtste"
+    ],
+    "rows": [
+      [
+        "1",
+        "eerste",
+        "first"
+      ],
+      [
+        "3",
+        "derde",
+        "third"
+      ],
+      [
+        "8",
+        "achtste",
+        "eighth"
+      ]
+    ]
   }
 }

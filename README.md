@@ -2,7 +2,7 @@
 
 [Open practice](https://somatomita.github.io/dlc-vocabulary/)
 
-The deck has 2,192 study entries, including larger numbers from Lessons 9 and 10. A source review of 807 flagged readings confirmed 35 for the deck and ruled out 633. Another 139 OCR-only readings lacked source confirmation and were left out. Checking the original pages also recovered five entries outside that review set. The source index records 2,191 Dutch candidates and selected expressions.
+The deck has 2,178 study entries, including larger numbers from Lessons 9 and 10. A source review of 807 flagged readings confirmed 35 for the deck and ruled out 633. Another 139 OCR-only readings lacked source confirmation and were left out. Checking the original pages also recovered five entries outside that review set. The source index records 2,191 Dutch candidates and selected expressions.
 
 ## Development
 
@@ -45,10 +45,11 @@ python3 scripts/audit_extraction.py \
   --source-root "$course" --data "$work/data-work" --require-ocr
 python3 scripts/import-course.py "$work/data-work" "$kaikki" \
   --cache "$work/cache" --audit "$work/course-audit.tsv" "${ocr[@]}" --write
+python3 scripts/build-quiz-alternatives.py "$kaikki"
 ```
 
-The import preserves manually authored cards and stable IDs, matches observed word forms to dictionary entries, and records an outcome for every observation. Put corrections in `content/course-glossary.json`. Generate missing clips and run `npm run build` before publishing.
+The import preserves manually authored cards and stable IDs, matches observed word forms to dictionary entries, and records an outcome for every observation. Put extraction corrections in `content/course-glossary.json` and source-checked card meanings in `content/course-meanings.json`. Generate missing clips and run `npm run build` before publishing.
 
 ### Vocabulary attribution
 
-The dictionary-derived content in `content/words.json` is adapted from [English Wiktionary contributors](https://en.wiktionary.org/) through the [Kaikki Dutch export](https://kaikki.org/dictionary/Dutch/) and is available under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Adaptations include selecting course forms, shortening glosses and adding grammar labels. Each dictionary-derived card links to its source entry from **Word details**.
+The dictionary-derived content in `content/words.json` and `content/quiz-alternatives.json` is adapted from [English Wiktionary contributors](https://en.wiktionary.org/) through the [Kaikki Dutch export](https://kaikki.org/dictionary/Dutch/) and is available under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Adaptations include selecting course forms, shortening glosses, adding grammar labels and indexing overlapping meanings and pronunciations. Each dictionary-derived card links to its source entry from **Word details**.

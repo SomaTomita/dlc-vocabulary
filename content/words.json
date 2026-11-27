@@ -1548,7 +1548,7 @@
   {
     "id": "zijn-bb07d1",
     "nl": "zijn",
-    "en": "to be",
+    "en": "to be; his (possessive)",
     "kind": "verb",
     "topic": "Verbs",
     "source": {
@@ -2020,7 +2020,7 @@
   {
     "id": "vinden-5124fa",
     "nl": "vinden",
-    "en": "to find",
+    "en": "to find; to think or consider",
     "kind": "verb",
     "topic": "Verbs",
     "source": {
@@ -4236,7 +4236,7 @@
   {
     "nl": "'s middags",
     "kind": "word",
-    "en": "at noon",
+    "en": "at midday; in the afternoon",
     "forms": [],
     "groups": [],
     "topic": "Course vocabulary",
@@ -4276,23 +4276,9 @@
     "imported": true
   },
   {
-    "nl": "Aa",
-    "kind": "word",
-    "en": "The name of dozens of small rivers and streams; also a common element in many derived hydronyms",
-    "forms": [],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "Aa",
-    "id": "course-961b6dd3ede3cb8e",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 8_27-10-26.pdf",
-      "location": "p. 38"
-    }
-  },
-  {
     "nl": "aan",
     "kind": "preposition",
-    "en": "on (positioned at the outer surface of; attached to)",
+    "en": "at (an institution); on or attached to",
     "forms": [],
     "groups": [
       "place-preps"
@@ -4729,20 +4715,6 @@
     }
   },
   {
-    "nl": "ad",
-    "kind": "preposition",
-    "en": "costing, totaling",
-    "forms": [],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "ad",
-    "id": "course-70ba33708cbfb103",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 8_27-10-26.pdf",
-      "location": "p. 92"
-    }
-  },
-  {
     "nl": "het adjectief",
     "kind": "noun",
     "en": "adjective",
@@ -4816,7 +4788,7 @@
   {
     "nl": "af",
     "kind": "word",
-    "en": "off",
+    "en": "off; separable particle in een examen afleggen (to take an exam)",
     "forms": [],
     "groups": [],
     "topic": "Course vocabulary",
@@ -4901,7 +4873,7 @@
   {
     "nl": "al",
     "kind": "word",
-    "en": "all, all of",
+    "en": "already; by now",
     "forms": [],
     "groups": [],
     "topic": "Course vocabulary",
@@ -5032,7 +5004,7 @@
   {
     "nl": "als",
     "kind": "word",
-    "en": "if, when",
+    "en": "as (in “as lunch”); if or when",
     "forms": [],
     "groups": [],
     "topic": "Course vocabulary",
@@ -5524,25 +5496,6 @@
     }
   },
   {
-    "nl": "de arts",
-    "kind": "noun",
-    "en": "physician, doctor",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de artsen"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "arts",
-    "id": "course-907decfcc13a76fa",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 6_20-10-26.pdf",
-      "location": "p. 82"
-    }
-  },
-  {
     "nl": "assistente",
     "kind": "noun",
     "en": "assistant, person who assists, aid (inflected form)",
@@ -5862,7 +5815,7 @@
   {
     "nl": "de baan",
     "kind": "noun",
-    "en": "a road, way, path",
+    "en": "job; position",
     "forms": [
       {
         "label": "Plural",
@@ -6078,29 +6031,6 @@
     "imported": true
   },
   {
-    "nl": "bars",
-    "kind": "adjective",
-    "en": "stern, strict",
-    "forms": [
-      {
-        "label": "Comparative",
-        "text": "barser"
-      },
-      {
-        "label": "Superlative",
-        "text": "meest bars"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "bars",
-    "id": "course-8556ab2559634a19",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
-      "location": "p. 81"
-    }
-  },
-  {
     "nl": "de bas",
     "kind": "noun",
     "en": "bass (low voice or instrument)",
@@ -6202,25 +6132,6 @@
     "source": {
       "file": "Dutch Language and Cultures_Les 2_01-10-26.pdf",
       "location": "p. 41"
-    }
-  },
-  {
-    "nl": "de beer",
-    "kind": "noun",
-    "en": "a bear, any member of the family Ursidae",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de beren"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "beer",
-    "id": "course-1d8b4cf854cd42f4",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
-      "location": "p. 79"
     }
   },
   {
@@ -6536,7 +6447,7 @@
   {
     "nl": "bellen",
     "kind": "verb",
-    "en": "to ring, like using a bell",
+    "en": "to call (by phone); to ring",
     "forms": [
       {
         "label": "Past participle",
@@ -6553,18 +6464,18 @@
     }
   },
   {
-    "nl": "de belt",
-    "kind": "noun",
-    "en": "a dumpsite, notably for waste products",
+    "nl": "belt",
+    "kind": "verb",
+    "en": "calls by phone",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de belten"
+        "label": "Base form",
+        "text": "bellen"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "belt",
+    "dictionary": "bellen",
     "id": "course-5f4f045d317c6bb4",
     "source": {
       "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
@@ -6574,7 +6485,7 @@
   {
     "nl": "ben",
     "kind": "verb",
-    "en": "to be, to exist (inflected form)",
+    "en": "am (ik); are (je or jij after the verb)",
     "forms": [
       {
         "label": "Base form",
@@ -6607,7 +6518,7 @@
   {
     "nl": "bent",
     "kind": "verb",
-    "en": "to be, to exist (inflected form)",
+    "en": "are (je, jij or u)",
     "forms": [
       {
         "label": "Base form",
@@ -6942,8 +6853,13 @@
   {
     "nl": "beter",
     "kind": "adjective",
-    "en": "not sick anymore; recovered (from a disease)",
-    "forms": [],
+    "en": "better",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "goed"
+      }
+    ],
     "groups": [],
     "topic": "Course vocabulary",
     "dictionary": "beter",
@@ -7064,29 +6980,6 @@
     "source": {
       "file": "Dutch Language and Cultures_Les 12_19-11-26.pdf",
       "location": "p. 20"
-    }
-  },
-  {
-    "nl": "bi",
-    "kind": "adjective",
-    "en": "bisexual",
-    "forms": [
-      {
-        "label": "Comparative",
-        "text": "meer bi"
-      },
-      {
-        "label": "Superlative",
-        "text": "meest bi"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "bi",
-    "id": "course-d9065d6da185ec28",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
-      "location": "p. 60"
     }
   },
   {
@@ -8214,7 +8107,7 @@
   {
     "nl": "broers",
     "kind": "noun",
-    "en": "brother (male sibling) (plural)",
+    "en": "brothers",
     "forms": [
       {
         "label": "Base form",
@@ -10954,25 +10847,6 @@
     }
   },
   {
-    "nl": "de do",
-    "kind": "noun",
-    "en": "do, the musical note",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de do's"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "do",
-    "id": "course-ac0b52a2ae6ef999",
-    "source": {
-      "file": "Dutch Language and Cultures 2026 semester 1_PRACTICAL INFORMATION.pdf",
-      "location": "p. 1"
-    }
-  },
-  {
     "nl": "de dobbelsteen",
     "kind": "noun",
     "en": "dice, polyhedron used in games of chance",
@@ -11049,18 +10923,18 @@
     }
   },
   {
-    "nl": "de doe",
-    "kind": "noun",
-    "en": "a festival of song and dance organised and performed by and for enslaved people",
+    "nl": "doe",
+    "kind": "verb",
+    "en": "do (ik or command)",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de doe's"
+        "label": "Base form",
+        "text": "doen"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "doe",
+    "dictionary": "doen",
     "id": "course-799ef92a11af918e",
     "source": {
       "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
@@ -11136,20 +11010,6 @@
     "source": {
       "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
       "location": "p. 61"
-    }
-  },
-  {
-    "nl": "Don",
-    "kind": "word",
-    "en": "Don",
-    "forms": [],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "Don",
-    "id": "course-4a2326c64ab2287e",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 8_27-10-26.pdf",
-      "location": "p. 92"
     }
   },
   {
@@ -11378,18 +11238,18 @@
     }
   },
   {
-    "nl": "de drink",
-    "kind": "noun",
-    "en": "a social event were beverages are served, with or without snacks, e.g. as a celebration",
+    "nl": "drink",
+    "kind": "verb",
+    "en": "drink (ik or command)",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de drinks"
+        "label": "Base form",
+        "text": "drinken"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "drink",
+    "dictionary": "drinken",
     "id": "course-218ae6b44966c8a9",
     "source": {
       "file": "Deel 2_Les 6_Negatie_AB spreekoefening.pdf",
@@ -12460,25 +12320,6 @@
     "source": {
       "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
       "location": "p. 32"
-    }
-  },
-  {
-    "nl": "de ex",
-    "kind": "noun",
-    "en": "ex (former partner)",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de exen"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "ex",
-    "id": "course-5312fb609f603847",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 2_01-10-26.pdf",
-      "location": "p. 59"
     }
   },
   {
@@ -13641,18 +13482,18 @@
     }
   },
   {
-    "nl": "het gebruik",
-    "kind": "noun",
-    "en": "use",
+    "nl": "gebruik",
+    "kind": "verb",
+    "en": "use (ik or command)",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de gebruiken"
+        "label": "Base form",
+        "text": "gebruiken"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "gebruik",
+    "dictionary": "gebruiken",
     "id": "course-39a4520b12f0f018",
     "source": {
       "file": "Dutch Language and Cultures_Les 12_19-11-26.pdf",
@@ -13698,18 +13539,18 @@
     }
   },
   {
-    "nl": "de geef",
-    "kind": "noun",
-    "en": "gift",
+    "nl": "geef",
+    "kind": "verb",
+    "en": "give (ik or command)",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de geven"
+        "label": "Base form",
+        "text": "geven"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "geef",
+    "dictionary": "geven",
     "id": "course-7c64c18dbe11b4ba",
     "source": {
       "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
@@ -15466,7 +15307,7 @@
   {
     "nl": "het",
     "kind": "word",
-    "en": "it; third-person singular neuter subjective personal pronoun",
+    "en": "the (neuter article); it",
     "forms": [],
     "groups": [],
     "topic": "Course vocabulary",
@@ -15939,13 +15780,18 @@
     }
   },
   {
-    "nl": "de hoor",
-    "kind": "noun",
-    "en": "only used in hoor en wederhoor",
-    "forms": [],
+    "nl": "hoor",
+    "kind": "verb",
+    "en": "hear (ik or command)",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "horen"
+      }
+    ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "hoor",
+    "dictionary": "horen",
     "id": "course-810a06d65455200f",
     "source": {
       "file": "Dutch Language and Cultures_Les 12_19-11-26.pdf",
@@ -16025,12 +15871,17 @@
   },
   {
     "nl": "hou",
-    "kind": "adjective",
-    "en": "friendly, of a favourable disposition",
-    "forms": [],
+    "kind": "verb",
+    "en": "love or like (ik hou van)",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "houden"
+      }
+    ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "hou",
+    "dictionary": "houden",
     "id": "course-f8f0b056d2457ac6",
     "source": {
       "file": "Dutch Language and Cultures_Les 9_29-10-26.pdf",
@@ -17213,7 +17064,7 @@
   {
     "nl": "is",
     "kind": "verb",
-    "en": "to be, to exist (inflected form)",
+    "en": "is (hij, zij or het)",
     "forms": [
       {
         "label": "Base form",
@@ -17960,18 +17811,18 @@
     }
   },
   {
-    "nl": "de kan",
-    "kind": "noun",
-    "en": "jug",
+    "nl": "kan",
+    "kind": "verb",
+    "en": "can; be able to",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de kannen"
+        "label": "Base form",
+        "text": "kunnen"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "kan",
+    "dictionary": "kunnen",
     "id": "course-a2f45baa601696cc",
     "source": {
       "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
@@ -18392,13 +18243,18 @@
     }
   },
   {
-    "nl": "de kijk",
-    "kind": "noun",
-    "en": "view, opinion (way of understanding or looking at something)",
-    "forms": [],
+    "nl": "kijk",
+    "kind": "verb",
+    "en": "look or watch (ik or command)",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "kijken"
+      }
+    ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "kijk",
+    "dictionary": "kijken",
     "id": "course-bce4c6057ef0a2dd",
     "source": {
       "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
@@ -18469,7 +18325,7 @@
   {
     "nl": "kinderen",
     "kind": "noun",
-    "en": "child, kid, non-adult human (plural)",
+    "en": "children",
     "forms": [
       {
         "label": "Base form",
@@ -18925,18 +18781,18 @@
     }
   },
   {
-    "nl": "de kom",
-    "kind": "noun",
-    "en": "bowl",
+    "nl": "kom",
+    "kind": "verb",
+    "en": "come (ik or command)",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de kommen"
+        "label": "Base form",
+        "text": "komen"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "kom",
+    "dictionary": "komen",
     "id": "course-f3ed26b0bf5802c1",
     "source": {
       "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
@@ -19058,18 +18914,18 @@
     }
   },
   {
-    "nl": "de koop",
-    "kind": "noun",
-    "en": "a purchase, bought acquisition",
+    "nl": "koop",
+    "kind": "verb",
+    "en": "buy (ik or command)",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de kopen"
+        "label": "Base form",
+        "text": "kopen"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "koop",
+    "dictionary": "kopen",
     "id": "course-885fe2169ca8ee63",
     "source": {
       "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
@@ -19726,7 +19582,7 @@
   {
     "nl": "laatste",
     "kind": "adjective",
-    "en": "latest, most recent, newest (attributive form)",
+    "en": "last; final; most recent",
     "forms": [
       {
         "label": "Base form",
@@ -20107,18 +19963,18 @@
     "imported": true
   },
   {
-    "nl": "de leest",
-    "kind": "noun",
-    "en": "last (form on which shoes are made or repaired)",
+    "nl": "leest",
+    "kind": "verb",
+    "en": "reads; are reading (je)",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de leesten"
+        "label": "Base form",
+        "text": "lezen"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "leest",
+    "dictionary": "lezen",
     "id": "course-532472d37d14805e",
     "source": {
       "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
@@ -20777,7 +20633,7 @@
   {
     "nl": "ligt",
     "kind": "verb",
-    "en": "to lie; to be lying down (inflected form)",
+    "en": "is situated; lies",
     "forms": [
       {
         "label": "Base form",
@@ -21145,18 +21001,18 @@
     }
   },
   {
-    "nl": "de loop",
-    "kind": "noun",
-    "en": "course, duration",
+    "nl": "loop",
+    "kind": "verb",
+    "en": "walk (ik or command)",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de lopen"
+        "label": "Base form",
+        "text": "lopen"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "loop",
+    "dictionary": "lopen",
     "id": "course-254637f72efcddb6",
     "source": {
       "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
@@ -22195,7 +22051,7 @@
   {
     "nl": "het meer",
     "kind": "noun",
-    "en": "lake",
+    "en": "more",
     "forms": [
       {
         "label": "Plural",
@@ -22269,18 +22125,18 @@
     }
   },
   {
-    "nl": "de meet",
-    "kind": "noun",
-    "en": "the finish line in a competition",
+    "nl": "meet",
+    "kind": "verb",
+    "en": "measure (ik or command)",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de meten"
+        "label": "Base form",
+        "text": "meten"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "meet",
+    "dictionary": "meten",
     "id": "course-8ccb033c0e48b27f",
     "source": {
       "file": "Dutch Language and Cultures_Les 1_29-09-26.pdf",
@@ -24912,7 +24768,7 @@
   {
     "nl": "om",
     "kind": "preposition",
-    "en": "around, about",
+    "en": "at (with a clock time)",
     "forms": [],
     "groups": [
       "time-preps"
@@ -25419,10 +25275,12 @@
   },
   {
     "nl": "op",
-    "kind": "word",
-    "en": "up",
+    "kind": "preposition",
+    "en": "on (with a day or date); on top of",
     "forms": [],
-    "groups": [],
+    "groups": [
+      "time-preps"
+    ],
     "topic": "Course vocabulary",
     "dictionary": "op",
     "id": "course-037aeaeaf4bbf26d",
@@ -27349,17 +27207,17 @@
   },
   {
     "nl": "post",
-    "kind": "noun",
-    "en": "mail",
+    "kind": "verb",
+    "en": "post (ik or command)",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de posten"
+        "label": "Base form",
+        "text": "posten"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "post",
+    "dictionary": "posten",
     "id": "course-72231043bc1807e6",
     "source": {
       "file": "Dutch Language and Cultures_Les 1_29-09-26.pdf",
@@ -27388,7 +27246,7 @@
   {
     "nl": "potloden",
     "kind": "noun",
-    "en": "a pencil (plural)",
+    "en": "pencils",
     "forms": [
       {
         "label": "Base form",
@@ -27424,13 +27282,18 @@
     }
   },
   {
-    "nl": "de praat",
-    "kind": "noun",
-    "en": "talk, talking",
-    "forms": [],
+    "nl": "praat",
+    "kind": "verb",
+    "en": "talk or speak (present form)",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "praten"
+      }
+    ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "praat",
+    "dictionary": "praten",
     "id": "course-9237acf929aadbf0",
     "source": {
       "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
@@ -27759,7 +27622,7 @@
     }
   },
   {
-    "nl": "proefexamen",
+    "nl": "het proefexamen",
     "kind": "noun",
     "en": "mock exam",
     "forms": [],
@@ -28437,18 +28300,18 @@
     }
   },
   {
-    "nl": "de regent",
-    "kind": "noun",
-    "en": "regent, acting head of state in a monarch's place",
+    "nl": "regent",
+    "kind": "verb",
+    "en": "is raining; rains",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de regenten"
+        "label": "Base form",
+        "text": "regenen"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "regent",
+    "dictionary": "regenen",
     "id": "course-e8279948dbb73e50",
     "source": {
       "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
@@ -28826,18 +28689,18 @@
     }
   },
   {
-    "nl": "de roep",
-    "kind": "noun",
-    "en": "call, shout, cry",
+    "nl": "roep",
+    "kind": "verb",
+    "en": "call out (ik or command)",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de roepen"
+        "label": "Base form",
+        "text": "roepen"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "roep",
+    "dictionary": "roepen",
     "id": "course-65065c1424b06e0a",
     "source": {
       "file": "Dutch Language and Cultures_Les 8_27-10-26.pdf",
@@ -29000,13 +28863,18 @@
     }
   },
   {
-    "nl": "de rook",
-    "kind": "noun",
-    "en": "smoke",
-    "forms": [],
+    "nl": "rook",
+    "kind": "verb",
+    "en": "smoke (ik or command)",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "roken"
+      }
+    ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "rook",
+    "dictionary": "roken",
     "id": "course-2c2b76080bad0b14",
     "source": {
       "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
@@ -29952,13 +29820,18 @@
     }
   },
   {
-    "nl": "de slaap",
-    "kind": "noun",
-    "en": "sleep",
-    "forms": [],
+    "nl": "slaap",
+    "kind": "verb",
+    "en": "sleep (ik or command)",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "slapen"
+      }
+    ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "slaap",
+    "dictionary": "slapen",
     "id": "course-77a8bfd3bc411f3a",
     "source": {
       "file": "Deel 2_Les 6_Negatie_AB spreekoefening.pdf",
@@ -30456,18 +30329,18 @@
     }
   },
   {
-    "nl": "het spel",
-    "kind": "noun",
-    "en": "game",
+    "nl": "spel",
+    "kind": "verb",
+    "en": "spell (ik or command)",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de spellen"
+        "label": "Base form",
+        "text": "spellen"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "spel",
+    "dictionary": "spellen",
     "id": "course-41ce4b07d17d772e",
     "source": {
       "file": "Dutch Language and Cultures_Les 1_29-09-26.pdf",
@@ -30773,18 +30646,18 @@
     }
   },
   {
-    "nl": "de staat",
-    "kind": "noun",
-    "en": "state (political entity)",
+    "nl": "staat",
+    "kind": "verb",
+    "en": "stands; is written or located",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de staten"
+        "label": "Base form",
+        "text": "staan"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "staat",
+    "dictionary": "staan",
     "id": "course-2448e3fd93b22b6d",
     "source": {
       "file": "Dutch Language and Cultures_Les 12_19-11-26.pdf",
@@ -31066,18 +30939,18 @@
     }
   },
   {
-    "nl": "het stel",
-    "kind": "noun",
-    "en": "couple, pair",
+    "nl": "stel",
+    "kind": "verb",
+    "en": "ask (a question); suggest (iets voorstellen)",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de stellen"
+        "label": "Base form",
+        "text": "stellen"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "stel",
+    "dictionary": "stellen",
     "id": "course-99eaec408595c902",
     "source": {
       "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
@@ -31087,7 +30960,7 @@
   {
     "nl": "stellen",
     "kind": "verb",
-    "en": "to position; place",
+    "en": "to ask (a question); to place",
     "forms": [
       {
         "label": "Past participle",
@@ -31104,18 +30977,18 @@
     }
   },
   {
-    "nl": "de stelt",
-    "kind": "noun",
-    "en": "stilt (either of two poles with footrests that allow someone to stand or walk above the ground)",
+    "nl": "stelt",
+    "kind": "verb",
+    "en": "asks (a question); introduces (stelt iemand voor)",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de stelten"
+        "label": "Base form",
+        "text": "stellen"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "stelt",
+    "dictionary": "stellen",
     "id": "course-482389584f0d112b",
     "source": {
       "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
@@ -31952,7 +31825,7 @@
   {
     "nl": "tanden",
     "kind": "noun",
-    "en": "natural tooth, more specifically incisor (plural)",
+    "en": "teeth",
     "forms": [
       {
         "label": "Base form",
@@ -32231,7 +32104,7 @@
   {
     "nl": "het tekstboek",
     "kind": "noun",
-    "en": "libretto, book with song texts",
+    "en": "textbook",
     "forms": [
       {
         "label": "Plural",
@@ -33141,18 +33014,18 @@
     }
   },
   {
-    "nl": "de trek",
-    "kind": "noun",
-    "en": "appetite",
+    "nl": "trek",
+    "kind": "verb",
+    "en": "pull; put on or take off with aan or uit",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de trekken"
+        "label": "Base form",
+        "text": "trekken"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "trek",
+    "dictionary": "trekken",
     "id": "course-1994d77b7cf4860a",
     "source": {
       "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
@@ -33528,8 +33401,8 @@
   },
   {
     "nl": "uit",
-    "kind": "word",
-    "en": "out, from the inside to the outside",
+    "kind": "preposition",
+    "en": "from (country or place of origin); out of",
     "forms": [],
     "groups": [],
     "topic": "Course vocabulary",
@@ -33897,20 +33770,6 @@
       "file": "Dutch Language and Cultures_Les 1_29-09-26.pdf",
       "location": "p. 26"
     }
-  },
-  {
-    "nl": "vaneen",
-    "kind": "word",
-    "en": "apart",
-    "forms": [],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "id": "course-72448ebff86b513d",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 12_19-11-26.pdf",
-      "location": "p. 57"
-    },
-    "imported": true
   },
   {
     "nl": "de vang",
@@ -34948,7 +34807,7 @@
   {
     "nl": "vind",
     "kind": "verb",
-    "en": "to find (after searching) (inflected form)",
+    "en": "think or find something a certain way (ik vind)",
     "forms": [
       {
         "label": "Base form",
@@ -35462,7 +35321,7 @@
     }
   },
   {
-    "nl": "voorbereiding",
+    "nl": "de voorbereiding",
     "kind": "noun",
     "en": "preparation",
     "forms": [],
@@ -35879,7 +35738,7 @@
   {
     "nl": "vrij",
     "kind": "adjective",
-    "en": "free; not imprisoned or enslaved",
+    "en": "free; off (from work or school)",
     "forms": [
       {
         "label": "Comparative",
@@ -36334,25 +36193,6 @@
     }
   },
   {
-    "nl": "wan",
-    "kind": "noun",
-    "en": "winnowing basket",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de wannen"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "wan",
-    "id": "course-611f9708e31c66b0",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 8_27-10-26.pdf",
-      "location": "p. 92"
-    }
-  },
-  {
     "nl": "wandel",
     "kind": "verb",
     "en": "to stroll, be on a walk (‘to go for a walk’ = ‘gaan wandelen’) (inflected form)",
@@ -36461,32 +36301,18 @@
     "imported": true
   },
   {
-    "nl": "wars",
-    "kind": "adjective",
-    "en": "disliking, having an aversion",
-    "forms": [],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "wars",
-    "id": "course-2e7af2bf0c17e5a9",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 9_29-10-26.pdf",
-      "location": "p. 60"
-    }
-  },
-  {
-    "nl": "de was",
-    "kind": "noun",
-    "en": "wash, washing, laundry (act of cleaning with water)",
+    "nl": "was",
+    "kind": "verb",
+    "en": "was (singular past of zijn)",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de wassen"
+        "label": "Base form",
+        "text": "zijn"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "was",
+    "dictionary": "zijn",
     "id": "course-b63b99f6383ba713",
     "source": {
       "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
@@ -36740,9 +36566,9 @@
     }
   },
   {
-    "nl": "weer",
-    "kind": "word",
-    "en": "again, once more",
+    "nl": "het weer",
+    "kind": "noun",
+    "en": "weather",
     "forms": [],
     "groups": [],
     "topic": "Course vocabulary",
@@ -36773,18 +36599,18 @@
     }
   },
   {
-    "nl": "de weet",
-    "kind": "noun",
-    "en": "awareness, knowledge",
+    "nl": "weet",
+    "kind": "verb",
+    "en": "know (a fact)",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de weten"
+        "label": "Base form",
+        "text": "weten"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "weet",
+    "dictionary": "weten",
     "id": "course-e2e631e8a8999eb9",
     "source": {
       "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
@@ -37009,25 +36835,6 @@
     }
   },
   {
-    "nl": "went",
-    "kind": "verb",
-    "en": "to get used (to), to become accustomed (inflected form)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "wennen"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "wennen",
-    "id": "course-bd7e83102fa3e6aa",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
-      "location": "p. 79"
-    }
-  },
-  {
     "nl": "het wereldkampioenschap",
     "kind": "noun",
     "en": "world championship",
@@ -37047,18 +36854,18 @@
     }
   },
   {
-    "nl": "het werk",
-    "kind": "noun",
-    "en": "work, labor",
+    "nl": "werk",
+    "kind": "verb",
+    "en": "work (ik or command)",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de werken"
+        "label": "Base form",
+        "text": "werken"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "werk",
+    "dictionary": "werken",
     "id": "course-ba31188f8190c477",
     "source": {
       "file": "Deel 2_Les 6_Negatie_AB spreekoefening.pdf",
@@ -37515,13 +37322,18 @@
     }
   },
   {
-    "nl": "de woon",
-    "kind": "noun",
-    "en": "domicile, residence, home, abode (place of living)",
-    "forms": [],
+    "nl": "woon",
+    "kind": "verb",
+    "en": "live or reside (ik)",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "wonen"
+      }
+    ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "woon",
+    "dictionary": "wonen",
     "id": "course-2abd3a9b9056adea",
     "source": {
       "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
@@ -37941,12 +37753,17 @@
   },
   {
     "nl": "zeg",
-    "kind": "phrase",
-    "en": "hey, used to draw the addressed person's attention",
-    "forms": [],
+    "kind": "verb",
+    "en": "say (ik or command)",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "zeggen"
+      }
+    ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "zeg",
+    "dictionary": "zeggen",
     "id": "course-af5652d95e6f2840",
     "source": {
       "file": "Dutch Language and Cultures_Les 12_19-11-26.pdf",
@@ -38085,18 +37902,18 @@
     }
   },
   {
-    "nl": "de zet",
-    "kind": "noun",
-    "en": "shove, push",
+    "nl": "zet",
+    "kind": "verb",
+    "en": "put or place (ik or command)",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de zetten"
+        "label": "Base form",
+        "text": "zetten"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "zet",
+    "dictionary": "zetten",
     "id": "course-72d7027887e4341e",
     "source": {
       "file": "Dutch Language and Cultures_Les 5_13-10-26.pdf",
@@ -38424,18 +38241,18 @@
     "imported": true
   },
   {
-    "nl": "de zit",
-    "kind": "noun",
-    "en": "the act of sitting",
+    "nl": "zit",
+    "kind": "verb",
+    "en": "sit; be seated",
     "forms": [
       {
-        "label": "Plural",
-        "text": "de zitten"
+        "label": "Base form",
+        "text": "zitten"
       }
     ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "zit",
+    "dictionary": "zitten",
     "id": "course-be99d7122a591433",
     "source": {
       "file": "Dutch Language and Cultures_Les 8_27-10-26.pdf",
@@ -38491,12 +38308,17 @@
   },
   {
     "nl": "zoek",
-    "kind": "adjective",
-    "en": "lost, missing, gone",
-    "forms": [],
+    "kind": "verb",
+    "en": "look for (ik or command)",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "zoeken"
+      }
+    ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "zoek",
+    "dictionary": "zoeken",
     "id": "course-2b74f271f08c63a3",
     "source": {
       "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
@@ -38638,7 +38460,7 @@
   {
     "nl": "zou",
     "kind": "verb",
-    "en": "used to form the future tense of a verb, together with an infinitive; will, going to (past-tense form)",
+    "en": "would (singular conditional)",
     "forms": [
       {
         "label": "Base form",
@@ -38779,7 +38601,7 @@
   {
     "nl": "zullen",
     "kind": "verb",
-    "en": "used to form the future tense of a verb, together with an infinitive; will, going to",
+    "en": "shall or will; used to make a suggestion",
     "forms": [],
     "groups": [],
     "topic": "Course vocabulary",
@@ -38805,13 +38627,18 @@
     "imported": true
   },
   {
-    "nl": "de zult",
-    "kind": "noun",
-    "en": "brawn, head cheese",
-    "forms": [],
+    "nl": "zult",
+    "kind": "verb",
+    "en": "will (je, jij or u)",
+    "forms": [
+      {
+        "label": "Base form",
+        "text": "zullen"
+      }
+    ],
     "groups": [],
     "topic": "Course vocabulary",
-    "dictionary": "zult",
+    "dictionary": "zullen",
     "id": "course-517c6ecec57d1d4a",
     "source": {
       "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
@@ -38821,7 +38648,7 @@
   {
     "nl": "zussen",
     "kind": "noun",
-    "en": "sister (plural)",
+    "en": "sisters",
     "forms": [
       {
         "label": "Base form",
@@ -38962,20 +38789,6 @@
     "source": {
       "file": "Dutch Language and Cultures_Les 2_01-10-26.pdf",
       "location": "p. 50"
-    }
-  },
-  {
-    "nl": "à",
-    "kind": "preposition",
-    "en": "indicates an approximate number",
-    "forms": [],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "à",
-    "id": "course-b3fc9de526e253e7",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
-      "location": "p. 70"
     }
   },
   {

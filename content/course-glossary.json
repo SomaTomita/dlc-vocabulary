@@ -9,6 +9,11 @@
     "word",
     "the (unstressed form of het)"
   ],
+  "aa": [
+    "aa",
+    "exclude",
+    "Vowel duration or spelling notation in the source, rather than the river name"
+  ],
   "aak": [
     "aak",
     "exclude",
@@ -108,6 +113,11 @@
     "actiewerkwoord",
     "noun",
     "action verb"
+  ],
+  "ad": [
+    "ad",
+    "exclude",
+    "Store branding or OCR fragment in the source"
   ],
   "address": [
     "address",
@@ -299,6 +309,11 @@
     "exclude",
     "Personal or fictional example name"
   ],
+  "arts": [
+    "arts",
+    "exclude",
+    "English in the source passage"
+  ],
   "as": [
     "as",
     "exclude",
@@ -399,6 +414,11 @@
     "exclude",
     "Personal or fictional example name"
   ],
+  "bars": [
+    "bars",
+    "exclude",
+    "English in the source passage"
+  ],
   "bart": [
     "bart",
     "exclude",
@@ -418,6 +438,11 @@
     "beef",
     "exclude",
     "English or another language in the source passage"
+  ],
+  "beer": [
+    "beer",
+    "exclude",
+    "English in the source passage"
   ],
   "beerten": [
     "beerten",
@@ -478,6 +503,11 @@
     "beyoncé",
     "exclude",
     "Personal or fictional example name"
+  ],
+  "bi": [
+    "bi",
+    "exclude",
+    "OCR fragment of the source page"
   ],
   "bid": [
     "bid",
@@ -1108,6 +1138,11 @@
     "exclude",
     "Organisation, product, title or brand"
   ],
+  "do": [
+    "do",
+    "exclude",
+    "English in the source passage"
+  ],
   "docente's": [
     "docente's",
     "exclude",
@@ -1132,6 +1167,11 @@
     "dominika",
     "exclude",
     "Personal or fictional example name"
+  ],
+  "don": [
+    "don",
+    "exclude",
+    "OCR fragment without a complete source word"
   ],
   "doo": [
     "doo",
@@ -1432,6 +1472,11 @@
     "events",
     "exclude",
     "English or another language in the source passage"
+  ],
+  "ex": [
+    "ex",
+    "exclude",
+    "Already represented by ex-collega in the source"
   ],
   "ex-collega": [
     "ex-collega",
@@ -4735,8 +4780,8 @@
   ],
   "vaneen": [
     "vaneen",
-    "word",
-    "apart"
+    "exclude",
+    "The source phrase van een was joined by OCR"
   ],
   "vanzelf": [
     "vanzelf",
@@ -4948,6 +4993,11 @@
     "exclude",
     "English or a proper name on a graphic"
   ],
+  "wan": [
+    "wan",
+    "exclude",
+    "Split proper name or OCR fragment"
+  ],
   "wapenstilstand": [
     "wapenstilstand",
     "noun",
@@ -4967,6 +5017,11 @@
     "warme",
     "adjective",
     "warm (attributive form)"
+  ],
+  "wars": [
+    "wars",
+    "exclude",
+    "English in the source passage"
   ],
   "watis": [
     "watis",
@@ -5002,6 +5057,11 @@
     "wend",
     "exclude",
     "OCR-only reading without corroboration in the source review"
+  ],
+  "went": [
+    "went",
+    "exclude",
+    "English in the source passage"
   ],
   "were": [
     "were",
@@ -5207,6 +5267,11 @@
     "zullen we",
     "phrase",
     "shall we?"
+  ],
+  "à": [
+    "à",
+    "exclude",
+    "PDF arrow rendered as a letter in source extraction"
   ],
   "àhij": [
     "àhij",

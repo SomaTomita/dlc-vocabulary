@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
-import type { FormEvent, ReactNode } from 'react';
+import type { FormEvent, MouseEvent, ReactNode } from 'react';
 import numbers from '../content/numbers.json';
 import coverage from '../content/coverage.json';
 import { playDutch, stopAudio } from './audio';
 import {
-  allTopics, answer, availableWords, changeTopics, createSession, expected, getWord, groups, localDay, mergeStudy, next,
-  normalize, prompt, restore, restoreTab, roundMistakes, selectedTopics, storageKey, tabKey, topicCounts, topics, words,
+  allTopics, answer, availableWords, changeTopics, createSession, expected, getWord, localDay, mergeStudy, next,
+  normalize, prompt, relatedGroups, restore, restoreTab, roundMistakes, selectedTopics, storageKey, tabKey, topicCounts, topics, words,
 } from './study';
 import type { Mode, Rating, Word } from './study';
 
@@ -34,9 +34,9 @@ function Feedback({ word, onPlay, expanded = false }: { word: Word; onPlay: (tex
       {word.kind === 'noun' && word.forms.some(form => form.label === 'Plural') && <div><dt>Singular</dt><dd><span lang="nl-BE">{word.nl}</span><AudioButton text={word.nl} onPlay={onPlay} compact /></dd></div>}
       {word.forms.map(form => <div key={form.label}><dt>{form.label}</dt><dd><span lang="nl-BE">{form.text}</span><AudioButton text={form.text} onPlay={onPlay} compact /></dd></div>)}
     </dl>}
-    {word.groups.map(key => <details key={key} open={expanded || undefined}>
-      <summary>{groups[key].title}</summary>
-      <table><tbody>{groups[key].rows.map(([use, dutch, english]) => <tr key={dutch}>
+    {relatedGroups(word).map(([key, group]) => <details key={key} open={expanded || undefined}>
+      <summary>{group.title}</summary>
+      <table><tbody>{group.rows.map(([use, dutch, english]) => <tr key={dutch}>
         {use && <td>{use}</td>}<th scope="row" lang="nl-BE">{dutch}</th><td>{english}</td>
         <td><AudioButton text={dutch} onPlay={onPlay} compact /></td>
       </tr>)}</tbody></table>
@@ -63,11 +63,11 @@ function Activity({ history, onClear }: { history: Record<string, string[]>; onC
       {dates.map(day => {
         const count = history[day]?.length ?? 0;
         const level = count >= 30 ? 3 : count >= 10 ? 2 : count > 0 ? 1 : 0;
-        return <button key={day} className={`day level-${level}`} aria-label={`${day}, ${count} words`}
-          aria-pressed={date === day} title={`${day} · ${count} words`} onClick={() => select(day)} />;
+        return <button key={day} className={`day level-${level}`} aria-label={`${day}, ${count} words answered`}
+          aria-pressed={date === day} title={`${day} · ${count} words answered`} onClick={() => select(day)} />;
       })}
     </div>
-    <p aria-live="polite">{date} · {selectedCount} {selectedCount === 1 ? 'word' : 'words'}</p>
+    <p aria-live="polite">{date} · {selectedCount} {selectedCount === 1 ? 'word' : 'words'} answered</p>
     <button className="text-button" onClick={onClear} disabled={!studyDays}>Clear activity</button>
   </section>;
 }
@@ -151,10 +151,13 @@ export default function App() {
   const [started, setStarted] = useState(!!tab);
   const [topicsOpen, setTopicsOpen] = useState(false);
   const [audioError, setAudioError] = useState('');
+  const [audioBusy, setAudioBusy] = useState(false);
   const [storageError, setStorageError] = useState(!storageOk);
-  const audioTicket = useRef(0);
+  const playing = useRef(false);
   const session = study.session;
   const word = getWord(session.queue[0]);
+  const seen = new Set(session.completed ?? []);
+  if (word) seen.add(word.id);
   const practiced = study.history[localDay()]?.length ?? 0;
   const remaining = words.filter(entry => !study.review[entry.id]).length;
   const selection = selectedTopics(session);
@@ -191,7 +194,6 @@ export default function App() {
       const clearedStudy = (saved.studyReset ?? 0) > (study.studyReset ?? 0);
       if (!clearedActivity && !clearedStudy) return;
       if (clearedStudy) {
-        audioTicket.current++;
         stopAudio();
         setStarted(false);
         setInput('');
@@ -212,7 +214,6 @@ export default function App() {
 
   useEffect(() => {
     const change = () => {
-      audioTicket.current++;
       stopAudio();
       setAudioError('');
       setView(readView());
@@ -222,16 +223,27 @@ export default function App() {
   }, []);
 
   function play(text: string) {
-    const ticket = ++audioTicket.current;
+    if (playing.current) return;
+    playing.current = true;
+    setAudioBusy(true);
     setAudioError('');
     void playDutch(text).catch(() => {
-      if (ticket === audioTicket.current) setAudioError('Audio could not play. Tap the speaker to try again.');
+      setAudioError('Audio could not play. Tap the speaker to try again.');
+    }).finally(() => {
+      playing.current = false;
+      setAudioBusy(false);
     });
   }
 
+  function preventRepeatedAction(event: MouseEvent) {
+    if (!playing.current && event.detail <= 1) return;
+    if (!(event.target instanceof Element) || !event.target.closest('button, input, label, select, summary, a')) return;
+    event.preventDefault();
+    event.stopPropagation();
+  }
+
   function advance() {
-    audioTicket.current++;
-    stopAudio();
+    if (playing.current) return;
     setInput('');
     flip(false);
     setAudioError('');
@@ -241,7 +253,6 @@ export default function App() {
   }
 
   function newSession(nextTopics = selection, mode = session.mode) {
-    audioTicket.current++;
     stopAudio();
     setAudioError('');
     setInput('');
@@ -267,7 +278,6 @@ export default function App() {
 
   function clearStudyHistory() {
     if (!window.confirm('Clear word progress, reviews and the current round? Activity will be kept.')) return;
-    audioTicket.current++;
     stopAudio();
     setStarted(false);
     setInput('');
@@ -280,18 +290,19 @@ export default function App() {
   }
 
   function submit(value: string) {
-    if (!word) return;
+    if (!word || playing.current) return;
     const correct = normalize(value) === normalize(expected(word, session.mode));
     setStudy(current => ({ ...current, ...answer(current, current.session, correct ? 'correct' : 'wrong', value) }));
   }
 
   function rate(grade: Rating) {
+    if (playing.current) return;
     setStudy(current => ({ ...current, ...answer(current, current.session, grade) }));
   }
 
   useEffect(() => {
     const key = (event: KeyboardEvent) => {
-      if (!started || view !== 'practice' || session.result || event.repeat || event.altKey || event.ctrlKey || event.metaKey
+      if (!started || view !== 'practice' || session.result || playing.current || event.repeat || event.altKey || event.ctrlKey || event.metaKey
           || (event.target instanceof HTMLElement && ['INPUT', 'SELECT', 'BUTTON', 'SUMMARY', 'A'].includes(event.target.tagName))) return;
       const option = session.options[Number(event.key) - 1];
       if (option && /^[1-4]$/.test(event.key)) { event.preventDefault(); submit(option); }
@@ -330,7 +341,7 @@ export default function App() {
   </section>;
   else if (!word) content = <section className="surface round-complete">
     <h1>Round complete</h1>
-    {session.completed && <p>{session.completed.length} {session.completed.length === 1 ? 'word' : 'words'} this round</p>}
+    {session.completed && <p>{seen.size} {seen.size === 1 ? 'word' : 'words'} seen this round</p>}
     {session.missedWords && <RoundReview missedWords={session.missedWords} />}
     {shortRoundHint}
     {nextSize > 0 && <button className="primary" onClick={() => newSession()}>Start next {nextSize} <Icon name="arrow" /></button>}
@@ -380,7 +391,8 @@ export default function App() {
     </section>;
   }
 
-  return <div className="app">
+  return <fieldset className="app app-controls" disabled={audioBusy} onClickCapture={preventRepeatedAction}>
+    <legend className="sr-only">Dutch Vocabulary</legend>
     <header><a className="brand" href="#practice">
       <img src={import.meta.env.BASE_URL + 'flag-icon.png'} alt="" width="32" height="32" />
       Dutch Vocabulary
@@ -393,10 +405,10 @@ export default function App() {
         {started && word && <button className="text-button topic-toggle" aria-expanded={topicsOpen} aria-controls="round-topics"
           onClick={() => setTopicsOpen(open => !open)}>Topics <Icon name="chevron" /></button>}
         <a href="#activity" className="daily"><progress value={Math.min(practiced, study.goal)} max={study.goal} aria-label="Daily goal" />
-          <span>Today {practiced}{practiced <= study.goal ? ' / ' + study.goal : ''}</span></a>
+          <span>Today · {practiced} / {study.goal} answered</span></a>
       </div>}
       {view === 'practice' && <p className="small round-progress">
-        {started && session.size ? `Round ${session.completed?.length ?? 0} / ${session.size} · ` : ''}
+        {started && session.size ? `Round · ${seen.size} / ${session.size} seen · ` : ''}
         {remaining} of {words.length} words left
       </p>}
       {view === 'practice' && started && word && <div id="round-topics" hidden={!topicsOpen}>
@@ -408,5 +420,5 @@ export default function App() {
       {audioError && <p role="status" className="small">{audioError}</p>}
       {storageError && <p role="status" className="small">Saved progress could not be restored or saved in this browser.</p>}
     </main>
-  </div>;
+  </fieldset>;
 }

@@ -1,9 +1,15 @@
 import vocabulary from '../content/words.json';
 import review from '../content/review.json';
+import quizAlternatives from '../content/quiz-alternatives.json';
+import { createQuiz } from './quiz';
+
+export { normalize } from './quiz';
 
 export type Word = (typeof vocabulary)[number];
 export const words = vocabulary;
-export const groups: Record<string, { title: string; rows: string[][] }> = review;
+const quiz = createQuiz(words, quizAlternatives);
+const quizRevision = 1;
+const groups: Record<string, { title: string; rows: string[][]; members?: string[] }> = review;
 export const allTopics = 'All topics';
 const legacyWithoutNumbers = 'All except numbers';
 const wordKinds = { Nouns: 'noun', Verbs: 'verb', Adjectives: 'adjective' };
@@ -41,6 +47,7 @@ export type Session = {
   topics?: string[];
   retries: Record<string, number>;
   options: string[];
+  quizRevision?: number;
   mode: Mode;
   selected?: string;
   result?: Rating;
@@ -61,20 +68,17 @@ export const initialStudy: Study = { history: {}, review: {}, goal: 30 };
 const byId = new Map(words.map(word => [word.id, word]));
 export const getWord = (id: string | undefined) => id ? byId.get(id) : undefined;
 
+export function relatedGroups(word: Word) {
+  const base = word.forms.find(form => form.label === 'Base form')?.text;
+  return Object.entries(groups).filter(([key, group]) =>
+    word.groups.includes(key) || group.members?.some(member => member === word.nl || member === base));
+}
+
 export function localDay(offset = 0) {
   const day = new Date();
   day.setDate(day.getDate() + offset);
   return [day.getFullYear(), day.getMonth() + 1, day.getDate()]
     .map(part => String(part).padStart(2, '0')).join('-');
-}
-
-function shuffle<T>(items: readonly T[]): T[] {
-  const result = [...items];
-  for (let i = result.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [result[i], result[j]] = [result[j], result[i]];
-  }
-  return result;
 }
 
 export function prompt(word: Word, mode: Mode) {
@@ -87,20 +91,10 @@ export function expected(word: Word, mode: Mode) {
   return mode === 'typing' || (word.kind === 'ordinal' && mode === 'choice') ? word.nl : word.en;
 }
 
-export function normalize(text: string) {
-  return text.normalize('NFC').trim().toLocaleLowerCase().replace(/[’‘]/g, "'").replace(/\s+/g, ' ');
-}
-
 function optionsFor(id: string | undefined, mode: Mode): string[] {
   const word = getWord(id);
   if (!word || mode === 'flashcards' || mode === 'typing') return [];
-  const inverse = word.kind === 'ordinal' && mode === 'choice';
-  const peers = words.filter(other => (other.kind === word.kind || (!inverse && other.topic === word.topic)) && other.id !== word.id);
-  const sameKind = shuffle(peers.filter(other => other.kind === word.kind));
-  const distractors = [...sameKind, ...shuffle(peers)].map(other => inverse ? other.nl : other.en);
-  const answer = expected(word, mode);
-  const excluded = new Set([answer, ...(word.kind === 'noun' && word.nl.includes('naam') ? ['surname', 'family name'] : [])]);
-  return shuffle([answer, ...[...new Set(distractors)].filter(option => !excluded.has(option)).slice(0, 3)]);
+  return quiz.choices(word, word.kind === 'ordinal' && mode === 'choice', mode === 'listen');
 }
 
 export function selectedTopics(session: Session): string[] {
@@ -150,7 +144,8 @@ export function createSession(
   }
   return {
     date, queue, first: queue[0], question: 1, size: queue.length, target: study.goal, completed: [], missedWords: [],
-    topics: selection, topic: selection.length === 1 ? selection[0] : allTopics, mode, options: optionsFor(queue[0], mode), retries: {},
+    topics: selection, topic: selection.length === 1 ? selection[0] : allTopics, mode,
+    options: optionsFor(queue[0], mode), quizRevision, retries: {},
   };
 }
 
@@ -200,7 +195,8 @@ export function answer(study: Study, session: Session, grade: Rating, selected?:
 export function next(session: Session): Session {
   const roundDone = session.size !== undefined && session.completed?.length === session.size;
   const queue = roundDone ? [] : session.queue.slice(1);
-  return { ...session, queue, question: session.question === undefined ? undefined : session.question + 1, options: optionsFor(queue[0], session.mode), result: undefined, selected: undefined };
+  return { ...session, queue, question: session.question === undefined ? undefined : session.question + 1,
+    options: optionsFor(queue[0], session.mode), quizRevision, result: undefined, selected: undefined };
 }
 
 export function roundMistakes(ids: string[]) {
@@ -234,22 +230,25 @@ export function mergeStudy(study: Study, saved: Study): Study {
   return { ...study, history, review };
 }
 
-function removeUnavailableWords(session: Session): Session {
+function refreshQueue(session: Session): Session {
   const queue = session.queue.filter(id => getWord(id));
-  if (queue.length === session.queue.length) return session;
+  const currentRemoved = queue[0] !== session.queue[0];
+  const refreshOptions = currentRemoved || (!session.result && session.quizRevision !== quizRevision);
+  if (queue.length === session.queue.length && !refreshOptions) return session;
   const size = session.completed
     ? new Set([...session.completed, ...queue]).size
     : session.size;
   const updated = { ...session, queue, size };
-  if (queue[0] === session.queue[0]) return updated;
-  return { ...updated, options: optionsFor(queue[0], session.mode), selected: undefined, result: undefined };
+  if (!refreshOptions) return updated;
+  return { ...updated, options: optionsFor(queue[0], session.mode), quizRevision,
+    selected: undefined, result: undefined };
 }
 
 export function restoreTab(): TabPractice | undefined {
   try {
     const saved = JSON.parse(sessionStorage.getItem(tabKey) ?? 'null') as TabPractice | null;
     if (!saved || saved.session.date !== localDay()) return;
-    const session = removeUnavailableWords(saved.session);
+    const session = refreshQueue(saved.session);
     return session.queue[0] === saved.session.queue[0]
       ? { ...saved, session }
       : { ...saved, session, input: '', flipped: false };
@@ -268,7 +267,7 @@ export function restore(): [Study, boolean] {
       return [initialStudy, false];
     }
     const { history, review, goal, session, activityReset, studyReset } = data;
-    return [{ history, review, goal, session: session && removeUnavailableWords(session), activityReset, studyReset }, true];
+    return [{ history, review, goal, session: session && refreshQueue(session), activityReset, studyReset }, true];
   } catch {
     return [initialStudy, false];
   }
