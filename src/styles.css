@@ -105,9 +105,12 @@ input:not([type="checkbox"]), select { min-height: 44px; border: 1px solid var(-
 .topic-picker .topic-option {
   display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 5px; margin: 0;
   min-height: 44px; padding: 4px 8px; border: 1px solid var(--line); border-radius: 8px;
-  font-size: .85rem; color: var(--muted); cursor: pointer;
+  background: #fffefa; font-size: .85rem; color: var(--muted); cursor: pointer;
 }
-.topic-option:has(input:checked) { color: var(--accent); background: var(--tint); }
+.topic-picker .topic-option-all { background: #edf1eb; }
+.topic-option-all .topic-label { font-weight: 650; }
+.topic-option:has(input:checked) { color: var(--accent); background: var(--tint); border-color: #90aa9a; }
+.topic-option-all:has(input:checked) { background: #dce9df; }
 .topic-option input { margin: 0; accent-color: var(--accent); cursor: inherit; }
 .topic-label { overflow-wrap: anywhere; }
 .word-row > div { min-width: 0; overflow-wrap: anywhere; }

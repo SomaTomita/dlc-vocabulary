@@ -100,7 +100,7 @@ function TopicPicker({ selection, onChange, showLegend = true }: {
   return <fieldset className="topic-picker">
     <legend className={showLegend ? undefined : 'sr-only'}>Topics</legend>
     <div className="topic-options">
-      {topics.map(topic => <label key={topic} className="topic-option">
+      {topics.map(topic => <label key={topic} className={topic === allTopics ? 'topic-option topic-option-all' : 'topic-option'}>
         <input type="checkbox" checked={topic === allTopics ? selection.length === 0 : selection.includes(topic)}
           onChange={event => {
             if (topic === allTopics) { onChange([]); return; }
