@@ -11,12 +11,14 @@ import type { Mode, Rating, Word } from './study';
 
 const modes: Record<Mode, string> = { choice: 'Four choices', listen: 'Listening', typing: 'Type in Dutch', flashcards: 'Flashcards' };
 
-function Icon({ name }: { name: 'audio' | 'arrow' | 'check' | 'chevron' }) {
+function Icon({ name }: { name: 'audio' | 'arrow' | 'check' | 'chevron' | 'cross' | 'reveal' }) {
   const path = {
     audio: 'M3 9v6h4l5 4V5L7 9H3zM16 9a4 4 0 0 1 0 6m2-8a7 7 0 0 1 0 10',
     arrow: 'M4 12h15m-6-6 6 6-6 6',
     check: 'm5 12 4 4L19 6',
     chevron: 'm6 9 6 6 6-6',
+    cross: 'm6 6 12 12M18 6 6 18',
+    reveal: 'M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z M14 12a2 2 0 1 0-4 0 2 2 0 0 0 4 0z',
   };
   return <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"
     strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={path[name]} /></svg>;
@@ -346,7 +348,8 @@ export default function App() {
           const wrong = session.result === 'wrong' && option === session.selected;
           return <li key={option}><button disabled={!!session.result} onClick={() => submit(option)}
             className={right ? 'right' : wrong ? 'wrong' : ''}>
-            <span className="key">{index + 1}</span><span>{option}</span>{right && <Icon name="check" />}
+            <span className="key">{index + 1}</span><span>{option}</span>
+            {right && <Icon name="check" />}{wrong && <Icon name="cross" />}
           </button></li>;
         })}
       </ol>}
@@ -364,9 +367,13 @@ export default function App() {
         else rate('reveal');
       }}>Show answer</button>}
       {session.result && <div className="result">
-        <p role="status" className={session.result === 'wrong' ? 'wrong-text' : ''}>
-          {session.result === 'correct' ? 'Correct' : session.result === 'wrong' ? 'Answer' : 'Revealed'} · <span lang="nl-BE">{word.nl}</span> · {word.en}
-        </p>
+        <div role="status" className={`answer-feedback ${session.result}`}>
+          <strong>
+            <Icon name={session.result === 'correct' ? 'check' : session.result === 'wrong' ? 'cross' : 'reveal'} />
+            {session.result === 'correct' ? 'Correct' : session.result === 'wrong' ? 'Incorrect' : 'Answer revealed'}
+          </strong>
+          <span>{session.result === 'wrong' && <>Correct answer · </>}<span lang="nl-BE">{word.nl}</span> · {word.en}</span>
+        </div>
         <Feedback word={word} onPlay={play} expanded={session.result === 'correct'} />
         <button className="primary next" onClick={advance}>Next <Icon name="arrow" /></button>
       </div>}
