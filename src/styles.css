@@ -85,20 +85,29 @@ input:not([type="checkbox"]), select { min-height: 44px; border: 1px solid var(-
 .round-complete { display: grid; justify-items: center; text-align: center; }
 .round-complete p { margin: 0 0 20px; }
 .session-bar { justify-content: flex-end; }
-.topic-picker { padding: 0; border: 0; margin: 0 0 14px; min-width: 0; }
+.topic-picker { padding: 0; border: 0; margin: 0 0 14px; min-width: 0; container-type: inline-size; }
 .topic-picker legend { padding: 0; color: var(--muted); font-size: .85rem; margin-bottom: 6px; }
-.topic-options { display: flex; flex-wrap: wrap; gap: 6px; }
+.topic-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+@container (min-width: 500px) {
+  .topic-options { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@container (max-width: 235px) {
+  .topic-options { grid-template-columns: minmax(0, 1fr); }
+}
 .topic-picker .topic-option {
-  display: inline-flex; align-items: center; justify-content: flex-start; gap: 6px; margin: 0;
-  min-height: 44px; padding: 4px 9px; border: 1px solid var(--line); border-radius: 8px;
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 5px; margin: 0;
+  min-height: 44px; padding: 4px 8px; border: 1px solid var(--line); border-radius: 8px;
   font-size: .85rem; color: var(--muted); cursor: pointer;
 }
 .topic-option:has(input:checked) { color: var(--accent); background: var(--tint); }
 .topic-option input { margin: 0; accent-color: var(--accent); cursor: inherit; }
+.topic-label { overflow-wrap: anywhere; }
 .word-row > div { min-width: 0; overflow-wrap: anywhere; }
 .topic-count { font-size: .76rem; font-variant-numeric: tabular-nums; }
 .surface + .topic-picker { margin-top: 14px; }
-.topic-toggle { margin: 0 auto 0 0; }
+.topic-toggle { display: inline-flex; align-items: center; gap: 5px; margin: 0 auto 0 0; }
+.topic-toggle svg { width: 16px; height: 16px; }
+.topic-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
 .round-review {
   width: min(100%, 21rem);
   min-width: 0;

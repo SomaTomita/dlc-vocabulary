@@ -11,11 +11,12 @@ import type { Mode, Rating, Word } from './study';
 
 const modes: Record<Mode, string> = { choice: 'Four choices', listen: 'Listening', typing: 'Type in Dutch', flashcards: 'Flashcards' };
 
-function Icon({ name }: { name: 'audio' | 'arrow' | 'check' }) {
+function Icon({ name }: { name: 'audio' | 'arrow' | 'check' | 'chevron' }) {
   const path = {
     audio: 'M3 9v6h4l5 4V5L7 9H3zM16 9a4 4 0 0 1 0 6m2-8a7 7 0 0 1 0 10',
     arrow: 'M4 12h15m-6-6 6 6-6 6',
     check: 'm5 12 4 4L19 6',
+    chevron: 'm6 9 6 6 6-6',
   };
   return <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"
     strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={path[name]} /></svg>;
@@ -89,13 +90,13 @@ function Browse({ onPlay }: { onPlay: (text: string) => void }) {
   </section>;
 }
 
-function TopicPicker({ selection, onChange, disabled }: {
+function TopicPicker({ selection, onChange, showLegend = true }: {
   selection: string[];
   onChange: (selection: string[]) => void;
-  disabled?: boolean;
+  showLegend?: boolean;
 }) {
-  return <fieldset className="topic-picker" disabled={disabled}>
-    <legend>Topics</legend>
+  return <fieldset className="topic-picker">
+    <legend className={showLegend ? undefined : 'sr-only'}>Topics</legend>
     <div className="topic-options">
       {topics.map(topic => <label key={topic} className="topic-option">
         <input type="checkbox" checked={topic === allTopics ? selection.length === 0 : selection.includes(topic)}
@@ -104,7 +105,7 @@ function TopicPicker({ selection, onChange, disabled }: {
             if (!event.target.checked) { onChange(selection.filter(item => item !== topic)); return; }
             onChange([...selection, topic]);
           }} />
-        {topic} <span className="topic-count">{topicCounts[topic]}</span>
+        <span className="topic-label">{topic}</span> <span className="topic-count">{topicCounts[topic]}</span>
       </label>)}
     </div>
   </fieldset>;
@@ -382,8 +383,8 @@ export default function App() {
     </header>
     <main>
       {view === 'practice' && <div className="session-bar">
-        {started && word && <button className="text-button topic-toggle" aria-expanded={topicsOpen}
-          onClick={() => setTopicsOpen(open => !open)}>Topics</button>}
+        {started && word && <button className="text-button topic-toggle" aria-expanded={topicsOpen} aria-controls="round-topics"
+          onClick={() => setTopicsOpen(open => !open)}>Topics <Icon name="chevron" /></button>}
         <a href="#activity" className="daily"><progress value={Math.min(practiced, study.goal)} max={study.goal} aria-label="Daily goal" />
           <span>Today {practiced}{practiced <= study.goal ? ' / ' + study.goal : ''}</span></a>
       </div>}
@@ -391,8 +392,9 @@ export default function App() {
         {started && session.size ? `Round ${session.completed?.length ?? 0} / ${session.size} · ` : ''}
         {remaining} of {words.length} words left
       </p>}
-      {view === 'practice' && started && word && topicsOpen &&
-        <TopicPicker selection={selection} onChange={updateTopics} />}
+      {view === 'practice' && started && word && <div id="round-topics" hidden={!topicsOpen}>
+        <TopicPicker selection={selection} onChange={updateTopics} showLegend={false} />
+      </div>}
       {content}
       {view === 'practice' && (!started || !word) &&
         <TopicPicker selection={selection} onChange={updateTopics} />}
