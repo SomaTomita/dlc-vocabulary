@@ -528,5 +528,58 @@
         "eighth"
       ]
     ]
+  },
+  "irregular-comparisons": {
+    "title": "Exceptions · irregular comparisons",
+    "members": [
+      "goed",
+      "beter",
+      "best",
+      "graag",
+      "liever",
+      "veel"
+    ],
+    "rows": [
+      [
+        "",
+        "goed; beter; best",
+        "good; better; best"
+      ],
+      [
+        "",
+        "graag; liever; liefst",
+        "gladly; preferably; most willingly"
+      ],
+      [
+        "",
+        "veel; meer; meest",
+        "much or many; more; most"
+      ]
+    ]
+  },
+  "modal-inversion": {
+    "title": "Exceptions · modal verb inversion",
+    "members": [
+      "kunnen",
+      "willen",
+      "zullen"
+    ],
+    "rows": [
+      [
+        "kunnen",
+        "je kunt; kun je?",
+        "you can; can you?"
+      ],
+      [
+        "willen",
+        "je wilt; wil je?",
+        "you want; do you want?"
+      ],
+      [
+        "zullen",
+        "je zult; zul je?",
+        "you will; will you?"
+      ]
+    ]
   }
 }
