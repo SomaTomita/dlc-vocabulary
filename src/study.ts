@@ -50,6 +50,7 @@ export type Session = {
   quizRevision?: number;
   isRetry?: boolean;
   mode: Mode;
+  pendingMode?: Mode;
   selected?: string;
   result?: Rating;
 };
@@ -169,6 +170,11 @@ export function changeTopics(study: Study, session: Session, selection: string[]
   return { ...updated, queue: [current, ...remaining, ...pendingRetries], size: seen.size + remaining.length, completed };
 }
 
+export function changeMode(session: Session, mode: Mode, defer: boolean): Session {
+  if (defer) return { ...session, pendingMode: mode === session.mode ? undefined : mode };
+  return { ...session, mode, pendingMode: undefined, options: optionsFor(session.queue[0], mode) };
+}
+
 export function answer(study: Study, session: Session, grade: Rating, selected?: string): Study {
   const id = session.queue[0];
   if (!id || session.result) return study;
@@ -203,9 +209,10 @@ export function answer(study: Study, session: Session, grade: Rating, selected?:
 
 export function next(session: Session): Session {
   const queue = session.queue.slice(1);
-  return { ...session, queue, question: session.question === undefined ? undefined : session.question + 1,
+  const mode = session.pendingMode ?? session.mode;
+  return { ...session, queue, mode, pendingMode: undefined, question: session.question === undefined ? undefined : session.question + 1,
     isRetry: session.completed?.includes(queue[0]),
-    options: optionsFor(queue[0], session.mode), quizRevision, result: undefined, selected: undefined };
+    options: optionsFor(queue[0], mode), quizRevision, result: undefined, selected: undefined };
 }
 
 export function roundMistakes(ids: string[]) {
@@ -266,11 +273,15 @@ function isCounter(value: unknown): value is number {
   return typeof value === 'number' && Number.isSafeInteger(value) && value >= 0;
 }
 
+function isMode(value: unknown): value is Mode {
+  return value === 'choice' || value === 'listen' || value === 'typing' || value === 'flashcards';
+}
+
 function isSession(value: unknown): value is Session {
   return isRecord(value) && typeof value.date === 'string' && typeof value.topic === 'string'
     && isStringList(value.queue) && isStringList(value.options)
     && isRecord(value.retries) && Object.values(value.retries).every(isCounter)
-    && (value.mode === 'choice' || value.mode === 'listen' || value.mode === 'typing' || value.mode === 'flashcards')
+    && isMode(value.mode) && (value.pendingMode === undefined || isMode(value.pendingMode))
     && (value.topics === undefined || isStringList(value.topics))
     && (value.completed === undefined || isStringList(value.completed))
     && (value.missedWords === undefined || isStringList(value.missedWords))

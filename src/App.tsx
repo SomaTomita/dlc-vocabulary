@@ -4,7 +4,7 @@ import numbers from '../content/numbers.json';
 import coverage from '../content/coverage.json';
 import { playDutch, stopAudio } from './audio';
 import {
-  allTopics, answer, availableWords, changeTopics, createSession, expected, getWord, isCorrectAnswer, localDay, mergeStudy, next,
+  allTopics, answer, availableWords, changeMode, changeTopics, createSession, expected, getWord, isCorrectAnswer, localDay, mergeStudy, next,
   normalize, prompt, relatedGroups, restore, restoreTab, roundMistakes, selectedTopics, storageKey, tabKey, topicCounts, topics, words,
 } from './study';
 import type { Mode, Rating, Word } from './study';
@@ -209,7 +209,7 @@ export default function App() {
         const base = { ...current, history, activityReset: clearedActivity ? saved.activityReset : current.activityReset };
         if (!clearedStudy) return base;
         const reset = { ...base, review: saved.review, studyReset: saved.studyReset, session: undefined };
-        return { ...reset, session: createSession(reset, selectedTopics(current.session), current.session.mode) };
+        return { ...reset, session: createSession(reset, selectedTopics(current.session), current.session.pendingMode ?? current.session.mode) };
       });
     }
     window.addEventListener('storage', syncResets);
@@ -256,12 +256,15 @@ export default function App() {
       : current);
   }
 
-  function newSession(nextTopics = selection, mode = session.mode) {
+  function newSession() {
     stopAudio();
     setAudioError('');
     setInput('');
     flip(false);
-    setStudy(current => ({ ...current, session: createSession(current, nextTopics, mode) }));
+    setStudy(current => ({
+      ...current,
+      session: createSession(current, selectedTopics(current.session), current.session.pendingMode ?? current.session.mode),
+    }));
   }
 
   function updateTopics(nextTopics: string[]) {
@@ -269,7 +272,7 @@ export default function App() {
       ...current,
       session: started
         ? changeTopics(current, current.session, nextTopics)
-        : createSession(current, nextTopics, current.session.mode),
+        : createSession(current, nextTopics, current.session.pendingMode ?? current.session.mode),
     }));
   }
 
@@ -289,7 +292,7 @@ export default function App() {
     setAudioError('');
     setStudy(current => {
       const reset = { ...current, review: {}, studyReset: Math.max(Date.now(), (current.studyReset ?? 0) + 1), session: undefined };
-      return { ...reset, session: createSession(reset, selectedTopics(current.session), current.session.mode) };
+      return { ...reset, session: createSession(reset, selectedTopics(current.session), current.session.pendingMode ?? current.session.mode) };
     });
   }
 
@@ -322,8 +325,12 @@ export default function App() {
   else if (view === 'activity') content = <Activity history={study.history} onClear={clearActivity} />;
   else if (view === 'settings') content = <section className="surface settings">
     <h1>Settings</h1>
-    <label>Mode<select value={session.mode} disabled={started && !!session.result} onChange={event => newSession(selection, event.target.value as Mode)}>
+    <label>Mode<select value={session.pendingMode ?? session.mode} aria-describedby={started && word ? 'mode-help' : undefined} onChange={event => {
+      const mode = event.target.value as Mode;
+      setStudy(current => ({ ...current, session: changeMode(current.session, mode, started && current.session.queue.length > 0) }));
+    }}>
       {Object.entries(modes).map(([value,label]) => <option key={value} value={value}>{label}</option>)}</select></label>
+    {started && word && <p id="mode-help" className="small">Applies from the next question.</p>}
     <label>Daily goal<select value={study.goal} onChange={event => {
       const goal = Number(event.target.value);
       setStudy(current => ({ ...current, goal }));
