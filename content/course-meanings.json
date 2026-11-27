@@ -21,6 +21,11 @@
     ],
     "dictionary": "trekken"
   },
+  "course-1d91b9cc6b0ca7e1": {
+    "en": "February",
+    "nl": "februari",
+    "forms": []
+  },
   "course-218ae6b44966c8a9": {
     "en": "drink (ik or command)",
     "nl": "drink",
@@ -45,6 +50,11 @@
     ],
     "dictionary": "staan"
   },
+  "course-249d1f9cb846410c": {
+    "en": "September",
+    "nl": "september",
+    "forms": []
+  },
   "course-254637f72efcddb6": {
     "en": "walk (ik or command)",
     "nl": "loop",
@@ -56,6 +66,11 @@
       }
     ],
     "dictionary": "lopen"
+  },
+  "course-28cb179cd5e38fa5": {
+    "en": "March",
+    "nl": "maart",
+    "forms": []
   },
   "course-2abd3a9b9056adea": {
     "en": "live or reside (ik)",
@@ -96,6 +111,11 @@
   "course-2e23f8b81d15612b": {
     "en": "at (with a clock time)"
   },
+  "course-307cd37740be8e06": {
+    "en": "January",
+    "nl": "januari",
+    "forms": []
+  },
   "course-330d9bed0e5551d6": {
     "en": "job; position"
   },
@@ -110,6 +130,9 @@
       }
     ],
     "dictionary": "gebruiken"
+  },
+  "course-3b24bb161130ef2e": {
+    "en": "Belgian snack bar specialising in fries"
   },
   "course-41ce4b07d17d772e": {
     "en": "spell (ik or command)",
@@ -134,6 +157,11 @@
       }
     ],
     "dictionary": "stellen"
+  },
+  "course-4b0d7f59fd93b3c0": {
+    "en": "June",
+    "nl": "juni",
+    "forms": []
   },
   "course-503126878d17fcd6": {
     "en": "off; separable particle in een examen afleggen (to take an exam)"
@@ -165,6 +193,9 @@
   "course-5871c5f5d92dc15c": {
     "en": "more",
     "dictionary": "meer"
+  },
+  "course-5ab3072cf27d0337": {
+    "en": "the day after tomorrow"
   },
   "course-5f4f045d317c6bb4": {
     "en": "calls by phone",
@@ -239,6 +270,11 @@
   "course-763c741afee91d4b": {
     "en": "at midday; in the afternoon"
   },
+  "course-7717a57ec3d7fb93": {
+    "en": "May",
+    "nl": "mei",
+    "forms": []
+  },
   "course-77a8bfd3bc411f3a": {
     "en": "sleep (ik or command)",
     "nl": "slaap",
@@ -262,6 +298,9 @@
       }
     ],
     "dictionary": "doen"
+  },
+  "course-7bfcce9ea926d0ea": {
+    "en": "inhabitants; residents"
   },
   "course-7c64c18dbe11b4ba": {
     "en": "give (ik or command)",
@@ -289,6 +328,11 @@
   },
   "course-82dcc8e2b25f3a72": {
     "en": "at (an institution); on or attached to"
+  },
+  "course-8745f86640ad2ed6": {
+    "en": "December",
+    "nl": "december",
+    "forms": []
   },
   "course-885fe2169ca8ee63": {
     "en": "buy (ik or command)",
@@ -405,6 +449,11 @@
     ],
     "dictionary": "liggen"
   },
+  "course-aa6890829510931f": {
+    "en": "April",
+    "nl": "april",
+    "forms": []
+  },
   "course-af5652d95e6f2840": {
     "en": "say (ik or command)",
     "nl": "zeg",
@@ -440,6 +489,11 @@
       }
     ],
     "dictionary": "zijn"
+  },
+  "course-b68823eded0bc9c7": {
+    "en": "November",
+    "nl": "november",
+    "forms": []
   },
   "course-b9e16c3eee5a495c": {
     "en": "shall or will; used to make a suggestion"
@@ -493,6 +547,11 @@
   "course-ce89241f600c9ea1": {
     "en": "pencils"
   },
+  "course-cfb858c8bc39bb9b": {
+    "en": "August",
+    "nl": "augustus",
+    "forms": []
+  },
   "course-d1271b8d299a2c65": {
     "en": "teeth"
   },
@@ -514,6 +573,10 @@
     ],
     "dictionary": "weten"
   },
+  "course-e740077cbf196a13": {
+    "en": "Langstraat (street name in Vilvoorde)",
+    "nl": "Langstraat"
+  },
   "course-e8279948dbb73e50": {
     "en": "is raining; rains",
     "nl": "regent",
@@ -525,6 +588,16 @@
       }
     ],
     "dictionary": "regenen"
+  },
+  "course-eba744c8533dec47": {
+    "en": "July",
+    "nl": "juli",
+    "forms": []
+  },
+  "course-ec9dc88ae0c7f6cb": {
+    "en": "October",
+    "nl": "oktober",
+    "forms": []
   },
   "course-eda5a835fd21f514": {
     "en": "to ask (a question); to place"

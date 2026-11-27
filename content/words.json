@@ -5369,15 +5369,10 @@
     }
   },
   {
-    "nl": "de april",
+    "nl": "april",
     "kind": "noun",
-    "en": "the month of April",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de aprillen"
-      }
-    ],
+    "en": "April",
+    "forms": [],
     "groups": [],
     "topic": "Course vocabulary",
     "dictionary": "april",
@@ -5699,15 +5694,10 @@
     "imported": true
   },
   {
-    "nl": "de augustus",
+    "nl": "augustus",
     "kind": "noun",
-    "en": "August (month)",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de augustussen"
-      }
-    ],
+    "en": "August",
+    "forms": [],
     "groups": [],
     "topic": "Course vocabulary",
     "dictionary": "augustus",
@@ -5848,25 +5838,6 @@
     "source": {
       "file": "les-02_01-10-26_pronunciation.md",
       "location": "line 128"
-    }
-  },
-  {
-    "nl": "baart",
-    "kind": "verb",
-    "en": "to bear, to give birth to (inflected form)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "baren"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "baren",
-    "id": "course-532337d2a921bbcd",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 1_29-09-26.pdf",
-      "location": "p. 67"
     }
   },
   {
@@ -7816,20 +7787,6 @@
     }
   },
   {
-    "nl": "Born",
-    "kind": "word",
-    "en": "a village and former municipality of Sittard-Geleen, Limburg, Netherlands",
-    "forms": [],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "Born",
-    "id": "course-0822963756ce70ec",
-    "source": {
-      "file": "2026-12-08-oral-exam-preparation.md",
-      "location": "line 17"
-    }
-  },
-  {
     "nl": "het bos",
     "kind": "noun",
     "en": "forest",
@@ -8995,20 +8952,6 @@
     }
   },
   {
-    "nl": "de coltan",
-    "kind": "noun",
-    "en": "coltan",
-    "forms": [],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "coltan",
-    "id": "course-dbd0f5568e9f7cbe",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 3_06-10-26.pdf",
-      "location": "p. 4"
-    }
-  },
-  {
     "nl": "de combinatie",
     "kind": "noun",
     "en": "the act, process or outcome of combining",
@@ -9137,25 +9080,6 @@
     }
   },
   {
-    "nl": "complete",
-    "kind": "adjective",
-    "en": "complete (inflected form)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "compleet"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "compleet",
-    "id": "course-eebbf6457e46a7f6",
-    "source": {
-      "file": "Dutch Language and Cultures 2026 semester 1_PRACTICAL INFORMATION.pdf",
-      "location": "p. 1"
-    }
-  },
-  {
     "nl": "complex",
     "kind": "adjective",
     "en": "complex (composite)",
@@ -9257,25 +9181,6 @@
       "location": "p. 58"
     },
     "imported": true
-  },
-  {
-    "nl": "concerns",
-    "kind": "noun",
-    "en": "company, business, concern (plural)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "concern"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "concern",
-    "id": "course-fcfc5fe39fc177d6",
-    "source": {
-      "file": "practice-questions-2026.md",
-      "location": "line 39"
-    }
   },
   {
     "nl": "de conclusie",
@@ -9727,20 +9632,6 @@
     }
   },
   {
-    "nl": "de country",
-    "kind": "noun",
-    "en": "country music",
-    "forms": [],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "country",
-    "id": "course-aff64e4fd520bd18",
-    "source": {
-      "file": "2026-12-08-oral-exam-preparation.md",
-      "location": "line 14"
-    }
-  },
-  {
     "nl": "de courgette",
     "kind": "noun",
     "en": "a courgette, a zucchini (fruit)",
@@ -9757,25 +9648,6 @@
     "source": {
       "file": "Dutch Language and Cultures_Les 8_27-10-26.pdf",
       "location": "p. 93"
-    }
-  },
-  {
-    "nl": "covers",
-    "kind": "noun",
-    "en": "a cover, cover song, cover version (rerecording of a previously recorded song, typically by a different artist) (plural)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "cover"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "cover",
-    "id": "course-17ae69cc7e460477",
-    "source": {
-      "file": "2026-12-exam-information-and-preparation.md",
-      "location": "line 40"
     }
   },
   {
@@ -10100,44 +9972,6 @@
     }
   },
   {
-    "nl": "de date",
-    "kind": "noun",
-    "en": "a date (romantic outing)",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de dates"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "date",
-    "id": "course-0e87632cd46bd490",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 3_06-10-26.pdf",
-      "location": "p. 14"
-    }
-  },
-  {
-    "nl": "dates",
-    "kind": "noun",
-    "en": "a date (romantic outing) (plural)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "date"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "date",
-    "id": "course-f18e48678b723e80",
-    "source": {
-      "file": "2026-12-exam-information-and-preparation.md",
-      "location": "line 78"
-    }
-  },
-  {
     "nl": "de",
     "kind": "word",
     "en": "the; definite article, masculine and feminine singular, plural",
@@ -10166,34 +10000,10 @@
     "imported": true
   },
   {
-    "nl": "deals",
-    "kind": "noun",
-    "en": "deal, a transaction or arrangement (plural)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "deal"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "deal",
-    "id": "course-146879387a6ce4bf",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 6_20-10-26.pdf",
-      "location": "p. 81"
-    }
-  },
-  {
-    "nl": "de december",
+    "nl": "december",
     "kind": "noun",
     "en": "December",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de decembers"
-      }
-    ],
+    "forms": [],
     "groups": [],
     "topic": "Course vocabulary",
     "dictionary": "december",
@@ -10409,25 +10219,6 @@
       "location": "p. 53"
     },
     "imported": true
-  },
-  {
-    "nl": "details",
-    "kind": "noun",
-    "en": "detail (plural)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "detail"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "detail",
-    "id": "course-41ffd8b76afc92a6",
-    "source": {
-      "file": "2026-12-exam-information-and-preparation.md",
-      "location": "line 109"
-    }
   },
   {
     "nl": "deuren",
@@ -12032,20 +11823,6 @@
     }
   },
   {
-    "nl": "het email",
-    "kind": "noun",
-    "en": "enamel",
-    "forms": [],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "email",
-    "id": "course-82244417f956ac7c",
-    "source": {
-      "file": "Dutch Language and Cultures 2026 semester 1_PRACTICAL INFORMATION.pdf",
-      "location": "p. 1"
-    }
-  },
-  {
     "nl": "de emotie",
     "kind": "noun",
     "en": "emotion",
@@ -12633,7 +12410,7 @@
     }
   },
   {
-    "nl": "de februari",
+    "nl": "februari",
     "kind": "noun",
     "en": "February",
     "forms": [],
@@ -12663,25 +12440,6 @@
     "source": {
       "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
       "location": "p. 75"
-    }
-  },
-  {
-    "nl": "festivals",
-    "kind": "noun",
-    "en": "a festival (festive event or gathering) (plural)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "festival"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "festival",
-    "id": "course-40f2741cfe5f31bb",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 6_20-10-26.pdf",
-      "location": "p. 79"
     }
   },
   {
@@ -13137,25 +12895,6 @@
     }
   },
   {
-    "nl": "fries",
-    "kind": "noun",
-    "en": "frieze",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de friezen"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "fries",
-    "id": "course-a1fce31d9b8cd02f",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
-      "location": "p. 79"
-    }
-  },
-  {
     "nl": "de friet",
     "kind": "noun",
     "en": "chips or fries",
@@ -13209,7 +12948,7 @@
   {
     "nl": "de frituur",
     "kind": "noun",
-    "en": "deep-fried food, now especially used of snacks and fast food",
+    "en": "Belgian snack bar specialising in fries",
     "forms": [
       {
         "label": "Plural",
@@ -17003,7 +16742,7 @@
   {
     "nl": "inwoners",
     "kind": "noun",
-    "en": "inhabitant (plural)",
+    "en": "inhabitants; residents",
     "forms": [
       {
         "label": "Base form",
@@ -17175,25 +16914,6 @@
     }
   },
   {
-    "nl": "items",
-    "kind": "noun",
-    "en": "item (matter of discussion) (plural)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "item"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "item",
-    "id": "course-5f3c4f8580d392e4",
-    "source": {
-      "file": "2026-12-exam-information-and-preparation.md",
-      "location": "line 82"
-    }
-  },
-  {
     "nl": "ja",
     "kind": "word",
     "en": "yes",
@@ -17241,15 +16961,10 @@
     }
   },
   {
-    "nl": "de januari",
+    "nl": "januari",
     "kind": "noun",
     "en": "January",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de januari's"
-      }
-    ],
+    "forms": [],
     "groups": [],
     "topic": "Course vocabulary",
     "dictionary": "januari",
@@ -17447,25 +17162,6 @@
     }
   },
   {
-    "nl": "jobs",
-    "kind": "noun",
-    "en": "job (plural)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "job"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "job",
-    "id": "course-5d9a17cb70b9733a",
-    "source": {
-      "file": "practice-questions-2026.md",
-      "location": "line 123"
-    }
-  },
-  {
     "nl": "de jongen",
     "kind": "noun",
     "en": "a boy, any male child",
@@ -17589,15 +17285,10 @@
     }
   },
   {
-    "nl": "de juli",
+    "nl": "juli",
     "kind": "noun",
     "en": "July",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de juli's"
-      }
-    ],
+    "forms": [],
     "groups": [],
     "topic": "Course vocabulary",
     "dictionary": "juli",
@@ -17622,15 +17313,10 @@
     }
   },
   {
-    "nl": "de juni",
+    "nl": "juni",
     "kind": "noun",
-    "en": "June (month)",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de juni's"
-      }
-    ],
+    "en": "June",
+    "forms": [],
     "groups": [],
     "topic": "Course vocabulary",
     "dictionary": "juni",
@@ -19763,7 +19449,7 @@
   {
     "nl": "Langstraat",
     "kind": "word",
-    "en": "a hamlet in Goeree-Overflakkee, South Holland, Netherlands",
+    "en": "Langstraat (street name in Vilvoorde)",
     "forms": [],
     "groups": [],
     "topic": "Course vocabulary",
@@ -19814,25 +19500,6 @@
     "source": {
       "file": "Dutch Language and Cultures_Les 3_06-10-26.pdf",
       "location": "p. 12"
-    }
-  },
-  {
-    "nl": "de lease",
-    "kind": "noun",
-    "en": "lease",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de leases"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "lease",
-    "id": "course-b544a7686d118668",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 8_27-10-26.pdf",
-      "location": "p. 92"
     }
   },
   {
@@ -20370,25 +20037,6 @@
     "imported": true
   },
   {
-    "nl": "levels",
-    "kind": "noun",
-    "en": "level (segment of a game) (plural)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "level"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "level",
-    "id": "course-7d50f20853334a30",
-    "source": {
-      "file": "practice-questions-2026.md",
-      "location": "line 125"
-    }
-  },
-  {
     "nl": "leven",
     "kind": "verb",
     "en": "to live",
@@ -20707,25 +20355,6 @@
     }
   },
   {
-    "nl": "de like",
-    "kind": "noun",
-    "en": "like",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de likes"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "like",
-    "id": "course-cab2644828bcc1f2",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
-      "location": "p. 79"
-    }
-  },
-  {
     "nl": "link",
     "kind": "adjective",
     "en": "dangerous",
@@ -20814,25 +20443,6 @@
     "source": {
       "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
       "location": "p. 81"
-    }
-  },
-  {
-    "nl": "de livestream",
-    "kind": "noun",
-    "en": "a live stream",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de livestreams"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "livestream",
-    "id": "course-897236c37fadc70c",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 5_13-10-26.pdf",
-      "location": "p. 72"
     }
   },
   {
@@ -21402,15 +21012,10 @@
     }
   },
   {
-    "nl": "de maart",
+    "nl": "maart",
     "kind": "noun",
     "en": "March",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de maarten"
-      }
-    ],
+    "forms": [],
     "groups": [],
     "topic": "Course vocabulary",
     "dictionary": "maart",
@@ -21889,25 +21494,6 @@
     }
   },
   {
-    "nl": "masters",
-    "kind": "noun",
-    "en": "a master, boss, superior (plural)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "master"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "master",
-    "id": "course-9c0736a282d77e28",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
-      "location": "p. 86"
-    }
-  },
-  {
     "nl": "de mat",
     "kind": "noun",
     "en": "rug, mat",
@@ -21958,25 +21544,6 @@
       "location": "p. 58"
     },
     "imported": true
-  },
-  {
-    "nl": "matters",
-    "kind": "adjective",
-    "en": "matte, not reflecting light (comparative)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "mat"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "mat",
-    "id": "course-3e9ae4c1660ed4da",
-    "source": {
-      "file": "2026-12-exam-information-and-preparation.md",
-      "location": "line 128"
-    }
   },
   {
     "nl": "me",
@@ -22144,7 +21711,7 @@
     }
   },
   {
-    "nl": "de mei",
+    "nl": "mei",
     "kind": "noun",
     "en": "May",
     "forms": [],
@@ -23242,25 +22809,6 @@
     "imported": true
   },
   {
-    "nl": "museums",
-    "kind": "noun",
-    "en": "museum (plural)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "museum"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "museum",
-    "id": "course-0f87cbda09f66f18",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 14_26-11-26.pdf",
-      "location": "p. 86"
-    }
-  },
-  {
     "nl": "de muur",
     "kind": "noun",
     "en": "wall",
@@ -24271,15 +23819,10 @@
     }
   },
   {
-    "nl": "de november",
+    "nl": "november",
     "kind": "noun",
-    "en": "November (the eleventh month of the Gregorian calendar, following October and preceding December)",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de novembers"
-      }
-    ],
+    "en": "November",
+    "forms": [],
     "groups": [],
     "topic": "Course vocabulary",
     "dictionary": "november",
@@ -24686,15 +24229,10 @@
     "imported": true
   },
   {
-    "nl": "de oktober",
+    "nl": "oktober",
     "kind": "noun",
-    "en": "October (the tenth month of the Gregorian calendar, following September and preceding November)",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de oktobers"
-      }
-    ],
+    "en": "October",
+    "forms": [],
     "groups": [],
     "topic": "Course vocabulary",
     "dictionary": "oktober",
@@ -25785,7 +25323,7 @@
   {
     "nl": "overmorgen",
     "kind": "word",
-    "en": "overmorrow, the day after tomorrow",
+    "en": "the day after tomorrow",
     "forms": [],
     "groups": [],
     "topic": "Course vocabulary",
@@ -26298,25 +25836,6 @@
     }
   },
   {
-    "nl": "pensions",
-    "kind": "noun",
-    "en": "a pension, boarding house (plural)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "pension"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "pension",
-    "id": "course-f0338de7272e2033",
-    "source": {
-      "file": "practice-questions-2026.md",
-      "location": "line 63"
-    }
-  },
-  {
     "nl": "de peper",
     "kind": "noun",
     "en": "pepper (Piper nigrum or the spice obtained from its berries)",
@@ -26370,25 +25889,6 @@
     "source": {
       "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
       "location": "p. 81"
-    }
-  },
-  {
-    "nl": "performances",
-    "kind": "noun",
-    "en": "performance (act of performing) (plural)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "performance"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "performance",
-    "id": "course-ded2f50e2c78fbb2",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 5_13-10-26.pdf",
-      "location": "p. 72"
     }
   },
   {
@@ -26783,25 +26283,6 @@
       "location": "p. 92"
     },
     "imported": true
-  },
-  {
-    "nl": "de pizzeria",
-    "kind": "noun",
-    "en": "pizzeria",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de pizzeria's"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "pizzeria",
-    "id": "course-ae94023c210b62e9",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
-      "location": "p. 93"
-    }
   },
   {
     "nl": "de plaats",
@@ -27683,25 +27164,6 @@
     }
   },
   {
-    "nl": "prompts",
-    "kind": "adjective",
-    "en": "quick, immediate (inflected form)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "prompt"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "prompt",
-    "id": "course-eb7526362ee7678c",
-    "source": {
-      "file": "2026-12-exam-information-and-preparation.md",
-      "location": "line 100"
-    }
-  },
-  {
     "nl": "het pronomen",
     "kind": "noun",
     "en": "pronoun",
@@ -28153,25 +27615,6 @@
     }
   },
   {
-    "nl": "records",
-    "kind": "noun",
-    "en": "a record, a best achievement (plural)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "record"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "record",
-    "id": "course-a94e7bcfcbed3c84",
-    "source": {
-      "file": "2026-12-exam-information-and-preparation.md",
-      "location": "line 130"
-    }
-  },
-  {
     "nl": "de rector",
     "kind": "noun",
     "en": "rector",
@@ -28539,25 +27982,6 @@
     "source": {
       "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
       "location": "p. 75"
-    }
-  },
-  {
-    "nl": "de reu",
-    "kind": "noun",
-    "en": "male dog or other canine",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de reuen"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "reu",
-    "id": "course-ca747b228c9e938c",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 8_27-10-26.pdf",
-      "location": "p. 92"
     }
   },
   {
@@ -29553,44 +28977,6 @@
     "source": {
       "file": "Dutch Language and Cultures_Les 1_29-09-26.pdf",
       "location": "p. 16"
-    }
-  },
-  {
-    "nl": "de shop",
-    "kind": "noun",
-    "en": "shop",
-    "forms": [
-      {
-        "label": "Plural",
-        "text": "de shops"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "shop",
-    "id": "course-8d9001d32c6a703d",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 8_27-10-26.pdf",
-      "location": "p. 92"
-    }
-  },
-  {
-    "nl": "shows",
-    "kind": "noun",
-    "en": "a show (entertainment) (plural)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "show"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "show",
-    "id": "course-c093955cebfac85b",
-    "source": {
-      "file": "practice-questions-2026.md",
-      "location": "line 259"
     }
   },
   {
@@ -30854,25 +30240,6 @@
     "imported": true
   },
   {
-    "nl": "starts",
-    "kind": "noun",
-    "en": "start (plural)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "start"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "start",
-    "id": "course-89ae673c344bb1fb",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 5_13-10-26.pdf",
-      "location": "p. 72"
-    }
-  },
-  {
     "nl": "startvorm",
     "kind": "noun",
     "en": "base form",
@@ -31951,25 +31318,6 @@
     }
   },
   {
-    "nl": "teams",
-    "kind": "noun",
-    "en": "team (group of people) (plural)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "team"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "team",
-    "id": "course-fadff6cf8575b7b1",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 5_13-10-26.pdf",
-      "location": "p. 71"
-    }
-  },
-  {
     "nl": "de teen",
     "kind": "noun",
     "en": "toe",
@@ -32355,25 +31703,6 @@
     "source": {
       "file": "Dutch Language and Cultures_Les 9_29-10-26.pdf",
       "location": "p. 22"
-    }
-  },
-  {
-    "nl": "tests",
-    "kind": "noun",
-    "en": "test (plural)",
-    "forms": [
-      {
-        "label": "Base form",
-        "text": "test"
-      }
-    ],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "test",
-    "id": "course-59830ebc3a418411",
-    "source": {
-      "file": "2026-12-exam-information-and-preparation.md",
-      "location": "line 145"
     }
   },
   {

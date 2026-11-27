@@ -8,7 +8,7 @@ export { normalize } from './quiz';
 export type Word = (typeof vocabulary)[number];
 export const words = vocabulary;
 const quiz = createQuiz(words, quizAlternatives);
-const quizRevision = 1;
+const quizRevision = 2;
 const groups: Record<string, { title: string; rows: string[][]; members?: string[] }> = review;
 export const allTopics = 'All topics';
 const legacyWithoutNumbers = 'All except numbers';

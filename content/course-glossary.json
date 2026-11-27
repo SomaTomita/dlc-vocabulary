@@ -384,6 +384,11 @@
     "exclude",
     "OCR-only reading without corroboration in the source review"
   ],
+  "baart": [
+    "baart",
+    "exclude",
+    "Surname in the example, not the verb baren"
+  ],
   "bag": [
     "bag",
     "exclude",
@@ -583,6 +588,11 @@
     "boord",
     "noun",
     "board, as in on board"
+  ],
+  "born": [
+    "born",
+    "exclude",
+    "English in the source passage"
   ],
   "bos": [
     "het bos",
@@ -804,6 +814,11 @@
     "exclude",
     "English or another language in the source passage"
   ],
+  "coltan": [
+    "coltan",
+    "exclude",
+    "English in the source passage"
+  ],
   "columbus": [
     "columbus",
     "exclude",
@@ -829,6 +844,11 @@
     "exclude",
     "English or another language in the source passage"
   ],
+  "complete": [
+    "complete",
+    "exclude",
+    "English in the source passage"
+  ],
   "component": [
     "component",
     "exclude",
@@ -848,6 +868,11 @@
     "computerwetenschappen",
     "noun",
     "computer science"
+  ],
+  "concerns": [
+    "concerns",
+    "exclude",
+    "English in the source passage"
   ],
   "congolese": [
     "congolese",
@@ -923,6 +948,16 @@
     "adjective",
     "correct (attributive form)"
   ],
+  "country": [
+    "country",
+    "exclude",
+    "English in the source passage"
+  ],
+  "covers": [
+    "covers",
+    "exclude",
+    "English in the source passage"
+  ],
   "cuisine": [
     "cuisine",
     "exclude",
@@ -988,6 +1023,16 @@
     "exclude",
     "OCR reading contradicted by the rendered source page"
   ],
+  "date": [
+    "date",
+    "exclude",
+    "English in the source passage"
+  ],
+  "dates": [
+    "dates",
+    "exclude",
+    "English in the source passage"
+  ],
   "davide": [
     "davide",
     "exclude",
@@ -1007,6 +1052,11 @@
     "de-woord",
     "noun",
     "noun that takes de"
+  ],
+  "deals": [
+    "deals",
+    "exclude",
+    "English in the source passage"
   ],
   "debby": [
     "debby",
@@ -1087,6 +1137,11 @@
     "destinatie",
     "noun",
     "destination"
+  ],
+  "details": [
+    "details",
+    "exclude",
+    "English in the source passage"
   ],
   "deuniversiteit": [
     "deuniversiteit",
@@ -1363,6 +1418,11 @@
     "exclude",
     "Personal or fictional example name"
   ],
+  "email": [
+    "email",
+    "exclude",
+    "English in the source passage"
+  ],
   "emoe": [
     "emoe",
     "exclude",
@@ -1538,6 +1598,11 @@
     "exclude",
     "OCR-only reading without corroboration in the source review"
   ],
+  "festivals": [
+    "festivals",
+    "exclude",
+    "English in the source passage"
+  ],
   "fi": [
     "fi",
     "exclude",
@@ -1627,6 +1692,11 @@
     "friendly",
     "exclude",
     "English or another language in the source passage"
+  ],
+  "fries": [
+    "fries",
+    "exclude",
+    "English in the source passage"
   ],
   "friet": [
     "de friet",
@@ -2201,6 +2271,11 @@
     "exclude",
     "English or another language in the source passage"
   ],
+  "items": [
+    "items",
+    "exclude",
+    "English in the source passage"
+  ],
   "itie": [
     "itie",
     "exclude",
@@ -2295,6 +2370,11 @@
     "jo",
     "exclude",
     "OCR fragment in surrounding source text"
+  ],
+  "jobs": [
+    "jobs",
+    "exclude",
+    "English in the source passage"
   ],
   "johan": [
     "johan",
@@ -2629,6 +2709,11 @@
     "exclude",
     "Visible typesetting or OCR fragment"
   ],
+  "lease": [
+    "lease",
+    "exclude",
+    "Split OCR text in an English source passage"
+  ],
   "lecture": [
     "lecture",
     "exclude",
@@ -2679,6 +2764,11 @@
     "adjective",
     "from Leuven"
   ],
+  "levels": [
+    "levels",
+    "exclude",
+    "English in the source passage"
+  ],
   "liberalisme": [
     "liberalisme",
     "noun",
@@ -2714,6 +2804,11 @@
     "exclude",
     "OCR-only reading without corroboration in the source review"
   ],
+  "like": [
+    "like",
+    "exclude",
+    "English in the source passage"
+  ],
   "links": [
     "links",
     "word",
@@ -2748,6 +2843,11 @@
     "liu",
     "exclude",
     "Personal or fictional example name"
+  ],
+  "livestream": [
+    "livestream",
+    "exclude",
+    "English in the source passage"
   ],
   "lk": [
     "lk",
@@ -2909,6 +3009,11 @@
     "exclude",
     "English or a proper name on a graphic"
   ],
+  "masters": [
+    "masters",
+    "exclude",
+    "English in the source passage"
+  ],
   "mathematica": [
     "mathematica",
     "noun",
@@ -2923,6 +3028,11 @@
     "matter",
     "exclude",
     "English or another language in the source passage"
+  ],
+  "matters": [
+    "matters",
+    "exclude",
+    "English in the source passage"
   ],
   "may": [
     "may",
@@ -3118,6 +3228,11 @@
     "het museum",
     "noun",
     "museum"
+  ],
+  "museums": [
+    "museums",
+    "exclude",
+    "English in the source passage"
   ],
   "naamis": [
     "naamis",
@@ -3639,6 +3754,11 @@
     "exclude",
     "OCR-only reading without corroboration in the source review"
   ],
+  "pensions": [
+    "pensions",
+    "exclude",
+    "English in the source passage"
+  ],
   "people": [
     "people",
     "exclude",
@@ -3648,6 +3768,11 @@
     "peppe",
     "exclude",
     "Personal or fictional example name"
+  ],
+  "performances": [
+    "performances",
+    "exclude",
+    "English in the source passage"
   ],
   "person": [
     "person",
@@ -3698,6 +3823,11 @@
     "pizza",
     "noun",
     "pizza"
+  ],
+  "pizzeria": [
+    "pizzeria",
+    "exclude",
+    "English in the source passage"
   ],
   "places": [
     "places",
@@ -3818,6 +3948,11 @@
     "exclude",
     "English or another language in the source passage"
   ],
+  "prompts": [
+    "prompts",
+    "exclude",
+    "English in the source passage"
+  ],
   "pronomina-mix": [
     "pronomina-mix",
     "noun",
@@ -3928,6 +4063,11 @@
     "exclude",
     "English or another language in the source passage"
   ],
+  "records": [
+    "records",
+    "exclude",
+    "English in the source passage"
+  ],
   "rect": [
     "rect",
     "exclude",
@@ -4007,6 +4147,11 @@
     "reserve",
     "exclude",
     "English or another language in the source passage"
+  ],
+  "reu": [
+    "reu",
+    "exclude",
+    "OCR fragment in an English source passage"
   ],
   "rien": [
     "rien",
@@ -4218,10 +4363,20 @@
     "exclude",
     "Personal or fictional example name"
   ],
+  "shop": [
+    "shop",
+    "exclude",
+    "English caption in the source"
+  ],
   "show": [
     "show",
     "exclude",
     "English or another language in the source passage"
+  ],
+  "shows": [
+    "shows",
+    "exclude",
+    "English in the source passage"
   ],
   "shrek": [
     "shrek",
@@ -4388,6 +4543,11 @@
     "noun",
     "starting position"
   ],
+  "starts": [
+    "starts",
+    "exclude",
+    "English in the source passage"
+  ],
   "startvorm": [
     "startvorm",
     "noun",
@@ -4483,6 +4643,11 @@
     "exclude",
     "OCR fragment in surrounding source text"
   ],
+  "teams": [
+    "teams",
+    "exclude",
+    "English in the source passage"
+  ],
   "tech": [
     "tech",
     "exclude",
@@ -4542,6 +4707,11 @@
     "ter",
     "exclude",
     "OCR reading contradicted by the rendered source page"
+  ],
+  "tests": [
+    "tests",
+    "exclude",
+    "English in the source passage"
   ],
   "thanks": [
     "thanks",
