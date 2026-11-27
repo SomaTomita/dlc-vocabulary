@@ -4899,20 +4899,6 @@
     }
   },
   {
-    "nl": "ah",
-    "kind": "phrase",
-    "en": "ah (expressing understanding or surprise)",
-    "forms": [],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "ah",
-    "id": "course-70a0d5198ebb88f9",
-    "source": {
-      "file": "DLC_Oefenbundel_Deel 1.pdf",
-      "location": "p. 3"
-    }
-  },
-  {
     "nl": "al",
     "kind": "word",
     "en": "all, all of",
@@ -5677,20 +5663,6 @@
     "source": {
       "file": "Dutch Language and Cultures_Les 13_24-11-26.pdf",
       "location": "p. 29"
-    }
-  },
-  {
-    "nl": "au",
-    "kind": "phrase",
-    "en": "ouch!",
-    "forms": [],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "au",
-    "id": "course-632cd2fea71dcde0",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 2_01-10-26.pdf",
-      "location": "p. 46"
     }
   },
   {
@@ -12444,20 +12416,6 @@
     }
   },
   {
-    "nl": "euh",
-    "kind": "phrase",
-    "en": "er, erm, um, uh; used as a space filler or pause during conversation",
-    "forms": [],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "euh",
-    "id": "course-a277788f028008e3",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
-      "location": "p. 47"
-    }
-  },
-  {
     "nl": "euro",
     "kind": "noun",
     "en": "euro (currency)",
@@ -16148,34 +16106,6 @@
     "source": {
       "file": "les-02_01-10-26_pronunciation.md",
       "location": "line 322"
-    }
-  },
-  {
-    "nl": "hu",
-    "kind": "phrase",
-    "en": "brr (an expression of cold, fear or disgust, as if shuddering)",
-    "forms": [],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "hu",
-    "id": "course-ffd3d21b48469c85",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 11_17-11-26.pdf",
-      "location": "p. 60"
-    }
-  },
-  {
-    "nl": "huh",
-    "kind": "phrase",
-    "en": "huh (an exclamation indicating puzzlement)",
-    "forms": [],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "huh",
-    "id": "course-e48510d1ff85568d",
-    "source": {
-      "file": "DLC_Oefenbundel_Deel 2.pdf",
-      "location": "p. 2"
     }
   },
   {
@@ -24589,20 +24519,6 @@
     }
   },
   {
-    "nl": "o",
-    "kind": "phrase",
-    "en": "oh",
-    "forms": [],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "o",
-    "id": "course-65c74c15a686187b",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 10_12-11-26.pdf",
-      "location": "p. 13"
-    }
-  },
-  {
     "nl": "de ober",
     "kind": "noun",
     "en": "waiter",
@@ -24811,20 +24727,6 @@
     }
   },
   {
-    "nl": "oeh",
-    "kind": "phrase",
-    "en": "ooh",
-    "forms": [],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "id": "course-ed2bd65e5566751c",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 1_29-09-26.pdf",
-      "location": "p. 16"
-    },
-    "imported": true
-  },
-  {
     "nl": "Oekraïens",
     "kind": "adjective",
     "en": "Ukrainian, relating to Ukraine and/or its Slavic people/culture",
@@ -24912,20 +24814,6 @@
       "file": "DLC_Oefenbundel_Deel 2.pdf",
       "location": "p. 5"
     }
-  },
-  {
-    "nl": "oh",
-    "kind": "phrase",
-    "en": "oh",
-    "forms": [],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "id": "course-cf04119a706e2c45",
-    "source": {
-      "file": "DLC_Oefenbundel_Deel 1.pdf",
-      "location": "p. 3"
-    },
-    "imported": true
   },
   {
     "nl": "ok",
@@ -37884,20 +37772,6 @@
     "source": {
       "file": "les-02_01-10-26_pronunciation.md",
       "location": "line 176"
-    }
-  },
-  {
-    "nl": "yes",
-    "kind": "phrase",
-    "en": "yay (exclamation of happiness or enthusiasm)",
-    "forms": [],
-    "groups": [],
-    "topic": "Course vocabulary",
-    "dictionary": "yes",
-    "id": "course-8a798890fe938171",
-    "source": {
-      "file": "Dutch Language and Cultures_Les 5_13-10-26.pdf",
-      "location": "p. 72"
     }
   },
   {

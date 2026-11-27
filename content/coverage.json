@@ -4,15 +4,15 @@
   "sourceWordCandidates": 2191,
   "indexedForms": 5477,
   "visualSupplements": 2,
-  "cardCount": 2201,
+  "cardCount": 2192,
   "audit": {
     "check-gloss": 0,
     "check-source": 0,
     "unconfirmed-ocr": 139,
-    "authored": 257,
+    "authored": 255,
     "existing": 192,
-    "dictionary": 1721,
+    "dictionary": 1714,
     "no-lexical-match": 2533,
-    "excluded": 635
+    "excluded": 644
   }
 }

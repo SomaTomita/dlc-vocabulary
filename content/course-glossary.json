@@ -139,6 +139,11 @@
     "exclude",
     "English or another language in the source passage"
   ],
+  "ah": [
+    "ah",
+    "exclude",
+    "Generic interjection or filler omitted from practice"
+  ],
   "ai": [
     "ai",
     "exclude",
@@ -318,6 +323,11 @@
     "attend",
     "exclude",
     "English or another language in the source passage"
+  ],
+  "au": [
+    "au",
+    "exclude",
+    "Generic interjection or filler omitted from practice"
   ],
   "audio-opname": [
     "audio-opname",
@@ -1408,6 +1418,11 @@
     "exclude",
     "Phonetic segment, abbreviation or worksheet notation"
   ],
+  "euh": [
+    "euh",
+    "exclude",
+    "Generic interjection or filler omitted from practice"
+  ],
   "evening": [
     "evening",
     "exclude",
@@ -1945,6 +1960,16 @@
     "how",
     "exclude",
     "English or another language in the source passage"
+  ],
+  "hu": [
+    "hu",
+    "exclude",
+    "Generic interjection or filler omitted from practice"
+  ],
+  "huh": [
+    "huh",
+    "exclude",
+    "Generic interjection or filler omitted from practice"
   ],
   "huiswer": [
     "huiswer",
@@ -3269,6 +3294,11 @@
     "exclude",
     "English or another language in the source passage"
   ],
+  "o": [
+    "o",
+    "exclude",
+    "Generic interjection or filler omitted from practice"
+  ],
   "obama": [
     "obama",
     "exclude",
@@ -3306,8 +3336,8 @@
   ],
   "oeh": [
     "oeh",
-    "phrase",
-    "ooh"
+    "exclude",
+    "Generic interjection or filler omitted from practice"
   ],
   "oei": [
     "oei",
@@ -3336,8 +3366,8 @@
   ],
   "oh": [
     "oh",
-    "phrase",
-    "oh"
+    "exclude",
+    "Generic interjection or filler omitted from practice"
   ],
   "ohij": [
     "ohij",
@@ -5117,6 +5147,11 @@
     "xxx",
     "exclude",
     "Visible typesetting or OCR fragment"
+  ],
+  "yes": [
+    "yes",
+    "exclude",
+    "Generic interjection or filler omitted from practice"
   ],
   "yo": [
     "yo",

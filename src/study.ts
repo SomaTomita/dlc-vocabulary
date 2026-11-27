@@ -234,11 +234,25 @@ export function mergeStudy(study: Study, saved: Study): Study {
   return { ...study, history, review };
 }
 
+function removeUnavailableWords(session: Session): Session {
+  const queue = session.queue.filter(id => getWord(id));
+  if (queue.length === session.queue.length) return session;
+  const size = session.completed
+    ? new Set([...session.completed, ...queue]).size
+    : session.size;
+  const updated = { ...session, queue, size };
+  if (queue[0] === session.queue[0]) return updated;
+  return { ...updated, options: optionsFor(queue[0], session.mode), selected: undefined, result: undefined };
+}
+
 export function restoreTab(): TabPractice | undefined {
   try {
     const saved = JSON.parse(sessionStorage.getItem(tabKey) ?? 'null') as TabPractice | null;
-    if (!saved || saved.session.date !== localDay() || saved.session.queue.some(id => !getWord(id))) return;
-    return saved;
+    if (!saved || saved.session.date !== localDay()) return;
+    const session = removeUnavailableWords(saved.session);
+    return session.queue[0] === saved.session.queue[0]
+      ? { ...saved, session }
+      : { ...saved, session, input: '', flipped: false };
   } catch {
     return;
   }
@@ -253,9 +267,8 @@ export function restore(): [Study, boolean] {
         || data.goal < 5 || data.goal > 100) {
       return [initialStudy, false];
     }
-    if (data.session?.queue.some(id => !getWord(id))) delete data.session;
     const { history, review, goal, session, activityReset, studyReset } = data;
-    return [{ history, review, goal, session, activityReset, studyReset }, true];
+    return [{ history, review, goal, session: session && removeUnavailableWords(session), activityReset, studyReset }, true];
   } catch {
     return [initialStudy, false];
   }
