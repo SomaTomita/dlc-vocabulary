@@ -20,7 +20,7 @@ header {
   max-width: 1060px; min-height: 78px; padding: 12px 28px; margin: auto;
 }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 680; white-space: nowrap; }
-.brand span { display: grid; place-items: center; width: 32px; height: 32px; background: var(--accent); color: white; border-radius: 9px; }
+.brand img { display: block; flex: none; border-radius: 9px; }
 nav { display: flex; gap: 4px; align-items: center; }
 nav a { padding: 12px 11px; border-radius: 8px; color: var(--muted); font-size: .88rem; }
 nav a[aria-current] { background: #eaece4; color: #2d4538; font-weight: 650; }

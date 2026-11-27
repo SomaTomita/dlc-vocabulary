@@ -373,7 +373,10 @@ export default function App() {
   }
 
   return <div className="app">
-    <header><a className="brand" href="#practice"><span aria-hidden="true">D</span> Dutch Vocabulary</a>
+    <header><a className="brand" href="#practice">
+      <img src={import.meta.env.BASE_URL + 'flag-icon.png'} alt="" width="32" height="32" />
+      Dutch Vocabulary
+    </a>
       <nav aria-label="Main navigation">{navigation.map(([key,label]) => <a key={key} href={'#' + key}
         aria-current={view === key ? 'page' : undefined}>{label}</a>)}</nav>
     </header>
