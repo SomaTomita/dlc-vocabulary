@@ -5,7 +5,7 @@ import coverage from '../content/coverage.json';
 import { playDutch, stopAudio } from './audio';
 import {
   allTopics, answer, availableWords, changeTopics, createSession, expected, getWord, groups, localDay, mergeStudy, next,
-  normalize, prompt, restore, restoreTab, roundMistakes, selectedTopics, storageKey, tabKey, topicCounts, topics, withoutNumbers, words,
+  normalize, prompt, restore, restoreTab, roundMistakes, selectedTopics, storageKey, tabKey, topicCounts, topics, words,
 } from './study';
 import type { Mode, Rating, Word } from './study';
 
@@ -102,8 +102,7 @@ function TopicPicker({ selection, onChange, disabled }: {
           onChange={event => {
             if (topic === allTopics) { onChange([]); return; }
             if (!event.target.checked) { onChange(selection.filter(item => item !== topic)); return; }
-            const conflict = topic === withoutNumbers ? 'Numbers' : topic === 'Numbers' ? withoutNumbers : '';
-            onChange([...selection.filter(item => item !== conflict), topic]);
+            onChange([...selection, topic]);
           }} />
         {topic} <span className="topic-count">{topicCounts[topic]}</span>
       </label>)}

@@ -5,14 +5,14 @@ export type Word = (typeof vocabulary)[number];
 export const words = vocabulary;
 export const groups: Record<string, { title: string; rows: string[][] }> = review;
 export const allTopics = 'All topics';
-export const withoutNumbers = 'All except numbers';
+const legacyWithoutNumbers = 'All except numbers';
 const wordKinds = { Nouns: 'noun', Verbs: 'verb', Adjectives: 'adjective' };
-export const topics = [allTopics, withoutNumbers, ...Object.keys(wordKinds),
+export const topics = [allTopics, ...Object.keys(wordKinds),
   ...[...new Set(words.map(word => word.topic))].filter(topic => !(topic in wordKinds))];
 
 function matchesTopic(word: Word, topic: string): boolean {
   if (topic === allTopics) return true;
-  if (topic === withoutNumbers) return word.topic !== 'Numbers';
+  if (word.topic === 'Numbers') return topic === 'Numbers';
   const kind = wordKinds[topic as keyof typeof wordKinds];
   return kind ? word.kind === kind : word.topic === topic;
 }
@@ -22,9 +22,7 @@ export const topicCounts = Object.fromEntries(topics.map(topic => [
 ]));
 
 export function availableWords(selection: string[]) {
-  const includedTopics = selection.filter(topic => topic !== withoutNumbers);
-  return words.filter(word => (!selection.includes(withoutNumbers) || word.topic !== 'Numbers')
-    && (includedTopics.length === 0 || includedTopics.some(topic => matchesTopic(word, topic))));
+  return selection.length === 0 ? words : words.filter(word => selection.some(topic => matchesTopic(word, topic)));
 }
 
 export type Mode = 'choice' | 'listen' | 'typing' | 'flashcards';
@@ -106,7 +104,10 @@ function optionsFor(id: string | undefined, mode: Mode): string[] {
 }
 
 export function selectedTopics(session: Session): string[] {
-  return session.topics ?? (session.topic === allTopics ? [] : [session.topic]);
+  const selection = session.topics ?? (session.topic === allTopics ? [] : [session.topic]);
+  if (!selection.includes(legacyWithoutNumbers)) return selection;
+  const included = selection.filter(topic => topic !== legacyWithoutNumbers && topic !== 'Numbers');
+  return included.length ? included : topics.filter(topic => topic !== allTopics && topic !== 'Numbers');
 }
 
 export function createSession(
