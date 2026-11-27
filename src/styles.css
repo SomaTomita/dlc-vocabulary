@@ -80,7 +80,8 @@ input:not([type="checkbox"]), select { min-height: 44px; border: 1px solid var(-
   main { margin-top: 14px; }
 }
 .round-progress { margin: 0 0 10px; text-align: end; }
-.start-screen { display: grid; place-items: center; min-height: clamp(210px, 48svh, 420px); }
+.start-screen { display: grid; place-content: center; justify-items: center; gap: 12px; text-align: center; min-height: clamp(210px, 48svh, 420px); }
+.start-screen p { margin: 0; }
 .round-complete { display: grid; justify-items: center; text-align: center; }
 .round-complete p { margin: 0 0 20px; }
 .session-bar { justify-content: flex-end; }

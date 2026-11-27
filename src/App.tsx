@@ -156,6 +156,9 @@ export default function App() {
   const remaining = words.filter(entry => !study.review[entry.id]).length;
   const selection = selectedTopics(session);
   const nextSize = Math.min(study.goal, availableWords(selection).length);
+  const shortRoundHint = nextSize < study.goal && <p className="small" role="status">
+    Your selected topics have {nextSize} {nextSize === 1 ? 'word' : 'words'}. Check more topics below for a {study.goal}-word round.
+  </p>;
 
   useEffect(() => {
     try {
@@ -316,16 +319,18 @@ export default function App() {
     </details>
   </section>;
   else if (!started) content = <section className="surface start-screen">
-    <button className="primary" onClick={() => {
+    <button className="primary" disabled={!nextSize} onClick={() => {
       newSession();
       setStarted(true);
     }}>Start <Icon name="arrow" /></button>
+    {shortRoundHint}
   </section>;
   else if (!word) content = <section className="surface round-complete">
     <h1>Round complete</h1>
-    {session.completed && <p>{session.completed.length} words this round</p>}
+    {session.completed && <p>{session.completed.length} {session.completed.length === 1 ? 'word' : 'words'} this round</p>}
     {session.missedWords && <RoundReview missedWords={session.missedWords} />}
-    <button className="primary" onClick={() => newSession()}>Start next {nextSize} <Icon name="arrow" /></button>
+    {shortRoundHint}
+    {nextSize > 0 && <button className="primary" onClick={() => newSession()}>Start next {nextSize} <Icon name="arrow" /></button>}
   </section>;
   else {
     const dutchPrompt = session.mode !== 'listen' && session.mode !== 'typing' && !(word.kind === 'ordinal' && session.mode === 'choice');
