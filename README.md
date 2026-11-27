@@ -17,11 +17,34 @@ Audio is generated with the Belgian Flemish [Piper rdh medium voice](https://hug
 
 ## Import course vocabulary
 
-Run source extraction in the course notes repository and use the resulting `data-work/` index with the Dutch JSONL export from [Kaikki](https://kaikki.org/dictionary/Dutch/).
+Run the extraction and audit scripts from this repository. Use Python 3.11+, Poppler, Tesseract with Dutch and English language data, the [OpenTaal word list](https://github.com/OpenTaal/opentaal-wordlist), and the Dutch JSONL export from [Kaikki](https://kaikki.org/dictionary/Dutch/).
 
-```sh
-python3 scripts/import-course.py /path/to/data-work /path/to/dutch.jsonl \
-  --cache /path/to/extraction-cache --audit /tmp/course-audit.tsv --write
+Keep the course materials, extraction cache, and audit files in a local folder outside this checkout. Reuse the cache when adding materials. Keep a copy of `visual-checks.json` with the local index because it records manually checked forms.
+
+```bash
+course=/path/to/kuleuven-notes/dutch-language-and-cultures-H06B4A
+work=/path/to/dlc-vocabulary-work
+tessdata=/path/to/tessdata
+opentaal=/path/to/opentaal-wordlist.txt
+kaikki=/path/to/dutch.jsonl
+
+mkdir -p "$work/data-work"
+visual=()
+if [ -f "$work/data-work/visual-checks.json" ]; then
+  visual=(--visual-checks "$work/data-work/visual-checks.json")
+fi
+ocr=()
+if [ -d "$work/ocr-confirmations" ]; then
+  ocr=(--ocr-confirmations "$work/ocr-confirmations")
+fi
+python3 scripts/extract_sources.py \
+  --source-root "$course" --cache "$work/cache" --tessdata "$tessdata" --quick
+python3 scripts/index_words.py \
+  --cache "$work/cache" --output "$work/data-work" --dutch-dictionary "$opentaal" "${visual[@]}"
+python3 scripts/audit_extraction.py \
+  --source-root "$course" --data "$work/data-work" --require-ocr
+python3 scripts/import-course.py "$work/data-work" "$kaikki" \
+  --cache "$work/cache" --audit "$work/course-audit.tsv" "${ocr[@]}" --write
 ```
 
 The import preserves manually authored cards and stable IDs, matches observed word forms to dictionary entries, and records an outcome for every observation. Put corrections in `content/course-glossary.json`. Generate missing clips and run `npm run build` before publishing.
