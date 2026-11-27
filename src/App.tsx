@@ -4,7 +4,7 @@ import numbers from '../content/numbers.json';
 import coverage from '../content/coverage.json';
 import { playDutch, stopAudio } from './audio';
 import {
-  allTopics, answer, availableWords, changeTopics, createSession, expected, getWord, localDay, mergeStudy, next,
+  allTopics, answer, availableWords, changeTopics, createSession, expected, getWord, isCorrectAnswer, localDay, mergeStudy, next,
   normalize, prompt, relatedGroups, restore, restoreTab, roundMistakes, selectedTopics, storageKey, tabKey, topicCounts, topics, words,
 } from './study';
 import type { Mode, Rating, Word } from './study';
@@ -168,7 +168,11 @@ export default function App() {
 
   useEffect(() => {
     try {
-      const [saved] = restore();
+      const [saved, valid] = restore();
+      if (!valid) {
+        setStorageError(true);
+        return;
+      }
       if ((saved.activityReset ?? 0) > (study.activityReset ?? 0)
           || (saved.studyReset ?? 0) > (study.studyReset ?? 0)) return;
       localStorage.setItem(storageKey, JSON.stringify(mergeStudy(study, saved)));
@@ -291,7 +295,7 @@ export default function App() {
 
   function submit(value: string) {
     if (!word || playing.current) return;
-    const correct = normalize(value) === normalize(expected(word, session.mode));
+    const correct = isCorrectAnswer(word, session.mode, value);
     setStudy(current => ({ ...current, ...answer(current, current.session, correct ? 'correct' : 'wrong', value) }));
   }
 
@@ -348,8 +352,10 @@ export default function App() {
   </section>;
   else {
     const dutchPrompt = session.mode !== 'listen' && session.mode !== 'typing' && !(word.kind === 'ordinal' && session.mode === 'choice');
+    const typedAlternative = session.mode === 'typing' && session.result === 'correct' && session.selected
+      && normalize(session.selected) !== normalize(word.nl);
     content = <section className="surface practice" aria-label="Vocabulary question">
-      <div className="question-top"><span>{session.question ? 'Question ' + session.question + ' · ' : ''}{word.topic}{word.kind === 'ordinal' && session.mode === 'choice' ? ' · Ordinal' : ''}</span>
+      <div className="question-top"><span>{session.isRetry ? 'Review · ' : session.question ? 'Question ' + session.question + ' · ' : ''}{word.topic}{word.kind === 'ordinal' && session.mode === 'choice' ? ' · Ordinal' : ''}</span>
         <AudioButton text={word.nl} onPlay={play} />
       </div>
       <h1 key={word.id} lang={dutchPrompt ? 'nl-BE' : 'en'}>{prompt(word, session.mode)}</h1>
@@ -383,7 +389,9 @@ export default function App() {
             <Icon name={session.result === 'correct' ? 'check' : session.result === 'wrong' ? 'cross' : 'reveal'} />
             {session.result === 'correct' ? 'Correct' : session.result === 'wrong' ? 'Incorrect' : 'Answer revealed'}
           </strong>
-          <span>{session.result === 'wrong' && <>Correct answer · </>}<span lang="nl-BE">{word.nl}</span> · {word.en}</span>
+          <span>{session.result === 'wrong' && <>Correct answer · </>}
+            {typedAlternative && <><span lang="nl-BE">{session.selected}</span> · Also accepted · </>}
+            <span lang="nl-BE">{word.nl}</span> · {word.en}</span>
         </div>
         <Feedback word={word} onPlay={play} expanded={session.result === 'correct'} />
         <button className="primary next" onClick={advance}>Next <Icon name="arrow" /></button>

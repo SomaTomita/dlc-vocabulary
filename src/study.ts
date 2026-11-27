@@ -1,7 +1,7 @@
 import vocabulary from '../content/words.json';
 import review from '../content/review.json';
 import quizAlternatives from '../content/quiz-alternatives.json';
-import { createQuiz } from './quiz';
+import { createQuiz, normalize } from './quiz';
 
 export { normalize } from './quiz';
 
@@ -48,6 +48,7 @@ export type Session = {
   retries: Record<string, number>;
   options: string[];
   quizRevision?: number;
+  isRetry?: boolean;
   mode: Mode;
   selected?: string;
   result?: Rating;
@@ -89,6 +90,13 @@ export function prompt(word: Word, mode: Mode) {
 
 export function expected(word: Word, mode: Mode) {
   return mode === 'typing' || (word.kind === 'ordinal' && mode === 'choice') ? word.nl : word.en;
+}
+
+export function isCorrectAnswer(word: Word, mode: Mode, value: string) {
+  const reply = normalize(value);
+  if (normalize(expected(word, mode)) === reply) return true;
+  return mode === 'typing' && words.some(card =>
+    normalize(card.nl) === reply && normalize(card.en) === normalize(word.en));
 }
 
 function optionsFor(id: string | undefined, mode: Mode): string[] {
@@ -157,7 +165,8 @@ export function changeTopics(study: Study, session: Session, selection: string[]
   const seen = new Set([...completed, current]);
   const goal = Math.max(0, (session.target ?? study.goal) - seen.size);
   const remaining = createSession({ ...study, goal }, selection, session.mode, seen).queue;
-  return { ...updated, queue: [current, ...remaining], size: seen.size + remaining.length, completed };
+  const pendingRetries = session.queue.slice(1).filter(id => seen.has(id));
+  return { ...updated, queue: [current, ...remaining, ...pendingRetries], size: seen.size + remaining.length, completed };
 }
 
 export function answer(study: Study, session: Session, grade: Rating, selected?: string): Study {
@@ -193,9 +202,9 @@ export function answer(study: Study, session: Session, grade: Rating, selected?:
 }
 
 export function next(session: Session): Session {
-  const roundDone = session.size !== undefined && session.completed?.length === session.size;
-  const queue = roundDone ? [] : session.queue.slice(1);
+  const queue = session.queue.slice(1);
   return { ...session, queue, question: session.question === undefined ? undefined : session.question + 1,
+    isRetry: session.completed?.includes(queue[0]),
     options: optionsFor(queue[0], session.mode), quizRevision, result: undefined, selected: undefined };
 }
 
@@ -241,17 +250,52 @@ function refreshQueue(session: Session): Session {
   const updated = { ...session, queue, size };
   if (!refreshOptions) return updated;
   return { ...updated, options: optionsFor(queue[0], session.mode), quizRevision,
+    isRetry: session.completed?.includes(queue[0]),
     selected: undefined, result: undefined };
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return value !== null && typeof value === 'object' && !Array.isArray(value);
+}
+
+function isStringList(value: unknown): value is string[] {
+  return Array.isArray(value) && value.every(item => typeof item === 'string');
+}
+
+function isCounter(value: unknown): value is number {
+  return typeof value === 'number' && Number.isSafeInteger(value) && value >= 0;
+}
+
+function isSession(value: unknown): value is Session {
+  return isRecord(value) && typeof value.date === 'string' && typeof value.topic === 'string'
+    && isStringList(value.queue) && isStringList(value.options)
+    && isRecord(value.retries) && Object.values(value.retries).every(isCounter)
+    && (value.mode === 'choice' || value.mode === 'listen' || value.mode === 'typing' || value.mode === 'flashcards')
+    && (value.topics === undefined || isStringList(value.topics))
+    && (value.completed === undefined || isStringList(value.completed))
+    && (value.missedWords === undefined || isStringList(value.missedWords))
+    && (value.result === undefined || value.result === 'correct' || value.result === 'wrong' || value.result === 'reveal')
+    && (value.selected === undefined || typeof value.selected === 'string')
+    && [value.question, value.size, value.target, value.quizRevision].every(item => item === undefined || isCounter(item));
+}
+
+function isReview(value: unknown): value is Review {
+  return isRecord(value) && typeof value.due === 'string' && typeof value.missed === 'boolean'
+    && isCounter(value.streak) && (value.updatedAt === undefined || isCounter(value.updatedAt));
 }
 
 export function restoreTab(): TabPractice | undefined {
   try {
-    const saved = JSON.parse(sessionStorage.getItem(tabKey) ?? 'null') as TabPractice | null;
-    if (!saved || saved.session.date !== localDay()) return;
+    const saved: unknown = JSON.parse(sessionStorage.getItem(tabKey) ?? 'null');
+    if (!isRecord(saved) || !isSession(saved.session) || saved.session.date !== localDay()) return;
     const session = refreshQueue(saved.session);
-    return session.queue[0] === saved.session.queue[0]
-      ? { ...saved, session }
-      : { ...saved, session, input: '', flipped: false };
+    const sameQuestion = session.queue[0] === saved.session.queue[0];
+    return {
+      session,
+      input: sameQuestion && typeof saved.input === 'string' ? saved.input : '',
+      flipped: sameQuestion && saved.flipped === true,
+      studyReset: isCounter(saved.studyReset) ? saved.studyReset : undefined,
+    };
   } catch {
     return;
   }
@@ -261,13 +305,21 @@ export function restore(): [Study, boolean] {
   try {
     const raw = localStorage.getItem(storageKey);
     if (!raw) return [initialStudy, true];
-    const data = JSON.parse(raw) as Study;
-    if (!data || !data.history || !data.review || !Number.isInteger(data.goal)
-        || data.goal < 5 || data.goal > 100) {
+    const data: unknown = JSON.parse(raw);
+    if (!isRecord(data) || (!isRecord(data.history) && !isRecord(data.review))) {
       return [initialStudy, false];
     }
-    const { history, review, goal, session, activityReset, studyReset } = data;
-    return [{ history, review, goal, session: session && refreshQueue(session), activityReset, studyReset }, true];
+    const history = Object.fromEntries(Object.entries(isRecord(data.history) ? data.history : {})
+      .filter((entry): entry is [string, string[]] => isStringList(entry[1])));
+    const review = Object.fromEntries(Object.entries(isRecord(data.review) ? data.review : {})
+      .filter((entry): entry is [string, Review] => isReview(entry[1])));
+    return [{
+      history, review,
+      goal: isCounter(data.goal) && data.goal >= 5 && data.goal <= 100 ? data.goal : initialStudy.goal,
+      session: isSession(data.session) ? refreshQueue(data.session) : undefined,
+      activityReset: isCounter(data.activityReset) ? data.activityReset : undefined,
+      studyReset: isCounter(data.studyReset) ? data.studyReset : undefined,
+    }, true];
   } catch {
     return [initialStudy, false];
   }
